@@ -7,9 +7,9 @@ const nextConfig = {
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
   },
-  // optimizeCss removido para evitar erro com critters
   poweredByHeader: false,
   reactStrictMode: true,
+  output: 'standalone',
 };
 
 module.exports = nextConfig;
