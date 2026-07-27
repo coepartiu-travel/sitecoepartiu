@@ -12,6 +12,11 @@ const ArrowRight = (props: SVGProps<SVGSVGElement>) => (
     <path d="M5 12h14" /><path d="m13 6 6 6-6 6" />
   </svg>
 );
+const Play = (props: SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>
+    <circle cx="12" cy="12" r="10" /><path d="m10 8 6 4-6 4V8Z" />
+  </svg>
+);
 const Compass = (props: SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>
     <circle cx="12" cy="12" r="8.5" /><path d="m14.9 9.1-2 3.8-3.8 2 2-3.8 3.8-2Z" />
@@ -42,46 +47,35 @@ const Shield = (props: SVGProps<SVGSVGElement>) => (
     <path d="M12 3 20 6v5.5c0 4.8-3.2 7.9-8 9.5-4.8-1.6-8-4.7-8-9.5V6l8-3Z" /><path d="m8.5 12 2.2 2.2 4.8-4.8" />
   </svg>
 );
-const Instagram = (props: SVGProps<SVGSVGElement>) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>
-    <rect x="3.5" y="3.5" width="17" height="17" rx="4" /><circle cx="12" cy="12" r="4" /><path d="M17.5 6.5h.01" />
-  </svg>
-);
-const WhatsApp = (props: SVGProps<SVGSVGElement>) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>
-    <path d="M20.5 11.5a8.5 8.5 0 0 1-12.7 7.4L3.5 20l1.2-4.1A8.5 8.5 0 1 1 20.5 11.5Z" /><path d="M8.5 8.7c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.7 1.6c.1.3.1.5-.1.7l-.5.6c.6 1.1 1.5 1.9 2.7 2.4l.5-.5c.2-.2.4-.2.7-.1l1.6.7c.3.1.4.3.4.5 0 .7-.3 1.3-.8 1.6-.5.3-1.2.3-2 .1-2.6-.7-5.2-3.3-5.9-5.9-.2-.7-.2-1.4.1-2Z" />
-  </svg>
-);
 
-// ================= DADOS PREMIUM =================
+// ================= DADOS =================
 const destinations = [
   {
     name: 'Mar Tranquilo',
     place: 'Alagoas, Brasil',
     image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85',
-    description: 'Dias leves, água morna e tempo para desacelerar. O cérebro descansa quando o corpo flutua.',
+    description: 'Dias leves, água morna e tempo para desacelerar.',
   },
   {
     name: 'Horizonte Aberto',
     place: 'Patagônia, Argentina',
     image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=85',
-    description: 'Paisagens que mudam a forma de enxergar o mundo. A imensidão desperta novos significados.',
+    description: 'Paisagens que mudam a forma de enxergar o mundo.',
   },
   {
     name: 'Entre História e Sabor',
     place: 'Lisboa, Portugal',
     image: 'https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&w=1200&q=85',
-    description: 'Cultura, encontros e pequenas descobertas pelo caminho. A memória afetiva se constrói nos detalhes.',
+    description: 'Cultura, encontros e pequenas descobertas pelo caminho.',
   },
 ];
 
-// ================= DADOS PREMIUM - UMA VIAGEM PARA CADA MOMENTO =================
 const audienceContent = {
   familias: {
     label: 'Famílias',
     tag: 'Conexão',
     title: 'Mais presença. Menos logística.',
-    description: 'Roteiros que respeitam o ritmo de cada pessoa e deixam espaço para o que realmente importa: estar junto. A conexão familiar ativa o sistema de recompensa do cérebro.',
+    description: 'Roteiros que respeitam o ritmo de cada pessoa e deixam espaço para o que realmente importa: estar junto.',
     detail: 'Conforto, segurança e descobertas para todas as idades.',
     image: 'https://images.unsplash.com/photo-1504150558240-0b4fd8946624?auto=format&fit=crop&w=1200&q=85',
     bg: 'from-amber-50/80 to-orange-50/80',
@@ -93,7 +87,7 @@ const audienceContent = {
     label: 'Noivos',
     tag: 'Romance',
     title: 'O começo de uma vida a dois merece um cenário à altura.',
-    description: 'Da lua de mel ao destination wedding, desenhamos cada detalhe para que vocês só precisem viver o momento. A âncora visual desse cenário ficará gravada para sempre.',
+    description: 'Da lua de mel ao destination wedding, desenhamos cada detalhe para que vocês só precisem viver o momento.',
     detail: 'Intimidade, beleza e experiências que viram memória.',
     image: 'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1200&q=85',
     bg: 'from-rose-50/80 to-pink-50/80',
@@ -105,7 +99,7 @@ const audienceContent = {
     label: 'Escolas & Grupos',
     tag: 'Propósito',
     title: 'Experiências que aproximam e ensinam.',
-    description: 'Viagens pedagógicas com planejamento cuidadoso, propósito claro e operação tranquila. Aprendizado experiencial ativa múltiplas inteligências.',
+    description: 'Viagens pedagógicas com planejamento cuidadoso, propósito claro e operação tranquila.',
     detail: 'Coordenação próxima do primeiro briefing ao retorno.',
     image: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=85',
     bg: 'from-blue-50/80 to-indigo-50/80',
@@ -119,44 +113,133 @@ export default function Home() {
   return (
     <div className="bg-white text-[#1a1a2e] font-sans overflow-hidden">
       <main>
-        {/* ===== HERO - ULTRA PREMIUM ===== */}
-        <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-[#0a0a1a] via-[#1a1a2e] to-[#2a1a3e] text-white">
-          <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2200&q=90)', backgroundSize: 'cover', backgroundPosition: 'center' }} />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a1a]/95 via-[#1a1a2e]/80 to-transparent" />
-          <div className="absolute top-20 right-20 w-96 h-96 bg-[#c9a84c]/10 rounded-full blur-3xl" />
+        {/* ============================================================
+            HERO - ULTRA PREMIUM INTERNACIONAL - ÚLTIMA GERAÇÃO
+            ============================================================ */}
+        <section className="relative min-h-screen flex items-center overflow-hidden">
+          {/* IMAGEM DE FUNDO - CLARA E CINEMATOGRÁFICA */}
+          <div className="absolute inset-0 z-0">
+            <img
+              src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=2200&q=90"
+              alt="Viagem dos sonhos - COÉ, PARTIU?"
+              className="w-full h-full object-cover"
+            />
+            {/* OVERLAY SUAVE - NÃO ESCURECE DEMAIS */}
+            <div className="absolute inset-0 bg-gradient-to-r from-white/85 via-white/60 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white/50" />
+          </div>
+
+          {/* ELEMENTOS DECORATIVOS PREMIUM */}
+          <div className="absolute top-20 right-20 z-0 opacity-30">
+            <div className="w-96 h-96 rounded-full bg-[#c9a84c]/10 blur-3xl" />
+          </div>
+          <div className="absolute bottom-20 left-20 z-0 opacity-20">
+            <div className="w-64 h-64 rounded-full bg-[#c9a84c]/5 blur-3xl" />
+          </div>
+
+          {/* CONTEÚDO */}
           <div className="container-custom relative z-10 py-20">
-            <div className="max-w-3xl space-y-8">
-              <div className="flex items-center gap-4">
-                <span className="w-12 h-[2px] bg-[#c9a84c]" />
-                <span className="text-sm font-medium tracking-[0.3em] text-[#c9a84c] uppercase">COÉ, PARTIU? Travel & Experiences</span>
+            <div className="max-w-3xl">
+              {/* BADGE - MARCA */}
+              <div className="inline-flex items-center gap-3 px-5 py-2.5 bg-white/80 backdrop-blur-md rounded-full shadow-lg border border-white/50 mb-8">
+                <span className="w-2 h-2 rounded-full bg-[#c9a84c] animate-pulse" />
+                <span className="text-xs font-medium tracking-[0.2em] text-[#1a1a2e] uppercase">
+                  COÉ, PARTIU? Travel & Experiences
+                </span>
+                <span className="text-xs font-light text-[#c9a84c]">✦</span>
               </div>
-              <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-[1.05] tracking-tight">
-                O mundo fica <br />
-                <span className="bg-gradient-to-r from-[#c9a84c] via-[#e8c87a] to-[#c9a84c] bg-clip-text text-transparent">mais bonito</span>
-                <br /> quando a gente parte.
+
+              {/* TÍTULO PRINCIPAL */}
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-[1.05] tracking-tight text-[#1a1a2e]">
+                O mundo fica
+                <br />
+                <span className="relative">
+                  <span className="bg-gradient-to-r from-[#c9a84c] via-[#e8c87a] to-[#c9a84c] bg-clip-text text-transparent">
+                    mais bonito
+                  </span>
+                  <span className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-[#c9a84c]/30 via-[#e8c87a]/30 to-[#c9a84c]/30 rounded-full blur-sm" />
+                </span>
+                <br />
+                quando a gente parte.
               </h1>
-              <p className="text-xl text-white/80 max-w-xl font-light leading-relaxed tracking-wide">
-                A COÉ, PARTIU? transforma vontade de viajar em experiências com sentido, cuidado e espaço para o inesperado. Sua próxima história começa aqui.
+
+              {/* DESCRIÇÃO - CLARA E LEGÍVEL */}
+              <p className="mt-8 text-xl md:text-2xl text-[#1a1a2e]/80 max-w-2xl font-light leading-relaxed tracking-wide">
+                A COÉ, PARTIU? transforma vontade de viajar em experiências com sentido,
+                cuidado e espaço para o inesperado.
               </p>
-              <div className="flex flex-wrap items-center gap-6 pt-4">
-                <a href="#planejar" className="group inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-[#c9a84c] to-[#b8983e] hover:from-[#b8983e] hover:to-[#a08830] text-[#0a0a1a] font-semibold rounded-full transition-all duration-500 shadow-2xl shadow-[#c9a84c]/20 hover:shadow-[#c9a84c]/40 hover:scale-105">
-                  Quero viver essa viagem
+
+              {/* SUBTEXTO COM DIFERENCIAL */}
+              <div className="mt-4 flex items-center gap-4 text-sm text-[#4a4a5a]">
+                <span className="flex items-center gap-2">
+                  <span className="w-1 h-1 rounded-full bg-[#c9a84c]" />
+                  Atendimento humano
+                </span>
+                <span className="flex items-center gap-2">
+                  <span className="w-1 h-1 rounded-full bg-[#c9a84c]" />
+                  Curadoria exclusiva
+                </span>
+                <span className="flex items-center gap-2">
+                  <span className="w-1 h-1 rounded-full bg-[#c9a84c]" />
+                  Parceiros selecionados
+                </span>
+              </div>
+
+              {/* BOTÕES DE AÇÃO */}
+              <div className="mt-10 flex flex-wrap items-center gap-6">
+                <a
+                  href="#planejar"
+                  className="group inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-[#c9a84c] to-[#b8983e] hover:from-[#b8983e] hover:to-[#a08830] text-[#0a0a1a] font-semibold rounded-full transition-all duration-500 shadow-2xl shadow-[#c9a84c]/30 hover:shadow-[#c9a84c]/50 hover:scale-105"
+                >
+                  <span className="text-lg">Quero viver essa viagem</span>
                   <ArrowUpRight className="h-5 w-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                 </a>
-                <a href="#experiencias" className="inline-flex items-center gap-3 text-white/70 hover:text-white transition-colors group text-lg font-light">
+                <a
+                  href="#experiencias"
+                  className="group inline-flex items-center gap-3 px-6 py-4 text-[#1a1a2e] hover:text-[#c9a84c] transition-colors text-lg font-medium border-b-2 border-transparent hover:border-[#c9a84c]"
+                >
                   Descobrir possibilidades
                   <ArrowRight className="h-5 w-5 group-hover:translate-x-2 transition-transform" />
                 </a>
               </div>
+
+              {/* ESTATÍSTICAS DE CONFIANÇA */}
+              <div className="mt-12 flex flex-wrap gap-8">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-[#c9a84c]/10 flex items-center justify-center text-[#c9a84c] text-lg font-bold">+</div>
+                  <div>
+                    <span className="block text-sm font-semibold text-[#1a1a2e]">500+</span>
+                    <span className="text-xs text-[#4a4a5a]">viagens realizadas</span>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-[#c9a84c]/10 flex items-center justify-center text-[#c9a84c] text-lg font-bold">✦</div>
+                  <div>
+                    <span className="block text-sm font-semibold text-[#1a1a2e]">4.9★</span>
+                    <span className="text-xs text-[#4a4a5a]">satisfação dos clientes</span>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-[#c9a84c]/10 flex items-center justify-center text-[#c9a84c] text-lg font-bold">🌍</div>
+                  <div>
+                    <span className="block text-sm font-semibold text-[#1a1a2e]">20+</span>
+                    <span className="text-xs text-[#4a4a5a]">destinos exclusivos</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/30 text-xs tracking-[0.2em] uppercase animate-bounce">
-            <span>Explore</span>
-            <span className="w-px h-8 bg-white/20" />
+
+          {/* INDICADOR DE SCROLL */}
+          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-[#1a1a2e]/30">
+            <span className="text-xs tracking-[0.2em] uppercase font-medium">Explore</span>
+            <div className="w-px h-12 bg-gradient-to-b from-[#c9a84c] to-transparent" />
           </div>
         </section>
 
-        {/* ===== PARA QUEM - ULTRA PREMIUM REFORMADO ===== */}
+        {/* ============================================================
+            PARA QUEM - ULTRA PREMIUM
+            ============================================================ */}
         <section id="para-quem" className="py-28 bg-gradient-to-b from-white to-[#faf8f5]">
           <div className="container-custom">
             <div className="text-center max-w-4xl mx-auto mb-20">
@@ -234,7 +317,9 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ===== EXPERIÊNCIAS ===== */}
+        {/* ============================================================
+            EXPERIÊNCIAS
+            ============================================================ */}
         <section id="experiencias" className="py-28 bg-white">
           <div className="container-custom">
             <div className="text-center max-w-3xl mx-auto mb-20 space-y-6">
@@ -275,7 +360,9 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ===== COMO FUNCIONA ===== */}
+        {/* ============================================================
+            COMO FUNCIONA
+            ============================================================ */}
         <section id="processo" className="py-28 bg-gradient-to-br from-[#0a0a1a] via-[#1a1a2e] to-[#0a0a1a] text-white">
           <div className="container-custom">
             <div className="text-center max-w-3xl mx-auto mb-20 space-y-6">
@@ -310,7 +397,9 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ===== SOBRE NÓS ===== */}
+        {/* ============================================================
+            SOBRE NÓS
+            ============================================================ */}
         <section id="sobre" className="py-28 bg-white">
           <div className="container-custom">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -354,7 +443,9 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ===== FORMULÁRIO ===== */}
+        {/* ============================================================
+            FORMULÁRIO
+            ============================================================ */}
         <section id="planejar" className="py-28 bg-gradient-to-br from-[#0a0a1a] via-[#1a1a2e] to-[#0a0a1a] text-white">
           <div className="container-custom max-w-5xl">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
