@@ -43,9 +43,10 @@ export function Header() {
           : 'bg-transparent'
       )}
     >
-      <nav className="container-custom py-4" aria-label="Global">
+      <nav className="container-custom py-3" aria-label="Global">
         <div className="flex items-center justify-between">
-          <Logo size="md" />
+          {/* Logo - 2cm altura, sem texto */}
+          <Logo size="md" showText={false} />
 
           <div className="hidden lg:flex items-center gap-8">
             {navigation.map((item) => (
