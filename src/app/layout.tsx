@@ -4,6 +4,7 @@ import './globals.css';
 import Providers from './providers';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { WhatsAppButton } from '@/components/ui/WhatsAppButton';
 
 // Fontes
 const inter = Inter({
@@ -83,6 +84,7 @@ export default function RootLayout({
           <Header />
           <main className="pt-20">{children}</main>
           <Footer />
+          <WhatsAppButton />
         </Providers>
       </body>
     </html>
