@@ -7,9 +7,7 @@ const nextConfig = {
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
   },
-  experimental: {
-    optimizeCss: true,
-  },
+  // optimizeCss removido para evitar erro com critters
   poweredByHeader: false,
   reactStrictMode: true,
 };
