@@ -8,14 +8,14 @@ import {
   Heart,
   Hotel,
   Mountain,
-  Beach,
+  Sun,
   Camera,
   Wine,
   Sparkles,
   Star,
   Calendar,
   Users,
-  Sun
+  Umbrella
 } from 'lucide-react';
 
 // Destinos de lua de mel
@@ -35,7 +35,7 @@ const destinos = [
   {
     titulo: 'Praias do Brasil',
     descricao: 'Destinos incríveis para curtir o amor à beira-mar.',
-    icone: Beach,
+    icone: Sun,
     imagem: '/images/lua-de-mel/praias.jpg',
   },
   {
