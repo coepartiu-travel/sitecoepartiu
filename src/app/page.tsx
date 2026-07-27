@@ -7,44 +7,65 @@ const ArrowUpRight = (props: SVGProps<SVGSVGElement>) => (
     <path d="M7 17 17 7" /><path d="M7 7h10v10" />
   </svg>
 );
+
 const ArrowRight = (props: SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>
     <path d="M5 12h14" /><path d="m13 6 6 6-6 6" />
   </svg>
 );
+
 const Play = (props: SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>
     <circle cx="12" cy="12" r="10" /><path d="m10 8 6 4-6 4V8Z" />
   </svg>
 );
+
 const Compass = (props: SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>
     <circle cx="12" cy="12" r="8.5" /><path d="m14.9 9.1-2 3.8-3.8 2 2-3.8 3.8-2Z" />
   </svg>
 );
+
 const Heart = (props: SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>
     <path d="M20.8 8.7c0 5.1-8.8 10-8.8 10s-8.8-4.9-8.8-10A4.7 4.7 0 0 1 12 6.3a4.7 4.7 0 0 1 8.8 2.4Z" />
   </svg>
 );
+
 const Users = (props: SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>
     <circle cx="9" cy="8" r="3" /><path d="M3.5 19c.5-3.1 2.4-4.7 5.5-4.7s5 1.6 5.5 4.7" /><path d="M15.5 5.4a3 3 0 0 1 0 5.8M17.4 14.5c1.8.6 2.8 2 3.1 4.5" />
   </svg>
 );
+
 const School = (props: SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>
     <path d="m3 10 9-5 9 5-9 5-9-5Z" /><path d="M6 12.2V17c3.7 2.3 8.3 2.3 12 0v-4.8M21 10v6" />
   </svg>
 );
+
 const Sparkle = (props: SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>
     <path d="m12 3 1.1 5.9L19 10l-5.9 1.1L12 17l-1.1-5.9L5 10l5.9-1.1L12 3ZM19 16l.5 2.5L22 19l-2.5.5L19 22l-.5-2.5L16 19l2.5-.5L19 16Z" />
   </svg>
 );
+
 const Shield = (props: SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>
     <path d="M12 3 20 6v5.5c0 4.8-3.2 7.9-8 9.5-4.8-1.6-8-4.7-8-9.5V6l8-3Z" /><path d="m8.5 12 2.2 2.2 4.8-4.8" />
+  </svg>
+);
+
+const Star = (props: SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>
+    <path d="M12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2Z" />
+  </svg>
+);
+
+const Camera = (props: SVGProps<SVGSVGElement>) => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>
+    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+    <circle cx="12" cy="13" r="4" />
   </svg>
 );
 
@@ -114,22 +135,19 @@ export default function Home() {
     <div className="bg-white text-[#1a1a2e] font-sans overflow-hidden">
       <main>
         {/* ============================================================
-            HERO - ULTRA PREMIUM INTERNACIONAL - ÚLTIMA GERAÇÃO
+            HERO - ULTRA PREMIUM
             ============================================================ */}
         <section className="relative min-h-screen flex items-center overflow-hidden">
-          {/* IMAGEM DE FUNDO - CLARA E CINEMATOGRÁFICA */}
           <div className="absolute inset-0 z-0">
             <img
               src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=2200&q=90"
               alt="Viagem dos sonhos - COÉ, PARTIU?"
               className="w-full h-full object-cover"
             />
-            {/* OVERLAY SUAVE - NÃO ESCURECE DEMAIS */}
             <div className="absolute inset-0 bg-gradient-to-r from-white/85 via-white/60 to-transparent" />
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white/50" />
           </div>
 
-          {/* ELEMENTOS DECORATIVOS PREMIUM */}
           <div className="absolute top-20 right-20 z-0 opacity-30">
             <div className="w-96 h-96 rounded-full bg-[#c9a84c]/10 blur-3xl" />
           </div>
@@ -137,10 +155,8 @@ export default function Home() {
             <div className="w-64 h-64 rounded-full bg-[#c9a84c]/5 blur-3xl" />
           </div>
 
-          {/* CONTEÚDO */}
           <div className="container-custom relative z-10 py-20">
             <div className="max-w-3xl">
-              {/* BADGE - MARCA */}
               <div className="inline-flex items-center gap-3 px-5 py-2.5 bg-white/80 backdrop-blur-md rounded-full shadow-lg border border-white/50 mb-8">
                 <span className="w-2 h-2 rounded-full bg-[#c9a84c] animate-pulse" />
                 <span className="text-xs font-medium tracking-[0.2em] text-[#1a1a2e] uppercase">
@@ -149,7 +165,6 @@ export default function Home() {
                 <span className="text-xs font-light text-[#c9a84c]">✦</span>
               </div>
 
-              {/* TÍTULO PRINCIPAL */}
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-[1.05] tracking-tight text-[#1a1a2e]">
                 O mundo fica
                 <br />
@@ -163,14 +178,12 @@ export default function Home() {
                 quando a gente parte.
               </h1>
 
-              {/* DESCRIÇÃO - CLARA E LEGÍVEL */}
               <p className="mt-8 text-xl md:text-2xl text-[#1a1a2e]/80 max-w-2xl font-light leading-relaxed tracking-wide">
                 A COÉ, PARTIU? transforma vontade de viajar em experiências com sentido,
                 cuidado e espaço para o inesperado.
               </p>
 
-              {/* SUBTEXTO COM DIFERENCIAL */}
-              <div className="mt-4 flex items-center gap-4 text-sm text-[#4a4a5a]">
+              <div className="mt-4 flex flex-wrap items-center gap-4 text-sm text-[#4a4a5a]">
                 <span className="flex items-center gap-2">
                   <span className="w-1 h-1 rounded-full bg-[#c9a84c]" />
                   Atendimento humano
@@ -185,7 +198,6 @@ export default function Home() {
                 </span>
               </div>
 
-              {/* BOTÕES DE AÇÃO */}
               <div className="mt-10 flex flex-wrap items-center gap-6">
                 <a
                   href="#planejar"
@@ -203,7 +215,6 @@ export default function Home() {
                 </a>
               </div>
 
-              {/* ESTATÍSTICAS DE CONFIANÇA */}
               <div className="mt-12 flex flex-wrap gap-8">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-full bg-[#c9a84c]/10 flex items-center justify-center text-[#c9a84c] text-lg font-bold">+</div>
@@ -230,7 +241,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* INDICADOR DE SCROLL */}
           <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-[#1a1a2e]/30">
             <span className="text-xs tracking-[0.2em] uppercase font-medium">Explore</span>
             <div className="w-px h-12 bg-gradient-to-b from-[#c9a84c] to-transparent" />
@@ -257,7 +267,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Tabs Premium */}
             <div className="flex flex-wrap justify-center gap-3 mb-16">
               {Object.entries(audienceContent).map(([key, value]) => (
                 <a
@@ -277,7 +286,6 @@ export default function Home() {
               ))}
             </div>
 
-            {/* Cards Premium */}
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               {Object.entries(audienceContent).map(([key, value]) => (
                 <div
@@ -318,7 +326,7 @@ export default function Home() {
         </section>
 
         {/* ============================================================
-            EXPERIÊNCIAS
+            EXPERIÊNCIAS EM DESTAQUE
             ============================================================ */}
         <section id="experiencias" className="py-28 bg-white">
           <div className="container-custom">
@@ -336,6 +344,7 @@ export default function Home() {
                 Lugares que despertam alguma coisa. Roteiros pensados para que cada dia tenha seu próprio ritmo.
               </p>
             </div>
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {destinations.map((dest, i) => (
                 <a
@@ -354,6 +363,54 @@ export default function Home() {
                       <ArrowUpRight className="h-4 w-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                     </span>
                   </div>
+                </a>
+              ))}
+            </div>
+
+            <div className="mt-12 text-center">
+              <a
+                href="/viagens"
+                className="inline-flex items-center gap-3 px-8 py-4 border-2 border-[#c9a84c] hover:bg-[#c9a84c] hover:text-[#0a0a1a] text-[#1a1a2e] font-semibold rounded-full transition-all duration-500"
+              >
+                Ver todos os destinos
+                <ArrowRight className="h-5 w-5" />
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* ============================================================
+            EXPERIÊNCIAS - 6 ÍCONES (NOVA SEÇÃO)
+            ============================================================ */}
+        <section className="py-20 bg-[#faf8f5]">
+          <div className="container-custom">
+            <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
+              <div className="flex items-center justify-center gap-4">
+                <span className="w-12 h-[2px] bg-[#c9a84c]" />
+                <span className="text-sm font-medium tracking-[0.3em] text-[#c9a84c] uppercase">Vivências</span>
+                <span className="w-12 h-[2px] bg-[#c9a84c]" />
+              </div>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-[#1a1a2e]">
+                Experiências que <span className="text-[#c9a84c]">transformam</span>
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+              {[
+                { emoji: '🏔️', label: 'Aventura' },
+                { emoji: '💑', label: 'Romance' },
+                { emoji: '🌿', label: 'Natureza' },
+                { emoji: '🎭', label: 'Cultura' },
+                { emoji: '🍷', label: 'Gastronomia' },
+                { emoji: '✨', label: 'Luxo' },
+              ].map((item) => (
+                <a
+                  key={item.label}
+                  href="/experiencias"
+                  className="group bg-white p-6 rounded-2xl text-center transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 border border-white hover:border-[#c9a84c]/30"
+                >
+                  <span className="text-4xl block mb-3 group-hover:scale-110 transition-transform duration-500">{item.emoji}</span>
+                  <span className="text-sm font-semibold text-[#1a1a2e]">{item.label}</span>
                 </a>
               ))}
             </div>
@@ -379,6 +436,7 @@ export default function Home() {
                 Um caminho claro, humano e cuidadoso para vocês aproveitarem o melhor de cada decisão.
               </p>
             </div>
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
                 { num: '01', icon: Compass, title: 'Você conta o sonho', desc: 'O que imaginam, o que precisam e o que não pode faltar.' },
@@ -398,21 +456,64 @@ export default function Home() {
         </section>
 
         {/* ============================================================
+            DIFERENCIAIS (NOVA SEÇÃO)
+            ============================================================ */}
+        <section className="py-20 bg-white">
+          <div className="container-custom">
+            <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
+              <div className="flex items-center justify-center gap-4">
+                <span className="w-12 h-[2px] bg-[#c9a84c]" />
+                <span className="text-sm font-medium tracking-[0.3em] text-[#c9a84c] uppercase">Diferenciais</span>
+                <span className="w-12 h-[2px] bg-[#c9a84c]" />
+              </div>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-[#1a1a2e]">
+                Por que <span className="text-[#c9a84c]">COÉ, PARTIU?</span>
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                { emoji: '⭐', title: 'Curadoria', desc: 'Opções selecionadas de acordo com seu perfil e preferências.' },
+                { emoji: '❤️', title: 'Atendimento Humano', desc: 'Você fala com pessoas que entendem sua viagem.' },
+                { emoji: '🛡️', title: 'Segurança', desc: 'Parceiros e fornecedores cuidadosamente selecionados.' },
+                { emoji: '📸', title: 'Experiência', desc: 'Pensamos além do destino, criamos memórias.' },
+              ].map((item) => (
+                <div
+                  key={item.title}
+                  className="group bg-[#faf8f5] p-8 rounded-3xl text-center transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 border border-transparent hover:border-[#c9a84c]/30"
+                >
+                  <span className="text-4xl block mb-4 group-hover:scale-110 transition-transform duration-500">{item.emoji}</span>
+                  <h3 className="font-display font-semibold text-[#1a1a2e]">{item.title}</h3>
+                  <p className="text-[#4a4a5a] text-sm mt-2 leading-relaxed">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ============================================================
             SOBRE NÓS
             ============================================================ */}
-        <section id="sobre" className="py-28 bg-white">
+        <section id="sobre" className="py-28 bg-[#faf8f5]">
           <div className="container-custom">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3] bg-[#f0ece6]">
-                <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1400&q=85" alt="Sobre a COÉ, PARTIU?" className="w-full h-full object-cover" />
+                <img
+                  src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1400&q=85"
+                  alt="Sobre a COÉ, PARTIU?"
+                  className="w-full h-full object-cover"
+                />
                 <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-md px-6 py-3 rounded-full shadow-lg">
                   <span className="text-sm font-medium text-[#1a1a2e]">✨ Viajar é uma forma de voltar diferente</span>
                 </div>
               </div>
               <div className="space-y-8">
                 <div>
-                  <span className="text-sm font-medium tracking-[0.3em] text-[#c9a84c] uppercase">A agência por trás do roteiro</span>
-                  <h2 className="text-4xl md:text-5xl font-display font-bold text-[#1a1a2e] leading-[1.1] mt-4">
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className="w-12 h-[2px] bg-[#c9a84c]" />
+                    <span className="text-sm font-medium tracking-[0.3em] text-[#c9a84c] uppercase">A agência por trás do roteiro</span>
+                  </div>
+                  <h2 className="text-4xl md:text-5xl font-display font-bold text-[#1a1a2e] leading-[1.1]">
                     A melhor parte de uma viagem é ter alguém que <br />
                     <span className="bg-gradient-to-r from-[#c9a84c] to-[#e8c87a] bg-clip-text text-transparent">entende você.</span>
                   </h2>
@@ -434,11 +535,54 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
-                <a href="#planejar" className="inline-flex items-center gap-3 text-[#c9a84c] font-semibold group text-lg">
-                  Conhecer a nossa forma de cuidar
+                <a
+                  href="/sobre"
+                  className="inline-flex items-center gap-3 text-[#c9a84c] font-semibold group text-lg"
+                >
+                  Conhecer a nossa história
                   <ArrowRight className="h-5 w-5 group-hover:translate-x-2 transition-transform" />
                 </a>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ============================================================
+            DEPOIMENTOS (NOVA SEÇÃO)
+            ============================================================ */}
+        <section className="py-20 bg-white">
+          <div className="container-custom">
+            <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
+              <div className="flex items-center justify-center gap-4">
+                <span className="w-12 h-[2px] bg-[#c9a84c]" />
+                <span className="text-sm font-medium tracking-[0.3em] text-[#c9a84c] uppercase">Depoimentos</span>
+                <span className="w-12 h-[2px] bg-[#c9a84c]" />
+              </div>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-[#1a1a2e]">
+                Quem viajou com a gente <span className="text-[#c9a84c]">recomenda</span>
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {[
+                { text: 'A COÉ, PARTIU? transformou nossa lua de mel em um conto de fadas. Cada detalhe foi pensado com carinho.', author: 'Ana e Pedro', place: 'Lua de Mel - Atacama' },
+                { text: 'Nossa viagem em família foi perfeita. Roteiro adaptado para todas as idades, com surpresas incríveis.', author: 'Família Silva', place: 'Férias - Alagoas' },
+                { text: 'A excursão escolar foi um sucesso! Os alunos aprenderam muito e voltaram inspirados.', author: 'Escola Nova Geração', place: 'Turismo Pedagógico - Chile' },
+              ].map((testimonial, i) => (
+                <div
+                  key={i}
+                  className="bg-[#faf8f5] p-8 rounded-3xl transition-all duration-500 hover:shadow-xl border border-transparent hover:border-[#c9a84c]/30"
+                >
+                  <div className="flex text-[#c9a84c] mb-4">
+                    <span>★★★★★</span>
+                  </div>
+                  <p className="text-[#4a4a5a] leading-relaxed italic">"{testimonial.text}"</p>
+                  <div className="mt-4 pt-4 border-t border-[#e8e3dc]">
+                    <p className="font-semibold text-[#1a1a2e]">{testimonial.author}</p>
+                    <p className="text-xs text-[#4a4a5a]">{testimonial.place}</p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -451,8 +595,11 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
               <div className="space-y-8">
                 <div>
-                  <span className="text-sm font-medium tracking-[0.3em] text-[#c9a84c] uppercase">Começa com uma conversa</span>
-                  <h2 className="text-4xl md:text-5xl font-display font-bold leading-[1.1] mt-4">
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className="w-12 h-[2px] bg-[#c9a84c]" />
+                    <span className="text-sm font-medium tracking-[0.3em] text-[#c9a84c] uppercase">Começa com uma conversa</span>
+                  </div>
+                  <h2 className="text-4xl md:text-5xl font-display font-bold leading-[1.1]">
                     Qual viagem está <br />
                     <span className="bg-gradient-to-r from-[#c9a84c] to-[#e8c87a] bg-clip-text text-transparent">na cabeça de vocês?</span>
                   </h2>
@@ -470,11 +617,24 @@ export default function Home() {
                     <span>Um ponto de partida pensado para vocês</span>
                   </div>
                 </div>
+
+                {/* Selo de confiança */}
+                <div className="flex items-center gap-4 bg-white/5 rounded-2xl p-4 border border-white/10">
+                  <div className="flex -space-x-2">
+                    <div className="w-8 h-8 rounded-full bg-[#c9a84c]/20 flex items-center justify-center text-xs font-bold text-[#c9a84c]">A</div>
+                    <div className="w-8 h-8 rounded-full bg-[#c9a84c]/20 flex items-center justify-center text-xs font-bold text-[#c9a84c]">P</div>
+                    <div className="w-8 h-8 rounded-full bg-[#c9a84c]/20 flex items-center justify-center text-xs font-bold text-[#c9a84c]">+</div>
+                  </div>
+                  <div>
+                    <p className="text-sm text-white/80">500+ viajantes confiam na COÉ, PARTIU?</p>
+                  </div>
+                </div>
               </div>
+
               <div className="bg-white/5 backdrop-blur-xl p-10 rounded-3xl border border-white/10 shadow-2xl">
                 <form action="/api/leads" method="POST" className="space-y-6">
                   <div>
-                    <label className="block text-sm font-medium text-white/70 mb-2">Como podemos chamar você?</label>
+                    <label className="block text-sm font-medium text-white/70 mb-2">Como podemos chamar você? *</label>
                     <input
                       type="text"
                       name="name"
@@ -484,7 +644,7 @@ export default function Home() {
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-white/70 mb-2">Qual experiência combina com o momento?</label>
+                    <label className="block text-sm font-medium text-white/70 mb-2">Qual experiência combina com o momento? *</label>
                     <select
                       name="tripType"
                       className="w-full px-5 py-4 bg-white/10 border border-white/10 rounded-2xl text-white placeholder:text-white/30 focus:outline-none focus:border-[#c9a84c] focus:ring-2 focus:ring-[#c9a84c]/20 transition-all duration-300 appearance-none"
@@ -497,7 +657,7 @@ export default function Home() {
                     </select>
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-white/70 mb-2">Para onde o coração está apontando?</label>
+                    <label className="block text-sm font-medium text-white/70 mb-2">Para onde o coração está apontando? *</label>
                     <input
                       type="text"
                       name="destination"
@@ -507,7 +667,7 @@ export default function Home() {
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-white/70 mb-2">Seu melhor contato</label>
+                    <label className="block text-sm font-medium text-white/70 mb-2">Seu melhor contato *</label>
                     <input
                       type="email"
                       name="email"
@@ -516,6 +676,10 @@ export default function Home() {
                       className="w-full px-5 py-4 bg-white/10 border border-white/10 rounded-2xl text-white placeholder:text-white/30 focus:outline-none focus:border-[#c9a84c] focus:ring-2 focus:ring-[#c9a84c]/20 transition-all duration-300"
                     />
                   </div>
+
+                  {/* Campo oculto para origem */}
+                  <input type="hidden" name="origin" value="site" />
+
                   <button
                     type="submit"
                     className="w-full py-5 bg-gradient-to-r from-[#c9a84c] to-[#b8983e] hover:from-[#b8983e] hover:to-[#a08830] text-[#0a0a1a] font-semibold rounded-2xl transition-all duration-500 flex items-center justify-center gap-3 group shadow-xl shadow-[#c9a84c]/20 hover:shadow-[#c9a84c]/40"
