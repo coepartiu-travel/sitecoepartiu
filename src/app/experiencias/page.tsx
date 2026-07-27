@@ -15,8 +15,7 @@ import {
   TreePine,
   UtensilsCrossed,
   Building,
-  Music,
-  Palmtree,
+  Users,
   Sparkles
 } from 'lucide-react';
 
