@@ -53,122 +53,221 @@ const WhatsApp = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-// ================= DADOS (NEUROCIÊNCIA + VENDAS) =================
+// ================= DADOS PREMIUM =================
 const destinations = [
   {
-    name: 'Mar tranquilo',
+    name: 'Mar Tranquilo',
     place: 'Alagoas, Brasil',
     image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=85',
     description: 'Dias leves, água morna e tempo para desacelerar. O cérebro descansa quando o corpo flutua.',
   },
   {
-    name: 'Horizonte aberto',
+    name: 'Horizonte Aberto',
     place: 'Patagônia, Argentina',
     image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=85',
     description: 'Paisagens que mudam a forma de enxergar o mundo. A imensidão desperta novos significados.',
   },
   {
-    name: 'Entre história e sabor',
+    name: 'Entre História e Sabor',
     place: 'Lisboa, Portugal',
     image: 'https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&w=1200&q=85',
     description: 'Cultura, encontros e pequenas descobertas pelo caminho. A memória afetiva se constrói nos detalhes.',
   },
 ];
 
+// ================= DADOS PREMIUM - UMA VIAGEM PARA CADA MOMENTO =================
 const audienceContent = {
   familias: {
-    label: 'Para famílias',
+    label: 'Famílias',
+    tag: 'Conexão',
     title: 'Mais presença. Menos logística.',
-    description: 'Roteiros que respeitam o ritmo de cada pessoa e deixam espaço para o que realmente importa: estar junto. (Neurociência: a conexão familiar ativa o sistema de recompensa do cérebro)',
+    description: 'Roteiros que respeitam o ritmo de cada pessoa e deixam espaço para o que realmente importa: estar junto. A conexão familiar ativa o sistema de recompensa do cérebro.',
     detail: 'Conforto, segurança e descobertas para todas as idades.',
     image: 'https://images.unsplash.com/photo-1504150558240-0b4fd8946624?auto=format&fit=crop&w=1200&q=85',
+    bg: 'from-amber-50/80 to-orange-50/80',
+    border: 'border-amber-200/50',
+    iconBg: 'bg-amber-100',
+    iconColor: 'text-amber-600',
   },
   noivos: {
-    label: 'Para noivos',
+    label: 'Noivos',
+    tag: 'Romance',
     title: 'O começo de uma vida a dois merece um cenário à altura.',
-    description: 'Da lua de mel ao destination wedding, desenhamos cada detalhe para que vocês só precisem viver o momento. (PNL: a âncora visual desse cenário ficará gravada para sempre)',
+    description: 'Da lua de mel ao destination wedding, desenhamos cada detalhe para que vocês só precisem viver o momento. A âncora visual desse cenário ficará gravada para sempre.',
     detail: 'Intimidade, beleza e experiências que viram memória.',
     image: 'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1200&q=85',
+    bg: 'from-rose-50/80 to-pink-50/80',
+    border: 'border-rose-200/50',
+    iconBg: 'bg-rose-100',
+    iconColor: 'text-rose-600',
   },
   grupos: {
-    label: 'Para escolas & grupos',
+    label: 'Escolas & Grupos',
+    tag: 'Propósito',
     title: 'Experiências que aproximam e ensinam.',
-    description: 'Viagens pedagógicas com planejamento cuidadoso, propósito claro e operação tranquila. (Psicologia: aprendizado experiencial ativa múltiplas inteligências)',
+    description: 'Viagens pedagógicas com planejamento cuidadoso, propósito claro e operação tranquila. Aprendizado experiencial ativa múltiplas inteligências.',
     detail: 'Coordenação próxima do primeiro briefing ao retorno.',
     image: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=85',
+    bg: 'from-blue-50/80 to-indigo-50/80',
+    border: 'border-blue-200/50',
+    iconBg: 'bg-blue-100',
+    iconColor: 'text-blue-600',
   },
 };
 
 export default function Home() {
   return (
-    <div className="bg-[#faf8f5] text-[#1a1a2e] font-sans overflow-hidden">
+    <div className="bg-white text-[#1a1a2e] font-sans overflow-hidden">
       <main>
-        {/* ===== HERO ===== */}
-        <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-[#1a1a2e] via-[#2a2a4e] to-[#0f0f1a] text-white">
-          <div className="absolute inset-0 opacity-30" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2200&q=90)', backgroundSize: 'cover', backgroundPosition: 'center' }} />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#1a1a2e]/90 via-[#1a1a2e]/70 to-transparent" />
+        {/* ===== HERO - ULTRA PREMIUM ===== */}
+        <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-[#0a0a1a] via-[#1a1a2e] to-[#2a1a3e] text-white">
+          <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2200&q=90)', backgroundSize: 'cover', backgroundPosition: 'center' }} />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a1a]/95 via-[#1a1a2e]/80 to-transparent" />
+          <div className="absolute top-20 right-20 w-96 h-96 bg-[#c9a84c]/10 rounded-full blur-3xl" />
           <div className="container-custom relative z-10 py-20">
-            <div className="max-w-3xl space-y-6">
-              <p className="inline-flex items-center gap-2 text-sm font-medium tracking-wider text-[#c9a84c] uppercase"><span className="w-8 h-[1px] bg-[#c9a84c]" /> COÉ, PARTIU? Travel &amp; Experiences</p>
-              <h1 className="text-5xl md:text-7xl font-display font-bold leading-[1.08] tracking-tight text-balance">O mundo fica <br /><span className="text-[#c9a84c]">mais bonito</span><br /> quando a gente parte.</h1>
-              <p className="text-xl text-white/80 max-w-xl font-light leading-relaxed">A COÉ, PARTIU? transforma vontade de viajar em experiências com sentido, cuidado e espaço para o inesperado. Sua próxima história começa aqui.</p>
+            <div className="max-w-3xl space-y-8">
+              <div className="flex items-center gap-4">
+                <span className="w-12 h-[2px] bg-[#c9a84c]" />
+                <span className="text-sm font-medium tracking-[0.3em] text-[#c9a84c] uppercase">COÉ, PARTIU? Travel & Experiences</span>
+              </div>
+              <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-[1.05] tracking-tight">
+                O mundo fica <br />
+                <span className="bg-gradient-to-r from-[#c9a84c] via-[#e8c87a] to-[#c9a84c] bg-clip-text text-transparent">mais bonito</span>
+                <br /> quando a gente parte.
+              </h1>
+              <p className="text-xl text-white/80 max-w-xl font-light leading-relaxed tracking-wide">
+                A COÉ, PARTIU? transforma vontade de viajar em experiências com sentido, cuidado e espaço para o inesperado. Sua próxima história começa aqui.
+              </p>
               <div className="flex flex-wrap items-center gap-6 pt-4">
-                <a href="#planejar" className="inline-flex items-center gap-2 px-8 py-4 bg-[#c9a84c] hover:bg-[#b8983e] text-[#1a1a2e] font-semibold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">Quero viver essa viagem <ArrowUpRight className="h-4 w-4" /></a>
-                <a href="#experiencias" className="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors">Descobrir possibilidades <ArrowRight className="h-4 w-4" /></a>
+                <a href="#planejar" className="group inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-[#c9a84c] to-[#b8983e] hover:from-[#b8983e] hover:to-[#a08830] text-[#0a0a1a] font-semibold rounded-full transition-all duration-500 shadow-2xl shadow-[#c9a84c]/20 hover:shadow-[#c9a84c]/40 hover:scale-105">
+                  Quero viver essa viagem
+                  <ArrowUpRight className="h-5 w-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                </a>
+                <a href="#experiencias" className="inline-flex items-center gap-3 text-white/70 hover:text-white transition-colors group text-lg font-light">
+                  Descobrir possibilidades
+                  <ArrowRight className="h-5 w-5 group-hover:translate-x-2 transition-transform" />
+                </a>
               </div>
             </div>
           </div>
+          <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/30 text-xs tracking-[0.2em] uppercase animate-bounce">
+            <span>Explore</span>
+            <span className="w-px h-8 bg-white/20" />
+          </div>
         </section>
 
-        {/* ===== PARA QUEM (AUDIENCE) ===== */}
-        <section id="para-quem" className="py-20 md:py-28 bg-[#faf8f5]">
+        {/* ===== PARA QUEM - ULTRA PREMIUM REFORMADO ===== */}
+        <section id="para-quem" className="py-28 bg-gradient-to-b from-white to-[#faf8f5]">
           <div className="container-custom">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-              <div className="space-y-6">
-                <p className="text-[#c9a84c] text-sm font-medium tracking-widest uppercase">Uma viagem para cada momento</p>
-                <h2 className="text-4xl md:text-5xl font-display font-bold leading-[1.1]">O que você quer <br /><span className="text-[#c9a84c]">sentir</span> na próxima?</h2>
-                <p className="text-lg text-[#4a4a5a] max-w-md">Não começamos pelo pacote. Começamos por vocês: o momento de vida, o desejo e a memória que querem levar de volta.</p>
-                <div className="flex flex-wrap gap-3 pt-4">
-                  {Object.entries(audienceContent).map(([key, value]) => (
-                    <a key={key} href={`#${key}`} className="group flex items-center gap-2 px-5 py-3 bg-white rounded-full shadow-sm hover:shadow-md transition-all duration-300 border border-[#e5e5e5] hover:border-[#c9a84c] text-sm font-medium text-[#1a1a2e]">
-                      {key === 'familias' && <Users className="h-4 w-4" />}
-                      {key === 'noivos' && <Heart className="h-4 w-4" />}
-                      {key === 'grupos' && <School className="h-4 w-4" />}
-                      <span>{value.label}</span>
-                      <ArrowUpRight className="h-3 w-3 opacity-0 group-hover:opacity-100 transition-all duration-300 -translate-x-2 group-hover:translate-x-0" />
+            <div className="text-center max-w-4xl mx-auto mb-20">
+              <div className="flex items-center justify-center gap-4 mb-6">
+                <span className="w-12 h-[2px] bg-[#c9a84c]" />
+                <span className="text-sm font-medium tracking-[0.3em] text-[#c9a84c] uppercase">Para cada alma, uma jornada</span>
+                <span className="w-12 h-[2px] bg-[#c9a84c]" />
+              </div>
+              <h2 className="text-4xl md:text-6xl font-display font-bold text-[#1a1a2e] leading-[1.1]">
+                Uma viagem para <br />
+                <span className="bg-gradient-to-r from-[#c9a84c] to-[#e8c87a] bg-clip-text text-transparent">cada momento</span>
+              </h2>
+              <p className="mt-6 text-xl text-[#4a4a5a] max-w-2xl mx-auto font-light leading-relaxed">
+                Não começamos pelo pacote. Começamos por vocês: o momento de vida, o desejo e a memória que querem levar de volta.
+              </p>
+            </div>
+
+            {/* Tabs Premium */}
+            <div className="flex flex-wrap justify-center gap-3 mb-16">
+              {Object.entries(audienceContent).map(([key, value]) => (
+                <a
+                  key={key}
+                  href={`#${key}`}
+                  className={`group flex items-center gap-3 px-8 py-4 rounded-full transition-all duration-500 border ${value.border} bg-gradient-to-r ${value.bg} hover:shadow-xl hover:-translate-y-1`}
+                >
+                  <span className={`p-2 rounded-full ${value.iconBg} ${value.iconColor}`}>
+                    {key === 'familias' && <Users className="h-5 w-5" />}
+                    {key === 'noivos' && <Heart className="h-5 w-5" />}
+                    {key === 'grupos' && <School className="h-5 w-5" />}
+                  </span>
+                  <span className="font-semibold text-[#1a1a2e]">{value.label}</span>
+                  <span className="text-xs text-[#4a4a5a] font-medium bg-white/50 px-3 py-1 rounded-full">{value.tag}</span>
+                  <ArrowUpRight className="h-4 w-4 text-[#4a4a5a] group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                </a>
+              ))}
+            </div>
+
+            {/* Cards Premium */}
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              {Object.entries(audienceContent).map(([key, value]) => (
+                <div
+                  key={key}
+                  id={key}
+                  className={`group relative overflow-hidden rounded-3xl bg-gradient-to-br ${value.bg} border ${value.border} p-8 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2`}
+                >
+                  <div className="absolute top-0 right-0 w-64 h-64 bg-[#c9a84c]/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 group-hover:scale-150 transition-transform duration-700" />
+                  <div className="relative z-10">
+                    <div className="flex items-center justify-between mb-6">
+                      <span className={`px-4 py-1.5 rounded-full text-xs font-semibold ${value.iconBg} ${value.iconColor}`}>
+                        {value.tag}
+                      </span>
+                      <span className="text-4xl font-display font-bold text-[#c9a84c]/10 group-hover:scale-110 transition-transform duration-500">
+                        {key === 'familias' && '👨‍👩‍👧‍👦'}
+                        {key === 'noivos' && '💑'}
+                        {key === 'grupos' && '🎓'}
+                      </span>
+                    </div>
+                    <h3 className="text-2xl font-display font-bold text-[#1a1a2e] leading-[1.2]">{value.title}</h3>
+                    <p className="mt-4 text-[#4a4a5a] leading-relaxed">{value.description}</p>
+                    <div className="mt-6 flex items-center gap-2 text-sm text-[#4a4a5a]/60">
+                      <span className="w-8 h-[1px] bg-[#c9a84c]" />
+                      <span>{value.detail}</span>
+                    </div>
+                    <a
+                      href="#planejar"
+                      className="inline-flex items-center gap-2 mt-8 text-[#c9a84c] font-semibold group-hover:gap-4 transition-all duration-300"
+                    >
+                      Planejar agora
+                      <ArrowUpRight className="h-4 w-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                     </a>
-                  ))}
+                  </div>
                 </div>
-              </div>
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3] bg-[#e5e5e5]">
-                <img src={audienceContent.familias.image} alt="Família viajando" className="w-full h-full object-cover" />
-                <div className="absolute bottom-0 inset-x-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
-                  <p className="text-white font-medium text-lg">Famílias</p>
-                  <p className="text-white/70 text-sm">Mais presença. Menos logística.</p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </section>
 
-        {/* ===== EXPERIÊNCIAS (NEUROCIÊNCIA) ===== */}
-        <section id="experiencias" className="py-20 md:py-28 bg-white">
+        {/* ===== EXPERIÊNCIAS ===== */}
+        <section id="experiencias" className="py-28 bg-white">
           <div className="container-custom">
-            <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-              <p className="text-[#c9a84c] text-sm font-medium tracking-widest uppercase">Curadoria COÉ, PARTIU?</p>
-              <h2 className="text-4xl md:text-5xl font-display font-bold leading-[1.1] text-balance">Escolha o cenário. <br /><span className="text-[#c9a84c]">A história é de vocês.</span></h2>
-              <p className="text-lg text-[#4a4a5a] max-w-2xl mx-auto">Lugares que despertam alguma coisa. Roteiros pensados para que cada dia tenha seu próprio ritmo. A neurociência comprova: experiências transformadoras ativam a plasticidade cerebral.</p>
+            <div className="text-center max-w-3xl mx-auto mb-20 space-y-6">
+              <div className="flex items-center justify-center gap-4">
+                <span className="w-12 h-[2px] bg-[#c9a84c]" />
+                <span className="text-sm font-medium tracking-[0.3em] text-[#c9a84c] uppercase">Curadoria Exclusiva</span>
+                <span className="w-12 h-[2px] bg-[#c9a84c]" />
+              </div>
+              <h2 className="text-4xl md:text-6xl font-display font-bold text-[#1a1a2e] leading-[1.1]">
+                Escolha o cenário. <br />
+                <span className="bg-gradient-to-r from-[#c9a84c] to-[#e8c87a] bg-clip-text text-transparent">A história é de vocês.</span>
+              </h2>
+              <p className="text-xl text-[#4a4a5a] max-w-2xl mx-auto font-light">
+                Lugares que despertam alguma coisa. Roteiros pensados para que cada dia tenha seu próprio ritmo.
+              </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {destinations.map((dest, i) => (
-                <a key={i} href="#planejar" className="group relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 aspect-[4/5]">
+                <a
+                  key={i}
+                  href="#planejar"
+                  className="group relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-700 hover:-translate-y-3 aspect-[4/5]"
+                >
                   <img src={dest.image} alt={dest.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a1a]/90 via-[#0a0a1a]/40 to-transparent" />
                   <div className="absolute bottom-0 p-8 text-white">
-                    <p className="text-sm text-white/60 font-medium">{dest.place}</p>
-                    <h3 className="text-2xl font-display font-bold mt-1">{dest.name}</h3>
-                    <p className="text-white/80 text-sm mt-2 max-w-xs">{dest.description}</p>
-                    <span className="inline-flex items-center gap-2 mt-4 text-[#c9a84c] font-medium group-hover:gap-3 transition-all duration-300">Explorar possibilidade <ArrowUpRight className="h-4 w-4" /></span>
+                    <p className="text-sm text-white/50 font-medium tracking-wider uppercase">{dest.place}</p>
+                    <h3 className="text-3xl font-display font-bold mt-2">{dest.name}</h3>
+                    <p className="text-white/70 text-sm mt-2 max-w-xs leading-relaxed">{dest.description}</p>
+                    <span className="inline-flex items-center gap-2 mt-6 text-[#c9a84c] font-medium group-hover:gap-4 transition-all duration-300">
+                      Explorar possibilidade
+                      <ArrowUpRight className="h-4 w-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                    </span>
                   </div>
                 </a>
               ))}
@@ -176,13 +275,22 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ===== COMO FUNCIONA (PROCESSO) ===== */}
-        <section id="processo" className="py-20 md:py-28 bg-[#1a1a2e] text-white">
+        {/* ===== COMO FUNCIONA ===== */}
+        <section id="processo" className="py-28 bg-gradient-to-br from-[#0a0a1a] via-[#1a1a2e] to-[#0a0a1a] text-white">
           <div className="container-custom">
-            <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-              <p className="text-[#c9a84c] text-sm font-medium tracking-widest uppercase">Do desejo ao embarque</p>
-              <h2 className="text-4xl md:text-5xl font-display font-bold leading-[1.1] text-balance">Planejar pode ser <br /><span className="text-[#c9a84c]">parte da viagem.</span></h2>
-              <p className="text-lg text-white/70 max-w-2xl mx-auto">Um caminho claro, humano e cuidadoso para vocês aproveitarem o melhor de cada decisão. A ansiedade reduz quando o processo é transparente.</p>
+            <div className="text-center max-w-3xl mx-auto mb-20 space-y-6">
+              <div className="flex items-center justify-center gap-4">
+                <span className="w-12 h-[2px] bg-[#c9a84c]" />
+                <span className="text-sm font-medium tracking-[0.3em] text-[#c9a84c] uppercase">Do desejo ao embarque</span>
+                <span className="w-12 h-[2px] bg-[#c9a84c]" />
+              </div>
+              <h2 className="text-4xl md:text-6xl font-display font-bold leading-[1.1]">
+                Planejar pode ser <br />
+                <span className="bg-gradient-to-r from-[#c9a84c] to-[#e8c87a] bg-clip-text text-transparent">parte da viagem.</span>
+              </h2>
+              <p className="text-xl text-white/60 max-w-2xl mx-auto font-light">
+                Um caminho claro, humano e cuidadoso para vocês aproveitarem o melhor de cada decisão.
+              </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
@@ -191,11 +299,11 @@ export default function Home() {
                 { num: '03', icon: Heart, title: 'Criamos o possível', desc: 'Um roteiro com intenção, beleza e escolhas que fazem sentido.' },
                 { num: '04', icon: ArrowUpRight, title: 'Vocês vivem a história', desc: 'Com a tranquilidade de saber que existe alguém cuidando.' },
               ].map((step, i) => (
-                <div key={i} className="text-center space-y-4 p-8 bg-white/5 rounded-3xl backdrop-blur-sm border border-white/10 hover:border-[#c9a84c]/50 transition-all duration-300 group">
-                  <div className="text-5xl font-display font-bold text-[#c9a84c]/20">{step.num}</div>
-                  <step.icon className="h-8 w-8 mx-auto text-[#c9a84c] group-hover:scale-110 transition-transform duration-300" />
-                  <h3 className="text-xl font-display font-semibold">{step.title}</h3>
-                  <p className="text-white/60 text-sm">{step.desc}</p>
+                <div key={i} className="group text-center space-y-4 p-8 bg-white/5 rounded-3xl backdrop-blur-sm border border-white/5 hover:border-[#c9a84c]/30 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
+                  <div className="text-6xl font-display font-bold text-[#c9a84c]/10 group-hover:text-[#c9a84c]/20 transition-colors duration-500">{step.num}</div>
+                  <step.icon className="h-8 w-8 mx-auto text-[#c9a84c] group-hover:scale-110 transition-transform duration-500" />
+                  <h3 className="text-xl font-display font-semibold text-white">{step.title}</h3>
+                  <p className="text-white/50 text-sm leading-relaxed">{step.desc}</p>
                 </div>
               ))}
             </div>
@@ -203,54 +311,93 @@ export default function Home() {
         </section>
 
         {/* ===== SOBRE NÓS ===== */}
-        <section id="sobre" className="py-20 md:py-28 bg-white">
+        <section id="sobre" className="py-28 bg-white">
           <div className="container-custom">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3] bg-[#e5e5e5]">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3] bg-[#f0ece6]">
                 <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1400&q=85" alt="Sobre a COÉ, PARTIU?" className="w-full h-full object-cover" />
-                <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium text-[#1a1a2e] shadow-lg">✨ Viajar é uma forma de voltar diferente</div>
+                <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-md px-6 py-3 rounded-full shadow-lg">
+                  <span className="text-sm font-medium text-[#1a1a2e]">✨ Viajar é uma forma de voltar diferente</span>
+                </div>
               </div>
-              <div className="space-y-6">
-                <p className="text-[#c9a84c] text-sm font-medium tracking-widest uppercase">A agência por trás do roteiro</p>
-                <h2 className="text-4xl md:text-5xl font-display font-bold leading-[1.1]">A melhor parte de uma viagem é ter alguém que <span className="text-[#c9a84c]">entende você.</span></h2>
-                <p className="text-lg text-[#4a4a5a] leading-relaxed">Somos uma agência de viagens e experiências com olhar atento para pessoas. Em vez de entregar opções infinitas, fazemos as perguntas certas e cuidamos dos detalhes que deixam tudo mais leve. Psicologia e hospitalidade caminham juntas aqui.</p>
-                <div className="space-y-3">
-                  {[ 
+              <div className="space-y-8">
+                <div>
+                  <span className="text-sm font-medium tracking-[0.3em] text-[#c9a84c] uppercase">A agência por trás do roteiro</span>
+                  <h2 className="text-4xl md:text-5xl font-display font-bold text-[#1a1a2e] leading-[1.1] mt-4">
+                    A melhor parte de uma viagem é ter alguém que <br />
+                    <span className="bg-gradient-to-r from-[#c9a84c] to-[#e8c87a] bg-clip-text text-transparent">entende você.</span>
+                  </h2>
+                </div>
+                <p className="text-lg text-[#4a4a5a] leading-relaxed font-light">
+                  Somos uma agência de viagens e experiências com olhar atento para pessoas. Em vez de entregar opções infinitas, fazemos as perguntas certas e cuidamos dos detalhes que deixam tudo mais leve.
+                </p>
+                <div className="space-y-4">
+                  {[
                     { icon: Shield, text: 'Curadoria segura e parceiros escolhidos' },
                     { icon: Heart, text: 'Atendimento próximo, do seu jeito' },
                     { icon: Sparkle, text: 'Experiências que continuam depois da volta' },
                   ].map((item, i) => (
-                    <div key={i} className="flex items-center gap-3 text-[#1a1a2e]"><item.icon className="h-5 w-5 text-[#c9a84c]" /><span>{item.text}</span></div>
+                    <div key={i} className="flex items-center gap-4 text-[#1a1a2e] group">
+                      <div className="p-2 rounded-full bg-[#c9a84c]/10 group-hover:bg-[#c9a84c]/20 transition-colors duration-300">
+                        <item.icon className="h-5 w-5 text-[#c9a84c]" />
+                      </div>
+                      <span className="text-[#1a1a2e]">{item.text}</span>
+                    </div>
                   ))}
                 </div>
-                <a href="#planejar" className="inline-flex items-center gap-2 text-[#1a1a2e] font-medium hover:text-[#c9a84c] transition-colors group">Conhecer a nossa forma de cuidar <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" /></a>
+                <a href="#planejar" className="inline-flex items-center gap-3 text-[#c9a84c] font-semibold group text-lg">
+                  Conhecer a nossa forma de cuidar
+                  <ArrowRight className="h-5 w-5 group-hover:translate-x-2 transition-transform" />
+                </a>
               </div>
             </div>
           </div>
         </section>
 
-        {/* ===== FORMULÁRIO (PLANEJAR) ===== */}
-        <section id="planejar" className="py-20 md:py-28 bg-[#1a1a2e] text-white">
-          <div className="container-custom max-w-4xl">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-              <div className="space-y-6">
-                <p className="text-[#c9a84c] text-sm font-medium tracking-widest uppercase">Começa com uma conversa</p>
-                <h2 className="text-4xl md:text-5xl font-display font-bold leading-[1.1]">Qual viagem está <br /><span className="text-[#c9a84c]">na cabeça de vocês?</span></h2>
-                <p className="text-lg text-white/70">Conte um pouco. A primeira ideia de roteiro nasce daqui, sem compromisso e sem respostas prontas. O simples ato de nomear um desejo já ativa o córtex pré-frontal, preparando o cérebro para a realização.</p>
-                <div className="space-y-2">
-                  <div className="flex items-center gap-3 text-white/80"><div className="w-5 h-5 rounded-full bg-[#c9a84c]/20 flex items-center justify-center text-[#c9a84c] text-xs">✓</div><span>Atendimento humano, sem pressão para decidir</span></div>
-                  <div className="flex items-center gap-3 text-white/80"><div className="w-5 h-5 rounded-full bg-[#c9a84c]/20 flex items-center justify-center text-[#c9a84c] text-xs">✓</div><span>Um ponto de partida pensado para vocês</span></div>
+        {/* ===== FORMULÁRIO ===== */}
+        <section id="planejar" className="py-28 bg-gradient-to-br from-[#0a0a1a] via-[#1a1a2e] to-[#0a0a1a] text-white">
+          <div className="container-custom max-w-5xl">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+              <div className="space-y-8">
+                <div>
+                  <span className="text-sm font-medium tracking-[0.3em] text-[#c9a84c] uppercase">Começa com uma conversa</span>
+                  <h2 className="text-4xl md:text-5xl font-display font-bold leading-[1.1] mt-4">
+                    Qual viagem está <br />
+                    <span className="bg-gradient-to-r from-[#c9a84c] to-[#e8c87a] bg-clip-text text-transparent">na cabeça de vocês?</span>
+                  </h2>
+                </div>
+                <p className="text-lg text-white/60 font-light leading-relaxed">
+                  Conte um pouco. A primeira ideia de roteiro nasce daqui, sem compromisso e sem respostas prontas.
+                </p>
+                <div className="space-y-3">
+                  <div className="flex items-center gap-4 text-white/70">
+                    <div className="w-6 h-6 rounded-full bg-[#c9a84c]/20 flex items-center justify-center text-[#c9a84c] text-xs font-bold">✓</div>
+                    <span>Atendimento humano, sem pressão para decidir</span>
+                  </div>
+                  <div className="flex items-center gap-4 text-white/70">
+                    <div className="w-6 h-6 rounded-full bg-[#c9a84c]/20 flex items-center justify-center text-[#c9a84c] text-xs font-bold">✓</div>
+                    <span>Um ponto de partida pensado para vocês</span>
+                  </div>
                 </div>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm p-8 rounded-3xl border border-white/10">
-                <form action="/api/leads" method="POST" className="space-y-5">
+              <div className="bg-white/5 backdrop-blur-xl p-10 rounded-3xl border border-white/10 shadow-2xl">
+                <form action="/api/leads" method="POST" className="space-y-6">
                   <div>
-                    <label className="block text-sm font-medium text-white/80 mb-1">Como podemos chamar você?</label>
-                    <input type="text" name="name" required placeholder="Seu nome" className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder:text-white/40 focus:outline-none focus:border-[#c9a84c] transition-colors" />
+                    <label className="block text-sm font-medium text-white/70 mb-2">Como podemos chamar você?</label>
+                    <input
+                      type="text"
+                      name="name"
+                      required
+                      placeholder="Seu nome"
+                      className="w-full px-5 py-4 bg-white/10 border border-white/10 rounded-2xl text-white placeholder:text-white/30 focus:outline-none focus:border-[#c9a84c] focus:ring-2 focus:ring-[#c9a84c]/20 transition-all duration-300"
+                    />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-white/80 mb-1">Qual experiência combina com o momento?</label>
-                    <select name="tripType" className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder:text-white/40 focus:outline-none focus:border-[#c9a84c] transition-colors appearance-none">
+                    <label className="block text-sm font-medium text-white/70 mb-2">Qual experiência combina com o momento?</label>
+                    <select
+                      name="tripType"
+                      className="w-full px-5 py-4 bg-white/10 border border-white/10 rounded-2xl text-white placeholder:text-white/30 focus:outline-none focus:border-[#c9a84c] focus:ring-2 focus:ring-[#c9a84c]/20 transition-all duration-300 appearance-none"
+                    >
                       <option value="" className="text-[#1a1a2e]">Escolha uma opção</option>
                       <option value="familia" className="text-[#1a1a2e]">Viagem em família</option>
                       <option value="lua-de-mel" className="text-[#1a1a2e]">Lua de mel ou viagem a dois</option>
@@ -259,15 +406,35 @@ export default function Home() {
                     </select>
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-white/80 mb-1">Para onde o coração está apontando?</label>
-                    <input type="text" name="destination" required placeholder="Pode ser um lugar ou uma sensação" className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder:text-white/40 focus:outline-none focus:border-[#c9a84c] transition-colors" />
+                    <label className="block text-sm font-medium text-white/70 mb-2">Para onde o coração está apontando?</label>
+                    <input
+                      type="text"
+                      name="destination"
+                      required
+                      placeholder="Pode ser um lugar ou uma sensação"
+                      className="w-full px-5 py-4 bg-white/10 border border-white/10 rounded-2xl text-white placeholder:text-white/30 focus:outline-none focus:border-[#c9a84c] focus:ring-2 focus:ring-[#c9a84c]/20 transition-all duration-300"
+                    />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-white/80 mb-1">Seu melhor contato</label>
-                    <input type="email" name="email" required placeholder="voce@email.com" className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder:text-white/40 focus:outline-none focus:border-[#c9a84c] transition-colors" />
+                    <label className="block text-sm font-medium text-white/70 mb-2">Seu melhor contato</label>
+                    <input
+                      type="email"
+                      name="email"
+                      required
+                      placeholder="voce@email.com"
+                      className="w-full px-5 py-4 bg-white/10 border border-white/10 rounded-2xl text-white placeholder:text-white/30 focus:outline-none focus:border-[#c9a84c] focus:ring-2 focus:ring-[#c9a84c]/20 transition-all duration-300"
+                    />
                   </div>
-                  <button type="submit" className="w-full py-4 bg-[#c9a84c] hover:bg-[#b8983e] text-[#1a1a2e] font-semibold rounded-xl transition-all duration-300 flex items-center justify-center gap-2 group shadow-lg hover:shadow-xl">Quero receber uma ideia de roteiro <ArrowUpRight className="h-4 w-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" /></button>
-                  <p className="text-xs text-white/40 text-center">Seus dados ficam seguros com a COÉ, PARTIU? e só serão usados para esta conversa.</p>
+                  <button
+                    type="submit"
+                    className="w-full py-5 bg-gradient-to-r from-[#c9a84c] to-[#b8983e] hover:from-[#b8983e] hover:to-[#a08830] text-[#0a0a1a] font-semibold rounded-2xl transition-all duration-500 flex items-center justify-center gap-3 group shadow-xl shadow-[#c9a84c]/20 hover:shadow-[#c9a84c]/40"
+                  >
+                    Quero receber uma ideia de roteiro
+                    <ArrowUpRight className="h-5 w-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                  </button>
+                  <p className="text-xs text-white/30 text-center">
+                    Seus dados ficam seguros com a COÉ, PARTIU? e só serão usados para esta conversa.
+                  </p>
                 </form>
               </div>
             </div>
