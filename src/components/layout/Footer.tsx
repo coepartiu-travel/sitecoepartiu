@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Logo } from '@/components/ui/Logo';
+import Image from 'next/image';
 import { Container } from '@/components/ui/Container';
 import { Instagram, Youtube, Facebook, Send } from 'lucide-react';
 
@@ -39,7 +39,7 @@ const social = [
   },
   {
     name: 'WhatsApp',
-    href: `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}?text=${encodeURIComponent(
+    href: `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '5511999999999'}?text=${encodeURIComponent(
       process.env.NEXT_PUBLIC_WHATSAPP_MESSAGE || 'Olá! Conheci a COÉ, PARTIU? Travel & Experiences e gostaria de planejar uma viagem.'
     )}`,
     icon: Send,
@@ -51,9 +51,18 @@ export function Footer() {
     <footer className="bg-primary text-text-light">
       <Container className="section-padding">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-          {/* Marca */}
+          {/* Logo e descrição */}
           <div className="lg:col-span-1">
-            <Logo size="lg" showText={false} />
+            <div className="flex items-center gap-3">
+              <div className="relative h-12 w-32">
+                <Image
+                  src="/logo-coe-partiu.png"
+                  alt="COÉ, PARTIU? Travel & Experiences"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </div>
             <p className="mt-4 text-primary-200 text-sm max-w-xs">
               Sua próxima história começa aqui. Viagens e experiências cuidadosamente planejadas para você viver mais e se preocupar menos.
             </p>
@@ -113,7 +122,7 @@ export function Footer() {
             <ul className="space-y-3 text-sm text-primary-200">
               <li>
                 <a
-                  href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}`}
+                  href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '5511999999999'}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-white transition-colors"
