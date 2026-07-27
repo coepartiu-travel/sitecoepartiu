@@ -38,7 +38,7 @@ const social = [
     icon: Facebook,
   },
   {
-    name: 'WhatsApp',
+    name: 'Fale com Especialista',
     href: 'https://wa.me/5534999082607?text=Olá! Conheci a COÉ, PARTIU? Travel & Experiences e gostaria de planejar uma viagem.',
     icon: Send,
   },
@@ -125,7 +125,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="hover:text-primary transition-colors"
                 >
-                  WhatsApp: (34) 99908-2607
+                  Fale com Especialista: (34) 99908-2607
                 </a>
               </li>
               <li>
