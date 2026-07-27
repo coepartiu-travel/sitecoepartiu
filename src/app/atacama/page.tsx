@@ -1,27 +1,24 @@
-// /src/app/atacama/page.tsx
-import { ArrowUpRight, Sun, Moon, Camera, Compass, Mountain, Star } from 'lucide-react';
+// /src/app/lua-de-mel/page.tsx
+import { ArrowUpRight, Heart, Hotel, Mountain, Sun, Camera, Wine, Sparkles } from 'lucide-react';
 import Link from 'next/link';
 
-export default function AtacamaPage() {
+export default function LuaDeMelPage() {
   return (
-    <div className="pt-28 pb-20 bg-[#faf8f5] min-h-screen">
-      <div className="container-custom">
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#1a1a2e] to-[#2a2a4e] p-12 md:p-16 text-white mb-16">
-          <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1569529461291-04a377959d11?auto=format&fit=crop&w=1400&q=85)', backgroundSize: 'cover', backgroundPosition: 'center' }} />
-          <div className="relative z-10 max-w-2xl">
-            <span className="text-[#c9a84c] text-sm font-medium tracking-widest uppercase">Destino Exclusivo</span>
-            <h1 className="text-5xl md:text-7xl font-display font-bold mt-4">ATACAMA</h1>
-            <p className="text-xl text-white/80 mt-4">O deserto mais árido do mundo. Um convite ao silêncio, à introspecção e à contemplação.</p>
-            <p className="text-white/60 mt-2 text-sm">A psicanálise chama isso de "encontro com o vazio fértil": é no silêncio que as respostas aparecem.</p>
-            <Link href="/planejar" className="inline-flex items-center gap-2 mt-8 px-8 py-4 bg-[#c9a84c] hover:bg-[#b8983e] text-[#1a1a2e] font-semibold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl">Viver essa experiência <ArrowUpRight className="h-4 w-4" /></Link>
-          </div>
+    <div className="pt-28 pb-20 bg-white min-h-screen">
+      <div className="container-custom max-w-4xl mx-auto">
+        <div className="text-center space-y-4 mb-16">
+          <span className="text-[#c9a84c] text-sm font-medium tracking-widest uppercase">Amor em movimento</span>
+          <h1 className="text-4xl md:text-5xl font-display font-bold text-[#1a1a2e]">O começo de uma vida a dois <br /><span className="text-[#c9a84c]">merece um cenário à altura.</span></h1>
+          <p className="text-lg text-[#4a4a5a] max-w-2xl mx-auto">A neurociência afirma que ambientes novos e belos potencializam a liberação de ocitocina, o hormônio do vínculo. Sua lua de mel é mais que uma viagem: é a construção de uma memória afetiva para toda a vida.</p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          {[ { nome: 'Valle de la Luna', icon: Sun }, { nome: 'Geysers del Tatio', icon: Moon }, { nome: 'Salar', icon: Compass }, { nome: 'Astronomia', icon: Star }, { nome: 'Lagunas', icon: Camera }, { nome: 'Vale da Morte', icon: Mountain } ].map((item) => (
-            <div key={item.nome} className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow text-center">
-              <item.icon className="h-8 w-8 mx-auto text-[#c9a84c]" />
-              <p className="font-display font-semibold mt-2 text-[#1a1a2e]">{item.nome}</p>
-            </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {[ { nome: 'Atacama Romântico', desc: 'Noites estreladas que vão ficar gravadas na memória afetiva.', icon: Sun }, { nome: 'Resorts Paradisíacos', desc: 'O luxo silencioso que permite ao corpo descansar e à mente se conectar.', icon: Hotel }, { nome: 'Praias do Brasil', desc: 'O som do mar ativa o sistema de relaxamento profundo.', icon: Mountain }, { nome: 'Destinos Europeus', desc: 'Cenários que parecem saídos de um conto de fadas, ativando a imaginação.', icon: Sparkles } ].map((dest) => (
+            <Link key={dest.nome} href="/planejar" className="group relative p-8 bg-[#faf8f5] rounded-3xl hover:shadow-xl transition-all duration-500 hover:-translate-y-1 overflow-hidden border border-transparent hover:border-[#c9a84c]/30">
+              <dest.icon className="h-10 w-10 text-[#c9a84c] mb-4" />
+              <h3 className="text-2xl font-display font-semibold text-[#1a1a2e]">{dest.nome}</h3>
+              <p className="text-[#4a4a5a] text-sm mt-2">{dest.desc}</p>
+              <span className="inline-flex items-center gap-2 mt-6 text-[#c9a84c] font-medium group-hover:gap-3 transition-all duration-300">Planejar <ArrowUpRight className="h-4 w-4" /></span>
+            </Link>
           ))}
         </div>
       </div>
