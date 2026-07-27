@@ -45,7 +45,6 @@ export function Header() {
     >
       <nav className="container-custom py-3" aria-label="Global">
         <div className="flex items-center justify-between">
-          {/* Logo - 2cm altura, sem texto */}
           <Logo size="md" showText={false} />
 
           <div className="hidden lg:flex items-center gap-8">
