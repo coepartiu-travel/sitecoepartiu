@@ -14,7 +14,6 @@ import {
   Globe,
   Sun,
   Mountain,
-  Beach,
   TreePine,
   Building,
   UtensilsCrossed,
