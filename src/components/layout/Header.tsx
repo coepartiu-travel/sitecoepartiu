@@ -45,10 +45,8 @@ export function Header() {
     >
       <nav className="container-custom py-4" aria-label="Global">
         <div className="flex items-center justify-between">
-          {/* Logo */}
           <Logo size="md" />
 
-          {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-8">
             {navigation.map((item) => (
               <Link
@@ -66,14 +64,12 @@ export function Header() {
             ))}
           </div>
 
-          {/* Desktop CTA */}
           <div className="hidden lg:block">
             <Button as="a" href="/planeje" variant="primary" size="sm">
               PLANEJE SUA VIAGEM
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
           <button
             type="button"
             className="lg:hidden p-2 rounded-lg hover:bg-surface transition-colors"
@@ -103,7 +99,6 @@ export function Header() {
           </button>
         </div>
 
-        {/* Mobile Menu */}
         <div
           className={cn(
             'lg:hidden overflow-hidden transition-all duration-300 ease-in-out',
