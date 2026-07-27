@@ -39,31 +39,29 @@ const social = [
   },
   {
     name: 'WhatsApp',
-    href: `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '5511999999999'}?text=${encodeURIComponent(
-      process.env.NEXT_PUBLIC_WHATSAPP_MESSAGE || 'Olá! Conheci a COÉ, PARTIU? Travel & Experiences e gostaria de planejar uma viagem.'
-    )}`,
+    href: 'https://wa.me/5534999082607?text=Olá! Conheci a COÉ, PARTIU? Travel & Experiences e gostaria de planejar uma viagem.',
     icon: Send,
   },
 ];
 
 export function Footer() {
   return (
-    <footer className="bg-primary text-text-light">
+    <footer className="bg-white border-t border-gray-100">
       <Container className="section-padding">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Logo e descrição */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-3">
-              <div className="relative h-12 w-32">
-                <Image
-                  src="/logo-coe-partiu.png"
-                  alt="COÉ, PARTIU? Travel & Experiences"
-                  fill
-                  className="object-contain"
-                />
-              </div>
+            <div className="relative h-16 w-auto">
+              <Image
+                src="/logo-coe-partiu.png"
+                alt="COÉ, PARTIU? Travel & Experiences"
+                width={240}
+                height={64}
+                className="h-full w-auto object-contain"
+                priority
+              />
             </div>
-            <p className="mt-4 text-primary-200 text-sm max-w-xs">
+            <p className="mt-4 text-text-secondary text-sm max-w-xs">
               Sua próxima história começa aqui. Viagens e experiências cuidadosamente planejadas para você viver mais e se preocupar menos.
             </p>
             <div className="mt-6 flex gap-4">
@@ -73,7 +71,7 @@ export function Footer() {
                   href={item.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 rounded-full bg-primary-700 hover:bg-primary-600 transition-colors"
+                  className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors text-primary"
                   aria-label={item.name}
                 >
                   <item.icon className="w-5 h-5" />
@@ -84,13 +82,13 @@ export function Footer() {
 
           {/* Navegação Principal */}
           <div>
-            <h3 className="font-display text-lg font-semibold mb-4">Navegação</h3>
+            <h3 className="font-display text-lg font-semibold mb-4 text-primary">Navegação</h3>
             <ul className="space-y-3">
               {navigation.principal.map((item) => (
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-primary-200 hover:text-white transition-colors text-sm"
+                    className="text-text-secondary hover:text-primary transition-colors text-sm"
                   >
                     {item.name}
                   </Link>
@@ -101,13 +99,13 @@ export function Footer() {
 
           {/* Suporte */}
           <div>
-            <h3 className="font-display text-lg font-semibold mb-4">Suporte</h3>
+            <h3 className="font-display text-lg font-semibold mb-4 text-primary">Suporte</h3>
             <ul className="space-y-3">
               {navigation.suporte.map((item) => (
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-primary-200 hover:text-white transition-colors text-sm"
+                    className="text-text-secondary hover:text-primary transition-colors text-sm"
                   >
                     {item.name}
                   </Link>
@@ -118,27 +116,27 @@ export function Footer() {
 
           {/* Contato */}
           <div>
-            <h3 className="font-display text-lg font-semibold mb-4">Contato</h3>
-            <ul className="space-y-3 text-sm text-primary-200">
+            <h3 className="font-display text-lg font-semibold mb-4 text-primary">Contato</h3>
+            <ul className="space-y-3 text-sm text-text-secondary">
               <li>
                 <a
-                  href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '5511999999999'}`}
+                  href="https://wa.me/5534999082607"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-white transition-colors"
+                  className="hover:text-primary transition-colors"
                 >
-                  WhatsApp: (11) 99999-9999
+                  WhatsApp: (34) 99908-2607
                 </a>
               </li>
               <li>
                 <a
                   href="mailto:contato@coepartiu.com.br"
-                  className="hover:text-white transition-colors"
+                  className="hover:text-primary transition-colors"
                 >
                   contato@coepartiu.com.br
                 </a>
               </li>
-              <li className="text-primary-300 text-xs">
+              <li className="text-text-tertiary text-xs">
                 São Paulo - Brasil
               </li>
             </ul>
@@ -146,12 +144,12 @@ export function Footer() {
         </div>
 
         {/* Rodapé inferior */}
-        <div className="mt-12 pt-8 border-t border-primary-700/50">
+        <div className="mt-12 pt-8 border-t border-gray-200">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-primary-300">
+            <p className="text-sm text-text-tertiary">
               © {new Date().getFullYear()} COÉ, PARTIU? Travel & Experiences. Todos os direitos reservados.
             </p>
-            <p className="text-sm text-primary-400">
+            <p className="text-sm text-text-tertiary">
               Feito com ❤️ para viajantes
             </p>
           </div>
