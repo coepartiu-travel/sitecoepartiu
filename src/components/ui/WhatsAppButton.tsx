@@ -22,9 +22,8 @@ export function WhatsAppButton({ className, message }: WhatsAppButtonProps) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const phoneNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '5511999999999';
-  const defaultMessage = process.env.NEXT_PUBLIC_WHATSAPP_MESSAGE || 
-    'Olá! Conheci a COÉ, PARTIU? Travel & Experiences e gostaria de planejar uma viagem.';
+  const phoneNumber = '5534999082607';
+  const defaultMessage = 'Olá! Conheci a COÉ, PARTIU? Travel & Experiences e gostaria de planejar uma viagem.';
   
   const whatsappMessage = message || defaultMessage;
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
