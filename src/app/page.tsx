@@ -150,12 +150,11 @@ const passos = [
 export default function Home() {
   return (
     <main>
-      {/* Hero Section - SEM IMAGEM */}
+      {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-gradient-hero">
         <div className="absolute inset-0 z-0 bg-gradient-hero" />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-primary/50" />
 
-        {/* Conteúdo do Hero */}
         <Container className="relative z-10 text-white">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-6">
@@ -191,7 +190,6 @@ export default function Home() {
               </Button>
             </div>
 
-            {/* Indicadores de confiança */}
             <div className="mt-12 flex flex-wrap gap-8">
               <div className="flex items-center gap-3">
                 <CheckCircle className="w-5 h-5 text-secondary" />
@@ -209,7 +207,6 @@ export default function Home() {
           </div>
         </Container>
 
-        {/* Scroll indicator */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-float">
           <div className="w-6 h-10 rounded-full border-2 border-white/30 flex justify-center">
             <div className="w-1 h-3 bg-secondary rounded-full mt-2 animate-bounce" />
