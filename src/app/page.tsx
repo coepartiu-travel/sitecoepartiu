@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
@@ -9,7 +8,6 @@ import {
   Compass, 
   Heart, 
   Users, 
-  GraduationCap, 
   Globe, 
   Camera, 
   Star,
@@ -18,7 +16,6 @@ import {
   Plane,
   Hotel,
   Shield,
-  Clock,
   Award
 } from 'lucide-react';
 
@@ -28,43 +25,43 @@ const viagens = [
     titulo: 'Brasil',
     descricao: 'Praias paradisíacas, florestas amazônicas e cidades vibrantes.',
     icone: MapPin,
-    href: '/viagens/brasil',
+    href: '/viagens',
   },
   {
     titulo: 'Internacional',
     descricao: 'Destinos incríveis na América Latina, Europa e além.',
     icone: Globe,
-    href: '/viagens/internacional',
+    href: '/viagens',
   },
   {
     titulo: 'Pacotes',
     descricao: 'Viagens completas com tudo planejado para você.',
     icone: Plane,
-    href: '/viagens/pacotes',
+    href: '/viagens',
   },
   {
     titulo: 'Resorts',
     descricao: 'Luxo e conforto em resorts incríveis.',
     icone: Hotel,
-    href: '/viagens/resorts',
+    href: '/viagens',
   },
   {
     titulo: 'Família',
     descricao: 'Viagens inesquecíveis para toda a família.',
     icone: Users,
-    href: '/viagens/familia',
+    href: '/viagens',
   },
   {
     titulo: 'Cruzeiros',
     descricao: 'Navegue pelos mares em cruzeiros memoráveis.',
     icone: Compass,
-    href: '/viagens/cruzeiros',
+    href: '/viagens',
   },
   {
     titulo: 'Grupos',
     descricao: 'Viaje com amigos, empresas ou associações.',
     icone: Users,
-    href: '/viagens/grupos',
+    href: '/escolas-grupos',
   },
 ];
 
@@ -153,20 +150,10 @@ const passos = [
 export default function Home() {
   return (
     <main>
-      {/* Hero Section */}
+      {/* Hero Section - SEM IMAGEM */}
       <section className="relative min-h-[90vh] flex items-center overflow-hidden bg-gradient-hero">
-        {/* Imagem de fundo */}
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/images/hero-bg.jpg"
-            alt="Viagem cinematográfica"
-            fill
-            className="object-cover opacity-40"
-            priority
-            sizes="100vw"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/60 to-transparent" />
-        </div>
+        <div className="absolute inset-0 z-0 bg-gradient-hero" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-primary/50" />
 
         {/* Conteúdo do Hero */}
         <Container className="relative z-10 text-white">
