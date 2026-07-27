@@ -44,7 +44,7 @@ const origins = [
   { value: 'google', label: 'Google' },
   { value: 'facebook', label: 'Facebook' },
   { value: 'site', label: 'Site' },
-  { value: 'whatsapp', label: 'WhatsApp' },
+  { value: 'fale-com-especialista', label: 'Fale com Especialista' },
   { value: 'indicacao', label: 'Indicação' },
   { value: 'escola', label: 'Escola' },
   { value: 'parceiro', label: 'Parceiro' },
@@ -79,7 +79,6 @@ export default function PlanejePage() {
     setLoading(true);
     setError(null);
 
-    // Validação básica
     if (!formData.name || !formData.whatsapp || !formData.email || !formData.destination) {
       setError('Por favor, preencha todos os campos obrigatórios.');
       setLoading(false);
@@ -118,7 +117,6 @@ export default function PlanejePage() {
         origin: 'site',
       });
 
-      // Redirecionar após 3 segundos
       setTimeout(() => {
         router.push('/');
       }, 3000);
@@ -197,11 +195,11 @@ export default function PlanejePage() {
                     required
                   />
                   <Input
-                    label="WhatsApp *"
+                    label="Fale com Especialista (WhatsApp) *"
                     name="whatsapp"
                     value={formData.whatsapp}
                     onChange={handleChange}
-                    placeholder="(11) 99999-9999"
+                    placeholder="(34) 99908-2607"
                     required
                   />
                 </div>
