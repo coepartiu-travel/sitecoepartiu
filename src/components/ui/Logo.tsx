@@ -8,21 +8,21 @@ interface LogoProps {
   showText?: boolean;
 }
 
-export function Logo({ className, size = 'md', showText = true }: LogoProps) {
+export function Logo({ className, size = 'md', showText = false }: LogoProps) {
   const sizes = {
-    sm: 'h-8',
-    md: 'h-10',
-    lg: 'h-12',
+    sm: 'h-12',   // ~1.5cm
+    md: 'h-16',   // ~2cm
+    lg: 'h-20',   // ~2.5cm
   };
 
   return (
-    <Link href="/" className={cn('flex items-center gap-3', className)}>
+    <Link href="/" className={cn('flex items-center', className)}>
       <div className={cn('relative', sizes[size])}>
         <Image
           src="/logo-coe-partiu.png"
           alt="COÉ, PARTIU? Travel & Experiences"
-          width={size === 'sm' ? 120 : size === 'md' ? 160 : 200}
-          height={size === 'sm' ? 32 : size === 'md' ? 40 : 48}
+          width={size === 'sm' ? 180 : size === 'md' ? 240 : 300}
+          height={size === 'sm' ? 48 : size === 'md' ? 64 : 80}
           className="h-full w-auto object-contain"
           priority
         />
