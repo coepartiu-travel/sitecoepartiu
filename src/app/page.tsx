@@ -14,12 +14,6 @@ const ArrowRight = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-const Play = (props: SVGProps<SVGSVGElement>) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>
-    <circle cx="12" cy="12" r="10" /><path d="m10 8 6 4-6 4V8Z" />
-  </svg>
-);
-
 const Compass = (props: SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>
     <circle cx="12" cy="12" r="8.5" /><path d="m14.9 9.1-2 3.8-3.8 2 2-3.8 3.8-2Z" />
@@ -53,19 +47,6 @@ const Sparkle = (props: SVGProps<SVGSVGElement>) => (
 const Shield = (props: SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>
     <path d="M12 3 20 6v5.5c0 4.8-3.2 7.9-8 9.5-4.8-1.6-8-4.7-8-9.5V6l8-3Z" /><path d="m8.5 12 2.2 2.2 4.8-4.8" />
-  </svg>
-);
-
-const Star = (props: SVGProps<SVGSVGElement>) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>
-    <path d="M12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2Z" />
-  </svg>
-);
-
-const Camera = (props: SVGProps<SVGSVGElement>) => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>
-    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
-    <circle cx="12" cy="13" r="4" />
   </svg>
 );
 
@@ -380,7 +361,7 @@ export default function Home() {
         </section>
 
         {/* ============================================================
-            EXPERIÊNCIAS - 6 ÍCONES (NOVA SEÇÃO)
+            EXPERIÊNCIAS - 6 ÍCONES
             ============================================================ */}
         <section className="py-20 bg-[#faf8f5]">
           <div className="container-custom">
@@ -418,45 +399,149 @@ export default function Home() {
         </section>
 
         {/* ============================================================
-            COMO FUNCIONA
+            COMO FUNCIONA - ULTRA PREMIUM REFORMULADO
             ============================================================ */}
-        <section id="processo" className="py-28 bg-gradient-to-br from-[#0a0a1a] via-[#1a1a2e] to-[#0a0a1a] text-white">
-          <div className="container-custom">
-            <div className="text-center max-w-3xl mx-auto mb-20 space-y-6">
+        <section id="processo" className="py-28 relative overflow-hidden">
+          {/* Fundo com gradiente suave */}
+          <div className="absolute inset-0 bg-gradient-to-br from-[#faf8f5] via-white to-[#f5f0eb]" />
+          
+          {/* Elementos decorativos */}
+          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#c9a84c]/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3" />
+          <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#c9a84c]/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3" />
+          
+          <div className="absolute top-1/2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#c9a84c]/20 to-transparent" />
+
+          <div className="container-custom relative z-10">
+            {/* CABEÇALHO - LEGÍVEL E PREMIUM */}
+            <div className="text-center max-w-3xl mx-auto mb-20 space-y-8">
               <div className="flex items-center justify-center gap-4">
-                <span className="w-12 h-[2px] bg-[#c9a84c]" />
-                <span className="text-sm font-medium tracking-[0.3em] text-[#c9a84c] uppercase">Do desejo ao embarque</span>
-                <span className="w-12 h-[2px] bg-[#c9a84c]" />
+                <span className="w-16 h-[2px] bg-[#c9a84c]" />
+                <span className="text-sm font-medium tracking-[0.3em] text-[#c9a84c] uppercase bg-white/80 backdrop-blur-sm px-6 py-2 rounded-full shadow-sm">
+                  Do desejo ao embarque
+                </span>
+                <span className="w-16 h-[2px] bg-[#c9a84c]" />
               </div>
-              <h2 className="text-4xl md:text-6xl font-display font-bold leading-[1.1]">
-                Planejar pode ser <br />
-                <span className="bg-gradient-to-r from-[#c9a84c] to-[#e8c87a] bg-clip-text text-transparent">parte da viagem.</span>
+              
+              <h2 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-[#1a1a2e] leading-[1.05]">
+                Planejar pode ser
+                <br />
+                <span className="relative inline-block">
+                  <span className="bg-gradient-to-r from-[#c9a84c] via-[#e8c87a] to-[#c9a84c] bg-clip-text text-transparent">
+                    parte da viagem.
+                  </span>
+                  <span className="absolute -bottom-3 left-0 w-full h-1 bg-gradient-to-r from-[#c9a84c]/30 via-[#e8c87a]/50 to-[#c9a84c]/30 rounded-full blur-sm" />
+                  <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-24 h-[3px] bg-[#c9a84c] rounded-full" />
+                </span>
               </h2>
-              <p className="text-xl text-white/60 max-w-2xl mx-auto font-light">
+              
+              <p className="text-xl md:text-2xl text-[#4a4a5a] max-w-2xl mx-auto font-light leading-relaxed">
                 Um caminho claro, humano e cuidadoso para vocês aproveitarem o melhor de cada decisão.
               </p>
             </div>
 
+            {/* CARDS - PREMIUM E LEGÍVEIS */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
-                { num: '01', icon: Compass, title: 'Você conta o sonho', desc: 'O que imaginam, o que precisam e o que não pode faltar.' },
-                { num: '02', icon: Sparkle, title: 'A gente escuta de verdade', desc: 'Entendemos o perfil de vocês para filtrar o excesso.' },
-                { num: '03', icon: Heart, title: 'Criamos o possível', desc: 'Um roteiro com intenção, beleza e escolhas que fazem sentido.' },
-                { num: '04', icon: ArrowUpRight, title: 'Vocês vivem a história', desc: 'Com a tranquilidade de saber que existe alguém cuidando.' },
+                { 
+                  num: '01', 
+                  icon: Compass, 
+                  title: 'Você conta o sonho', 
+                  desc: 'O que imaginam, o que precisam e o que não pode faltar.',
+                  gradient: 'from-amber-50/80 to-orange-50/80',
+                  border: 'hover:border-amber-300/50',
+                  iconBg: 'bg-amber-100',
+                  iconColor: 'text-amber-600',
+                },
+                { 
+                  num: '02', 
+                  icon: Sparkle, 
+                  title: 'A gente escuta de verdade', 
+                  desc: 'Entendemos o perfil de vocês para filtrar o excesso.',
+                  gradient: 'from-purple-50/80 to-pink-50/80',
+                  border: 'hover:border-purple-300/50',
+                  iconBg: 'bg-purple-100',
+                  iconColor: 'text-purple-600',
+                },
+                { 
+                  num: '03', 
+                  icon: Heart, 
+                  title: 'Criamos o possível', 
+                  desc: 'Um roteiro com intenção, beleza e escolhas que fazem sentido.',
+                  gradient: 'from-rose-50/80 to-pink-50/80',
+                  border: 'hover:border-rose-300/50',
+                  iconBg: 'bg-rose-100',
+                  iconColor: 'text-rose-600',
+                },
+                { 
+                  num: '04', 
+                  icon: ArrowUpRight, 
+                  title: 'Vocês vivem a história', 
+                  desc: 'Com a tranquilidade de saber que existe alguém cuidando.',
+                  gradient: 'from-blue-50/80 to-indigo-50/80',
+                  border: 'hover:border-blue-300/50',
+                  iconBg: 'bg-blue-100',
+                  iconColor: 'text-blue-600',
+                },
               ].map((step, i) => (
-                <div key={i} className="group text-center space-y-4 p-8 bg-white/5 rounded-3xl backdrop-blur-sm border border-white/5 hover:border-[#c9a84c]/30 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2">
-                  <div className="text-6xl font-display font-bold text-[#c9a84c]/10 group-hover:text-[#c9a84c]/20 transition-colors duration-500">{step.num}</div>
-                  <step.icon className="h-8 w-8 mx-auto text-[#c9a84c] group-hover:scale-110 transition-transform duration-500" />
-                  <h3 className="text-xl font-display font-semibold text-white">{step.title}</h3>
-                  <p className="text-white/50 text-sm leading-relaxed">{step.desc}</p>
+                <div 
+                  key={i} 
+                  className={`group relative bg-gradient-to-br ${step.gradient} backdrop-blur-sm p-8 rounded-3xl border border-white/50 ${step.border} transition-all duration-500 hover:shadow-2xl hover:-translate-y-3 hover:scale-[1.02]`}
+                >
+                  <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#c9a84c]/0 via-[#c9a84c]/0 to-[#c9a84c]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  
+                  <div className="absolute -top-3 -right-3 text-7xl font-display font-bold text-[#c9a84c]/5 group-hover:text-[#c9a84c]/10 transition-all duration-500 group-hover:scale-110 group-hover:rotate-3">
+                    {step.num}
+                  </div>
+
+                  <div className="relative z-10">
+                    <div className={`w-16 h-16 rounded-2xl ${step.iconBg} ${step.iconColor} flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-lg group-hover:shadow-xl`}>
+                      <step.icon className="h-7 w-7" />
+                    </div>
+                    
+                    <h3 className="text-2xl font-display font-bold text-[#1a1a2e] mb-3 group-hover:text-[#c9a84c] transition-colors duration-300">
+                      {step.title}
+                    </h3>
+                    
+                    <p className="text-[#4a4a5a] text-base leading-relaxed">
+                      {step.desc}
+                    </p>
+                    
+                    <div className="mt-6 w-12 h-[2px] bg-[#c9a84c]/30 group-hover:w-full group-hover:bg-[#c9a84c] transition-all duration-500" />
+                  </div>
                 </div>
               ))}
+            </div>
+
+            {/* CONEXÃO ENTRE OS CARDS */}
+            <div className="hidden lg:block relative mt-8">
+              <div className="absolute left-[12.5%] right-[12.5%] top-1/2 h-px bg-gradient-to-r from-[#c9a84c]/10 via-[#c9a84c]/30 to-[#c9a84c]/10" />
+              {[0, 1, 2, 3].map((i) => (
+                <div
+                  key={i}
+                  className="absolute top-1/2 w-3 h-3 rounded-full bg-[#c9a84c]/20 -translate-y-1/2"
+                  style={{ left: `${12.5 + i * 25}%` }}
+                />
+              ))}
+            </div>
+
+            {/* CTA ABAIXO DOS CARDS */}
+            <div className="mt-16 text-center">
+              <a
+                href="#planejar"
+                className="group inline-flex items-center gap-4 px-10 py-5 bg-gradient-to-r from-[#c9a84c] to-[#b8983e] hover:from-[#b8983e] hover:to-[#a08830] text-[#0a0a1a] font-semibold rounded-full transition-all duration-500 shadow-2xl shadow-[#c9a84c]/20 hover:shadow-[#c9a84c]/40 hover:scale-105"
+              >
+                <span className="text-lg">Quero começar minha jornada</span>
+                <ArrowRight className="h-5 w-5 group-hover:translate-x-2 transition-transform" />
+              </a>
+              <p className="mt-4 text-sm text-[#4a4a5a] font-light">
+                Sem compromisso. Apenas uma conversa para entender o que vocês sonham.
+              </p>
             </div>
           </div>
         </section>
 
         {/* ============================================================
-            DIFERENCIAIS (NOVA SEÇÃO)
+            DIFERENCIAIS
             ============================================================ */}
         <section className="py-20 bg-white">
           <div className="container-custom">
@@ -548,7 +633,7 @@ export default function Home() {
         </section>
 
         {/* ============================================================
-            DEPOIMENTOS (NOVA SEÇÃO)
+            DEPOIMENTOS
             ============================================================ */}
         <section className="py-20 bg-white">
           <div className="container-custom">
@@ -618,7 +703,6 @@ export default function Home() {
                   </div>
                 </div>
 
-                {/* Selo de confiança */}
                 <div className="flex items-center gap-4 bg-white/5 rounded-2xl p-4 border border-white/10">
                   <div className="flex -space-x-2">
                     <div className="w-8 h-8 rounded-full bg-[#c9a84c]/20 flex items-center justify-center text-xs font-bold text-[#c9a84c]">A</div>
@@ -677,7 +761,6 @@ export default function Home() {
                     />
                   </div>
 
-                  {/* Campo oculto para origem */}
                   <input type="hidden" name="origin" value="site" />
 
                   <button
