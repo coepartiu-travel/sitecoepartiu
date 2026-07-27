@@ -1,137 +1,38 @@
-import Image from 'next/image';
-import { Container } from '@/components/ui/Container';
-import { Button } from '@/components/ui/Button';
-import { Card } from '@/components/ui/Card';
-import { Badge } from '@/components/ui/Badge';
-import { 
-  ArrowRight,
-  Compass,
-  Heart,
-  Camera,
-  Globe,
-  Star,
-  Award,
-  Mountain,
-  TreePine,
-  UtensilsCrossed,
-  Building,
-  Users,
-  Sparkles
-} from 'lucide-react';
+// /src/app/experiencias/page.tsx
+import { ArrowUpRight, Compass, Heart, Camera, Globe, Star, TreePine, Utensils, Users, Sparkles } from 'lucide-react';
+import Link from 'next/link';
 
-// Dados das experiências
 const experiencias = [
-  {
-    titulo: 'Aventura',
-    descricao: 'Trilhas emocionantes, escaladas desafiadoras e esportes radicais em meio à natureza exuberante.',
-    icone: Compass,
-    cor: 'bg-orange-100 text-orange-600',
-    imagem: '/images/experiencias/aventura.jpg',
-  },
-  {
-    titulo: 'Romance',
-    descricao: 'Momentos inesquecíveis para casais, com paisagens deslumbrantes e atmosferas românticas.',
-    icone: Heart,
-    cor: 'bg-red-100 text-red-600',
-    imagem: '/images/experiencias/romance.jpg',
-  },
-  {
-    titulo: 'Natureza',
-    descricao: 'Contato profundo com a natureza em sua forma mais pura e preservada.',
-    icone: TreePine,
-    cor: 'bg-green-100 text-green-600',
-    imagem: '/images/experiencias/natureza.jpg',
-  },
-  {
-    titulo: 'Cultura',
-    descricao: 'Museus fascinantes, história viva e tradições locais que enriquecem sua viagem.',
-    icone: Building,
-    cor: 'bg-purple-100 text-purple-600',
-    imagem: '/images/experiencias/cultura.jpg',
-  },
-  {
-    titulo: 'Gastronomia',
-    descricao: 'Sabores autênticos, culinária regional e experiências gastronômicas inesquecíveis.',
-    icone: UtensilsCrossed,
-    cor: 'bg-yellow-100 text-yellow-600',
-    imagem: '/images/experiencias/gastronomia.jpg',
-  },
-  {
-    titulo: 'Família',
-    descricao: 'Atividades para todas as idades, diversão garantida e momentos em família.',
-    icone: Users,
-    cor: 'bg-blue-100 text-blue-600',
-    imagem: '/images/experiencias/familia.jpg',
-  },
-  {
-    titulo: 'Luxo',
-    descricao: 'O melhor da hospitalidade, conforto exclusivo e serviços premium.',
-    icone: Award,
-    cor: 'bg-amber-100 text-amber-600',
-    imagem: '/images/experiencias/luxo.jpg',
-  },
-  {
-    titulo: 'Educação',
-    descricao: 'Viagens que ensinam, com conteúdo cultural e pedagógico enriquecedor.',
-    icone: Sparkles,
-    cor: 'bg-indigo-100 text-indigo-600',
-    imagem: '/images/experiencias/educacao.jpg',
-  },
+  { titulo: 'Aventura', desc: 'A adrenalina libera dopamina. O medo controlado vira coragem.', icone: Compass },
+  { titulo: 'Romance', desc: 'A ocitocina (hormônio do amor) é ativada em cenários íntimos.', icone: Heart },
+  { titulo: 'Natureza', desc: 'O contato com a terra reduz o cortisol. Acalma a mente.', icone: TreePine },
+  { titulo: 'Cultura', desc: 'Aprender algo novo ativa o hipocampo. Você volta mais sábio.', icone: Globe },
+  { titulo: 'Gastronomia', desc: 'O paladar ativa memórias afetivas. Cada sabor conta uma história.', icone: Utensils },
+  { titulo: 'Família', desc: 'Vínculos fortalecidos criam uma rede de apoio emocional duradoura.', icone: Users },
+  { titulo: 'Luxo', desc: 'O conforto extremo permite que o cérebro entre em estado de descanso profundo.', icone: Star },
+  { titulo: 'Fotografia', desc: 'Registrar momentos ativa a memória autobiográfica. A história fica viva.', icone: Camera },
+  { titulo: 'Autoconhecimento', desc: 'Viagens solitárias ativam o córtex pré-frontal. Você se entende melhor.', icone: Sparkles },
 ];
 
 export default function ExperienciasPage() {
   return (
-    <main>
-      {/* Hero */}
-      <section className="relative py-20 md:py-28 bg-gradient-primary text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <Image
-            src="/images/experiencias-hero.jpg"
-            alt="Experiências"
-            fill
-            className="object-cover"
-            priority
-          />
+    <div className="pt-28 pb-20 bg-white min-h-screen">
+      <div className="container-custom">
+        <div className="max-w-3xl mx-auto text-center space-y-4 mb-16">
+          <span className="text-[#c9a84c] text-sm font-medium tracking-widest uppercase">Viver é sentir</span>
+          <h1 className="text-4xl md:text-5xl font-display font-bold text-[#1a1a2e]">Não é sobre onde você vai. <br />É sobre <span className="text-[#c9a84c]">o que você vai sentir.</span></h1>
+          <p className="text-[#4a4a5a] text-lg">A neurociência mostra que as emoções são o combustível da memória. Escolha vivências que mexem com você.</p>
         </div>
-        <Container className="relative z-10">
-          <div className="max-w-3xl">
-            <Badge variant="secondary" className="mb-4">Experiências</Badge>
-            <h1 className="heading-lg text-balance text-white">
-              Não é sobre onde você vai. É sobre o que você vai viver.
-            </h1>
-            <p className="text-xl text-white/80 mt-4 max-w-2xl">
-              Experiências únicas que transformam sua viagem em memórias eternas.
-            </p>
-          </div>
-        </Container>
-      </section>
-
-      {/* Grade de Experiências */}
-      <section className="section-padding bg-background-light">
-        <Container>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {experiencias.map((item) => (
-              <Card key={item.titulo} hover className="h-full text-center">
-                <div className="p-6">
-                  <div className={`p-4 rounded-full ${item.cor} mx-auto mb-4 w-fit`}>
-                    <item.icone className="w-8 h-8" />
-                  </div>
-                  <h3 className="font-semibold text-lg mb-2">{item.titulo}</h3>
-                  <p className="text-text-secondary text-sm">{item.descricao}</p>
-                </div>
-              </Card>
-            ))}
-          </div>
-
-          {/* CTA */}
-          <div className="mt-12 text-center">
-            <Button as="a" href="/planeje" variant="primary" size="lg">
-              QUERO VIVER ESSA EXPERIÊNCIA
-              <ArrowRight className="w-5 h-5 ml-2" />
-            </Button>
-          </div>
-        </Container>
-      </section>
-    </main>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          {experiencias.map((exp) => (
+            <Link key={exp.titulo} href="/planejar" className="group p-6 bg-[#faf8f5] rounded-2xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1 text-center border border-transparent hover:border-[#c9a84c]/30">
+              <exp.icone className="h-8 w-8 mx-auto text-[#c9a84c] group-hover:scale-110 transition-transform duration-300" />
+              <h3 className="font-display font-semibold mt-3 text-[#1a1a2e]">{exp.titulo}</h3>
+              <p className="text-xs text-[#4a4a5a] mt-1 leading-relaxed">{exp.desc}</p>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </div>
   );
 }
