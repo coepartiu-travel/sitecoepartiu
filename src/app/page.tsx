@@ -399,97 +399,113 @@ export default function Home() {
         </section>
 
         {/* ============================================================
-            COMO FUNCIONA - ULTRA PREMIUM REFORMULADO
+            COMO FUNCIONA - INTERNACIONAL ULTRA PREMIUM
             ============================================================ */}
-        <section id="processo" className="py-28 relative overflow-hidden">
-          {/* Fundo com gradiente suave */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#faf8f5] via-white to-[#f5f0eb]" />
-          
-          {/* Elementos decorativos */}
-          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#c9a84c]/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3" />
-          <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#c9a84c]/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3" />
-          
-          <div className="absolute top-1/2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#c9a84c]/20 to-transparent" />
+        <section id="processo" className="py-32 relative overflow-hidden bg-[#0a0a1a]">
+          {/* Fundo com gradiente internacional */}
+          <div className="absolute inset-0">
+            <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a1a] via-[#1a1a2e] to-[#0a0a1a]" />
+            <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[#c9a84c]/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3" />
+            <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[#c9a84c]/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3" />
+            
+            {/* Linhas decorativas */}
+            <div className="absolute top-1/3 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#c9a84c]/10 to-transparent" />
+            <div className="absolute top-2/3 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#c9a84c]/10 to-transparent" />
+            
+            {/* Elementos dourados decorativos */}
+            <div className="absolute top-10 left-10 w-20 h-20 border border-[#c9a84c]/10 rounded-full" />
+            <div className="absolute bottom-10 right-10 w-32 h-32 border border-[#c9a84c]/10 rounded-full" />
+          </div>
 
           <div className="container-custom relative z-10">
-            {/* CABEÇALHO - LEGÍVEL E PREMIUM */}
-            <div className="text-center max-w-3xl mx-auto mb-20 space-y-8">
-              <div className="flex items-center justify-center gap-4">
-                <span className="w-16 h-[2px] bg-[#c9a84c]" />
-                <span className="text-sm font-medium tracking-[0.3em] text-[#c9a84c] uppercase bg-white/80 backdrop-blur-sm px-6 py-2 rounded-full shadow-sm">
-                  Do desejo ao embarque
+            {/* CABEÇALHO */}
+            <div className="text-center max-w-4xl mx-auto mb-24 space-y-8">
+              <div className="flex items-center justify-center gap-6">
+                <div className="w-20 h-[2px] bg-gradient-to-r from-transparent to-[#c9a84c]" />
+                <span className="text-sm font-medium tracking-[0.4em] text-[#c9a84c] uppercase bg-[#c9a84c]/10 backdrop-blur-sm px-8 py-3 rounded-full border border-[#c9a84c]/20 shadow-lg shadow-[#c9a84c]/5">
+                  Do Desejo ao Embarque
                 </span>
-                <span className="w-16 h-[2px] bg-[#c9a84c]" />
+                <div className="w-20 h-[2px] bg-gradient-to-l from-transparent to-[#c9a84c]" />
               </div>
               
-              <h2 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-[#1a1a2e] leading-[1.05]">
+              <h2 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold text-white leading-[1.05]">
                 Planejar pode ser
                 <br />
                 <span className="relative inline-block">
-                  <span className="bg-gradient-to-r from-[#c9a84c] via-[#e8c87a] to-[#c9a84c] bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-[#c9a84c] via-[#f0d080] to-[#c9a84c] bg-clip-text text-transparent">
                     parte da viagem.
                   </span>
-                  <span className="absolute -bottom-3 left-0 w-full h-1 bg-gradient-to-r from-[#c9a84c]/30 via-[#e8c87a]/50 to-[#c9a84c]/30 rounded-full blur-sm" />
-                  <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-24 h-[3px] bg-[#c9a84c] rounded-full" />
+                  <svg className="absolute -bottom-4 left-0 w-full" height="6" viewBox="0 0 800 6" fill="none">
+                    <path d="M0 3C100 0 200 6 300 3C400 0 500 6 600 3C700 0 800 3 800 3" stroke="url(#goldGradient)" strokeWidth="3" strokeLinecap="round"/>
+                    <defs>
+                      <linearGradient id="goldGradient" x1="0" y1="0" x2="1" y2="0">
+                        <stop offset="0%" stopColor="#c9a84c" stopOpacity="0.1"/>
+                        <stop offset="30%" stopColor="#c9a84c" stopOpacity="0.6"/>
+                        <stop offset="50%" stopColor="#f0d080" stopOpacity="1"/>
+                        <stop offset="70%" stopColor="#c9a84c" stopOpacity="0.6"/>
+                        <stop offset="100%" stopColor="#c9a84c" stopOpacity="0.1"/>
+                      </linearGradient>
+                    </defs>
+                  </svg>
                 </span>
               </h2>
               
-              <p className="text-xl md:text-2xl text-[#4a4a5a] max-w-2xl mx-auto font-light leading-relaxed">
+              <p className="text-xl md:text-2xl text-white/60 max-w-2xl mx-auto font-light leading-relaxed tracking-wide">
                 Um caminho claro, humano e cuidadoso para vocês aproveitarem o melhor de cada decisão.
               </p>
             </div>
 
-            {/* CARDS - PREMIUM E LEGÍVEIS */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* CARDS PREMIUM */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
                 { 
                   num: '01', 
                   icon: Compass, 
                   title: 'Você conta o sonho', 
                   desc: 'O que imaginam, o que precisam e o que não pode faltar.',
-                  gradient: 'from-amber-50/80 to-orange-50/80',
-                  border: 'hover:border-amber-300/50',
-                  iconBg: 'bg-amber-100',
-                  iconColor: 'text-amber-600',
+                  gradient: 'from-amber-500/10 to-orange-500/10',
+                  border: 'hover:border-amber-400/50',
+                  iconBg: 'bg-amber-500/20',
+                  iconColor: 'text-amber-400',
                 },
                 { 
                   num: '02', 
                   icon: Sparkle, 
                   title: 'A gente escuta de verdade', 
                   desc: 'Entendemos o perfil de vocês para filtrar o excesso.',
-                  gradient: 'from-purple-50/80 to-pink-50/80',
-                  border: 'hover:border-purple-300/50',
-                  iconBg: 'bg-purple-100',
-                  iconColor: 'text-purple-600',
+                  gradient: 'from-purple-500/10 to-pink-500/10',
+                  border: 'hover:border-purple-400/50',
+                  iconBg: 'bg-purple-500/20',
+                  iconColor: 'text-purple-400',
                 },
                 { 
                   num: '03', 
                   icon: Heart, 
                   title: 'Criamos o possível', 
                   desc: 'Um roteiro com intenção, beleza e escolhas que fazem sentido.',
-                  gradient: 'from-rose-50/80 to-pink-50/80',
-                  border: 'hover:border-rose-300/50',
-                  iconBg: 'bg-rose-100',
-                  iconColor: 'text-rose-600',
+                  gradient: 'from-rose-500/10 to-pink-500/10',
+                  border: 'hover:border-rose-400/50',
+                  iconBg: 'bg-rose-500/20',
+                  iconColor: 'text-rose-400',
                 },
                 { 
                   num: '04', 
                   icon: ArrowUpRight, 
                   title: 'Vocês vivem a história', 
                   desc: 'Com a tranquilidade de saber que existe alguém cuidando.',
-                  gradient: 'from-blue-50/80 to-indigo-50/80',
-                  border: 'hover:border-blue-300/50',
-                  iconBg: 'bg-blue-100',
-                  iconColor: 'text-blue-600',
+                  gradient: 'from-blue-500/10 to-indigo-500/10',
+                  border: 'hover:border-blue-400/50',
+                  iconBg: 'bg-blue-500/20',
+                  iconColor: 'text-blue-400',
                 },
               ].map((step, i) => (
                 <div 
                   key={i} 
-                  className={`group relative bg-gradient-to-br ${step.gradient} backdrop-blur-sm p-8 rounded-3xl border border-white/50 ${step.border} transition-all duration-500 hover:shadow-2xl hover:-translate-y-3 hover:scale-[1.02]`}
+                  className={`group relative bg-gradient-to-br ${step.gradient} backdrop-blur-sm p-8 rounded-3xl border border-white/10 ${step.border} transition-all duration-500 hover:shadow-2xl hover:-translate-y-3 hover:scale-[1.02] hover:shadow-[#c9a84c]/10`}
                 >
                   <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#c9a84c]/0 via-[#c9a84c]/0 to-[#c9a84c]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   
-                  <div className="absolute -top-3 -right-3 text-7xl font-display font-bold text-[#c9a84c]/5 group-hover:text-[#c9a84c]/10 transition-all duration-500 group-hover:scale-110 group-hover:rotate-3">
+                  <div className="absolute -top-3 -right-3 text-7xl font-display font-bold text-white/5 group-hover:text-white/10 transition-all duration-500 group-hover:scale-110 group-hover:rotate-3">
                     {step.num}
                   </div>
 
@@ -498,11 +514,11 @@ export default function Home() {
                       <step.icon className="h-7 w-7" />
                     </div>
                     
-                    <h3 className="text-2xl font-display font-bold text-[#1a1a2e] mb-3 group-hover:text-[#c9a84c] transition-colors duration-300">
+                    <h3 className="text-2xl font-display font-bold text-white mb-3 group-hover:text-[#c9a84c] transition-colors duration-300">
                       {step.title}
                     </h3>
                     
-                    <p className="text-[#4a4a5a] text-base leading-relaxed">
+                    <p className="text-white/50 text-base leading-relaxed">
                       {step.desc}
                     </p>
                     
@@ -512,7 +528,7 @@ export default function Home() {
               ))}
             </div>
 
-            {/* CONEXÃO ENTRE OS CARDS */}
+            {/* LINHA DE CONEXÃO */}
             <div className="hidden lg:block relative mt-8">
               <div className="absolute left-[12.5%] right-[12.5%] top-1/2 h-px bg-gradient-to-r from-[#c9a84c]/10 via-[#c9a84c]/30 to-[#c9a84c]/10" />
               {[0, 1, 2, 3].map((i) => (
@@ -524,7 +540,7 @@ export default function Home() {
               ))}
             </div>
 
-            {/* CTA ABAIXO DOS CARDS */}
+            {/* CTA */}
             <div className="mt-16 text-center">
               <a
                 href="#planejar"
@@ -533,7 +549,7 @@ export default function Home() {
                 <span className="text-lg">Quero começar minha jornada</span>
                 <ArrowRight className="h-5 w-5 group-hover:translate-x-2 transition-transform" />
               </a>
-              <p className="mt-4 text-sm text-[#4a4a5a] font-light">
+              <p className="mt-4 text-sm text-white/30 font-light">
                 Sem compromisso. Apenas uma conversa para entender o que vocês sonham.
               </p>
             </div>
@@ -673,52 +689,74 @@ export default function Home() {
         </section>
 
         {/* ============================================================
-            FORMULÁRIO
+            FORMULÁRIO - "COMEÇA COM UMA CONVERSA"
             ============================================================ */}
-        <section id="planejar" className="py-28 bg-gradient-to-br from-[#0a0a1a] via-[#1a1a2e] to-[#0a0a1a] text-white">
-          <div className="container-custom max-w-5xl">
+        <section id="planejar" className="py-32 relative overflow-hidden bg-[#0a0a1a]">
+          {/* Fundo premium */}
+          <div className="absolute inset-0">
+            <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a1a] via-[#1a1a2e] to-[#0a0a1a]" />
+            <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-[#c9a84c]/5 rounded-full blur-3xl -translate-y-1/2 -translate-x-1/3" />
+            <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-[#c9a84c]/5 rounded-full blur-3xl translate-y-1/2 translate-x-1/3" />
+            
+            {/* Linhas decorativas */}
+            <div className="absolute top-1/2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#c9a84c]/10 to-transparent" />
+          </div>
+
+          <div className="container-custom max-w-5xl relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+              {/* LADO ESQUERDO - CONTEÚDO */}
               <div className="space-y-8">
                 <div>
-                  <div className="flex items-center gap-3 mb-4">
-                    <span className="w-12 h-[2px] bg-[#c9a84c]" />
-                    <span className="text-sm font-medium tracking-[0.3em] text-[#c9a84c] uppercase">Começa com uma conversa</span>
+                  <div className="flex items-center gap-4 mb-6">
+                    <div className="w-16 h-[2px] bg-gradient-to-r from-transparent to-[#c9a84c]" />
+                    <span className="text-sm font-medium tracking-[0.4em] text-[#c9a84c] uppercase bg-[#c9a84c]/10 backdrop-blur-sm px-6 py-2 rounded-full border border-[#c9a84c]/20">
+                      Começa com uma conversa
+                    </span>
+                    <div className="w-16 h-[2px] bg-gradient-to-l from-transparent to-[#c9a84c]" />
                   </div>
-                  <h2 className="text-4xl md:text-5xl font-display font-bold leading-[1.1]">
+                  
+                  <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white leading-[1.1]">
                     Qual viagem está <br />
-                    <span className="bg-gradient-to-r from-[#c9a84c] to-[#e8c87a] bg-clip-text text-transparent">na cabeça de vocês?</span>
+                    <span className="bg-gradient-to-r from-[#c9a84c] via-[#f0d080] to-[#c9a84c] bg-clip-text text-transparent">
+                      na cabeça de vocês?
+                    </span>
                   </h2>
                 </div>
-                <p className="text-lg text-white/60 font-light leading-relaxed">
+                
+                <p className="text-xl text-white/60 font-light leading-relaxed">
                   Conte um pouco. A primeira ideia de roteiro nasce daqui, sem compromisso e sem respostas prontas.
                 </p>
-                <div className="space-y-3">
+                
+                <div className="space-y-4">
                   <div className="flex items-center gap-4 text-white/70">
-                    <div className="w-6 h-6 rounded-full bg-[#c9a84c]/20 flex items-center justify-center text-[#c9a84c] text-xs font-bold">✓</div>
+                    <div className="w-7 h-7 rounded-full bg-[#c9a84c]/20 flex items-center justify-center text-[#c9a84c] text-xs font-bold border border-[#c9a84c]/20 flex-shrink-0">✓</div>
                     <span>Atendimento humano, sem pressão para decidir</span>
                   </div>
                   <div className="flex items-center gap-4 text-white/70">
-                    <div className="w-6 h-6 rounded-full bg-[#c9a84c]/20 flex items-center justify-center text-[#c9a84c] text-xs font-bold">✓</div>
+                    <div className="w-7 h-7 rounded-full bg-[#c9a84c]/20 flex items-center justify-center text-[#c9a84c] text-xs font-bold border border-[#c9a84c]/20 flex-shrink-0">✓</div>
                     <span>Um ponto de partida pensado para vocês</span>
                   </div>
                 </div>
 
-                <div className="flex items-center gap-4 bg-white/5 rounded-2xl p-4 border border-white/10">
+                {/* Selo de confiança */}
+                <div className="flex items-center gap-5 bg-white/5 rounded-2xl p-5 border border-white/10 backdrop-blur-sm">
                   <div className="flex -space-x-2">
-                    <div className="w-8 h-8 rounded-full bg-[#c9a84c]/20 flex items-center justify-center text-xs font-bold text-[#c9a84c]">A</div>
-                    <div className="w-8 h-8 rounded-full bg-[#c9a84c]/20 flex items-center justify-center text-xs font-bold text-[#c9a84c]">P</div>
-                    <div className="w-8 h-8 rounded-full bg-[#c9a84c]/20 flex items-center justify-center text-xs font-bold text-[#c9a84c]">+</div>
+                    <div className="w-9 h-9 rounded-full bg-[#c9a84c]/20 flex items-center justify-center text-xs font-bold text-[#c9a84c] border border-[#c9a84c]/30">A</div>
+                    <div className="w-9 h-9 rounded-full bg-[#c9a84c]/20 flex items-center justify-center text-xs font-bold text-[#c9a84c] border border-[#c9a84c]/30">P</div>
+                    <div className="w-9 h-9 rounded-full bg-[#c9a84c]/20 flex items-center justify-center text-xs font-bold text-[#c9a84c] border border-[#c9a84c]/30">+</div>
                   </div>
                   <div>
-                    <p className="text-sm text-white/80">500+ viajantes confiam na COÉ, PARTIU?</p>
+                    <p className="text-sm text-white/80 font-medium">500+ viajantes confiam na COÉ, PARTIU?</p>
+                    <p className="text-xs text-white/40">Experiências que transformam vidas</p>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-white/5 backdrop-blur-xl p-10 rounded-3xl border border-white/10 shadow-2xl">
+              {/* LADO DIREITO - FORMULÁRIO */}
+              <div className="bg-white/5 backdrop-blur-xl p-10 rounded-3xl border border-white/10 shadow-2xl shadow-[#c9a84c]/5">
                 <form action="/api/leads" method="POST" className="space-y-6">
                   <div>
-                    <label className="block text-sm font-medium text-white/70 mb-2">Como podemos chamar você? *</label>
+                    <label className="block text-sm font-medium text-white/70 mb-2">Como podemos chamar você? <span className="text-[#c9a84c]">*</span></label>
                     <input
                       type="text"
                       name="name"
@@ -727,8 +765,9 @@ export default function Home() {
                       className="w-full px-5 py-4 bg-white/10 border border-white/10 rounded-2xl text-white placeholder:text-white/30 focus:outline-none focus:border-[#c9a84c] focus:ring-2 focus:ring-[#c9a84c]/20 transition-all duration-300"
                     />
                   </div>
+                  
                   <div>
-                    <label className="block text-sm font-medium text-white/70 mb-2">Qual experiência combina com o momento? *</label>
+                    <label className="block text-sm font-medium text-white/70 mb-2">Qual experiência combina com o momento? <span className="text-[#c9a84c]">*</span></label>
                     <select
                       name="tripType"
                       className="w-full px-5 py-4 bg-white/10 border border-white/10 rounded-2xl text-white placeholder:text-white/30 focus:outline-none focus:border-[#c9a84c] focus:ring-2 focus:ring-[#c9a84c]/20 transition-all duration-300 appearance-none"
@@ -740,8 +779,9 @@ export default function Home() {
                       <option value="outro" className="text-[#1a1a2e]">Ainda estou descobrindo</option>
                     </select>
                   </div>
+                  
                   <div>
-                    <label className="block text-sm font-medium text-white/70 mb-2">Para onde o coração está apontando? *</label>
+                    <label className="block text-sm font-medium text-white/70 mb-2">Para onde o coração está apontando? <span className="text-[#c9a84c]">*</span></label>
                     <input
                       type="text"
                       name="destination"
@@ -750,8 +790,9 @@ export default function Home() {
                       className="w-full px-5 py-4 bg-white/10 border border-white/10 rounded-2xl text-white placeholder:text-white/30 focus:outline-none focus:border-[#c9a84c] focus:ring-2 focus:ring-[#c9a84c]/20 transition-all duration-300"
                     />
                   </div>
+                  
                   <div>
-                    <label className="block text-sm font-medium text-white/70 mb-2">Seu melhor contato *</label>
+                    <label className="block text-sm font-medium text-white/70 mb-2">Seu melhor contato <span className="text-[#c9a84c]">*</span></label>
                     <input
                       type="email"
                       name="email"
@@ -765,11 +806,12 @@ export default function Home() {
 
                   <button
                     type="submit"
-                    className="w-full py-5 bg-gradient-to-r from-[#c9a84c] to-[#b8983e] hover:from-[#b8983e] hover:to-[#a08830] text-[#0a0a1a] font-semibold rounded-2xl transition-all duration-500 flex items-center justify-center gap-3 group shadow-xl shadow-[#c9a84c]/20 hover:shadow-[#c9a84c]/40"
+                    className="w-full py-5 bg-gradient-to-r from-[#c9a84c] to-[#b8983e] hover:from-[#b8983e] hover:to-[#a08830] text-[#0a0a1a] font-semibold rounded-2xl transition-all duration-500 flex items-center justify-center gap-3 group shadow-xl shadow-[#c9a84c]/20 hover:shadow-[#c9a84c]/40 hover:scale-[1.02]"
                   >
                     Quero receber uma ideia de roteiro
                     <ArrowUpRight className="h-5 w-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                   </button>
+                  
                   <p className="text-xs text-white/30 text-center">
                     Seus dados ficam seguros com a COÉ, PARTIU? e só serão usados para esta conversa.
                   </p>
