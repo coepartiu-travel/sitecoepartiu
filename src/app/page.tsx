@@ -121,7 +121,7 @@ export default function Home() {
         <section className="relative min-h-screen flex items-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
-              src="https://images.unsplash.com/photo-1569529461291-04a377959d11?auto=format&fit=crop&w=2200&q=90"
+              src="/images/hero-bg.jpg"
               alt="Atacama - Carioca de Atacama"
               className="w-full h-full object-cover"
             />
@@ -136,13 +136,13 @@ export default function Home() {
           <div className="container-custom relative z-10 py-20">
             <div className="max-w-3xl">
               {/* BADGE - CARIOCA DE ATACAMA COM LOGO */}
-              <div className="inline-flex items-center gap-3 px-5 py-2.5 bg-[#c9a84c]/10 backdrop-blur-md rounded-full border border-[#c9a84c]/20 mb-8">
+              <div className="inline-flex items-center gap-3 px-5 py-3 bg-[#c9a84c]/15 backdrop-blur-md rounded-full border border-[#c9a84c]/30 mb-8">
                 <img
                   src="/images/carioca-atacama-logo.png"
                   alt="Carioca de Atacama"
-                  className="h-6 w-auto object-contain"
+                  className="h-8 w-auto object-contain"
                 />
-                <span className="w-px h-6 bg-[#c9a84c]/30" />
+                <span className="w-px h-8 bg-[#c9a84c]/40" />
                 <span className="text-xs font-medium tracking-[0.2em] text-[#c9a84c] uppercase">
                   Carioca de Atacama
                 </span>
@@ -225,24 +225,24 @@ export default function Home() {
         <section id="historia" className="py-16 bg-[#faf8f5] border-y border-[#e8e3dc]">
           <div className="container-custom">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-              {/* Foto - Placeholder para sua foto */}
               <div className="md:col-span-1">
                 <div className="relative rounded-2xl overflow-hidden aspect-square bg-gradient-to-br from-[#1a1a2e] to-[#0a0a1a] flex items-center justify-center">
-                  <div className="text-center text-white/30">
-                    <span className="text-6xl block mb-2">🌵</span>
-                    <span className="text-xs">Foto do Carioca de Atacama</span>
-                  </div>
-                  {/* Quando tiver a foto, substituir por:
                   <img
                     src="/images/carioca-perfil.jpg"
-                    alt="Carioca de Atacama"
+                    alt="Carioca de Atacama - Fundador COÉ, PARTIU?"
                     className="w-full h-full object-cover"
                   />
-                  */}
+                  <div className="absolute bottom-4 left-4 bg-[#c9a84c]/90 backdrop-blur-sm px-4 py-2 rounded-full flex items-center gap-2">
+                    <img
+                      src="/images/carioca-atacama-logo.png"
+                      alt="Carioca de Atacama"
+                      className="h-5 w-auto object-contain"
+                    />
+                    <span className="text-xs font-semibold text-[#0a0a1a]">Carioca de Atacama</span>
+                  </div>
                 </div>
               </div>
 
-              {/* Conteúdo */}
               <div className="md:col-span-2 space-y-4">
                 <div className="flex items-center gap-3">
                   <span className="w-10 h-[2px] bg-[#c9a84c]" />
