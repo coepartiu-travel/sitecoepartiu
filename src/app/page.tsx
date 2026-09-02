@@ -116,7 +116,7 @@ export default function Home() {
     <div className="bg-white text-[#1a1a2e] font-sans overflow-hidden">
       <main>
         {/* ============================================================
-            HERO - CARIOCA DE ATACAMA
+            HERO - CARIOCA DE ATACAMA (TEXTO REVISADO)
             ============================================================ */}
         <section className="relative min-h-screen flex items-center overflow-hidden">
           <div className="absolute inset-0 z-0">
@@ -135,21 +135,24 @@ export default function Home() {
 
           <div className="container-custom relative z-10 py-20">
             <div className="max-w-3xl">
-              {/* BADGE - CARIOCA DE ATACAMA COM LOGO */}
+              {/* BADGE - CARIOCA DE ATACAMA */}
               <div className="inline-flex items-center gap-3 px-5 py-3 bg-[#c9a84c]/15 backdrop-blur-md rounded-full border border-[#c9a84c]/30 mb-8">
-                <img
-                  src="/images/carioca-atacama-logo.png"
-                  alt="Carioca de Atacama"
-                  className="h-8 w-auto object-contain"
-                />
-                <span className="w-px h-8 bg-[#c9a84c]/40" />
+                <div className="bg-[#1a1a2e]/80 p-1 rounded-full">
+                  <img
+                    src="/images/carioca-atacama-logo.png"
+                    alt="Carioca de Atacama"
+                    className="h-7 w-auto object-contain"
+                  />
+                </div>
+                <span className="w-px h-7 bg-[#c9a84c]/40" />
                 <span className="text-xs font-medium tracking-[0.2em] text-[#c9a84c] uppercase">
                   Carioca de Atacama
                 </span>
               </div>
 
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold leading-[1.05] tracking-tight text-white">
-                Eu não apenas conheço o Chile.
+              {/* TÍTULO PRINCIPAL */}
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold leading-[1.05] tracking-tight">
+                <span className="text-white">Eu não apenas conheço o Chile.</span>
                 <br />
                 <span className="relative inline-block mt-2">
                   <span className="bg-gradient-to-r from-[#c9a84c] via-[#f0d080] to-[#c9a84c] bg-clip-text text-transparent">
@@ -159,54 +162,64 @@ export default function Home() {
                 </span>
               </h1>
 
+              {/* TEXTO DE APRESENTAÇÃO */}
               <p className="mt-6 text-lg md:text-xl text-white/80 max-w-2xl font-light leading-relaxed">
-                Durante um ano, vivi no Atacama. Trabalhei com turismo, fui guia, administrei agência. 
-                Conheci cada duna, cada lagoa, cada nascer do sol no deserto mais árido do mundo.
+                Em 2019, saí de Niterói, no Rio de Janeiro, para viver uma experiência que mudaria minha história.
+              </p>
+              <p className="mt-3 text-lg md:text-xl text-white/70 max-w-2xl font-light leading-relaxed">
+                Morei no Atacama, trabalhei com turismo, fui guia, administrei uma agência e vivi de perto as experiências que fazem desse lugar um dos destinos mais fascinantes do mundo.
+              </p>
+              <p className="mt-4 text-white/60 max-w-2xl font-light leading-relaxed">
+                Hoje, levo essa experiência para a <span className="text-[#c9a84c] font-medium">COÉ, PARTIU? Travel & Experiences</span>, ajudando você a descobrir o Chile com mais segurança, personalidade e significado.
               </p>
 
-              <p className="mt-3 text-[#c9a84c] font-medium text-sm tracking-wide">
-                Do Rio de Janeiro ao Atacama. Do sonho à experiência.
-              </p>
+              {/* FRASES DE IMPACTO */}
+              <div className="mt-6 space-y-1">
+                <p className="text-[#c9a84c] font-medium text-sm tracking-wide">Do Rio ao Atacama.</p>
+                <p className="text-[#c9a84c]/80 font-medium text-sm tracking-wide">Da experiência vivida à sua próxima história.</p>
+              </div>
 
+              {/* CTAs */}
               <div className="mt-10 flex flex-wrap items-center gap-4">
                 <a
-                  href="https://wa.me/5534999082607?text=Olá! Vi que você é o Carioca de Atacama e quero conhecer o Chile com quem viveu lá."
+                  href="https://wa.me/5534999082607?text=Olá! Vi que você é o Carioca de Atacama e quero planejar minha viagem."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#c9a84c] to-[#b8983e] hover:from-[#b8983e] hover:to-[#a08830] text-[#0a0a1a] font-semibold rounded-full transition-all duration-500 shadow-2xl shadow-[#c9a84c]/30 hover:shadow-[#c9a84c]/50 hover:scale-105"
                 >
-                  <span>Quero conhecer o Chile com quem viveu lá</span>
+                  <span>PLANEJE SUA VIAGEM</span>
                   <ArrowUpRight className="h-5 w-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                 </a>
                 <a
                   href="#historia"
-                  className="group inline-flex items-center gap-2 px-6 py-4 text-white/70 hover:text-white transition-colors text-sm font-medium border-b border-transparent hover:border-[#c9a84c]"
+                  className="group inline-flex items-center gap-2 px-6 py-4 text-white/60 hover:text-white transition-colors text-sm font-medium border-b border-transparent hover:border-[#c9a84c]"
                 >
-                  Conheça minha história
+                  Conheça a história
                   <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </a>
               </div>
 
+              {/* INDICADORES DE AUTORIDADE */}
               <div className="mt-10 flex flex-wrap gap-6">
                 <div className="flex items-center gap-3">
                   <span className="text-2xl">🌵</span>
                   <div>
                     <span className="block text-sm font-medium text-white">Viveu no Atacama</span>
-                    <span className="text-xs text-white/50">1 ano de experiência real</span>
+                    <span className="text-xs text-white/40">1 ano de experiência real</span>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="text-2xl">🏔️</span>
                   <div>
                     <span className="block text-sm font-medium text-white">Guia e Agente</span>
-                    <span className="text-xs text-white/50">Trabalhou no turismo local</span>
+                    <span className="text-xs text-white/40">Trabalhou no turismo local</span>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="text-2xl">🤝</span>
                   <div>
                     <span className="block text-sm font-medium text-white">Consultor Especialista</span>
-                    <span className="text-xs text-white/50">Conhecimento autêntico do destino</span>
+                    <span className="text-xs text-white/40">Conhecimento autêntico do destino</span>
                   </div>
                 </div>
               </div>
@@ -220,53 +233,63 @@ export default function Home() {
         </section>
 
         {/* ============================================================
-            QUEM SOU EU - RESUMO DO CONSULTOR (HOME)
+            QUEM ESTÁ POR TRÁS - RAUL RAMALHO (TEXTO REVISADO)
             ============================================================ */}
-        <section id="historia" className="py-16 bg-[#faf8f5] border-y border-[#e8e3dc]">
+        <section id="historia" className="py-20 bg-[#faf8f5] border-y border-[#e8e3dc]">
           <div className="container-custom">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
+              {/* FOTO */}
               <div className="md:col-span-1">
-                <div className="relative rounded-2xl overflow-hidden aspect-square bg-gradient-to-br from-[#1a1a2e] to-[#0a0a1a] flex items-center justify-center">
+                <div className="relative rounded-2xl overflow-hidden aspect-square bg-gradient-to-br from-[#1a1a2e] to-[#0a0a1a] flex items-center justify-center shadow-xl">
                   <img
                     src="/images/carioca-perfil.jpg"
-                    alt="Carioca de Atacama - Fundador COÉ, PARTIU?"
+                    alt="Raul Ramalho - Carioca de Atacama"
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute bottom-4 left-4 bg-[#c9a84c]/90 backdrop-blur-sm px-4 py-2 rounded-full flex items-center gap-2">
-                    <img
-                      src="/images/carioca-atacama-logo.png"
-                      alt="Carioca de Atacama"
-                      className="h-5 w-auto object-contain"
-                    />
+                  <div className="absolute bottom-4 left-4 bg-[#c9a84c]/90 backdrop-blur-sm px-4 py-2 rounded-full flex items-center gap-2 shadow-lg">
+                    <div className="bg-[#1a1a2e]/80 p-0.5 rounded-full">
+                      <img
+                        src="/images/carioca-atacama-logo.png"
+                        alt="Carioca de Atacama"
+                        className="h-4 w-auto object-contain"
+                      />
+                    </div>
                     <span className="text-xs font-semibold text-[#0a0a1a]">Carioca de Atacama</span>
                   </div>
                 </div>
               </div>
 
-              <div className="md:col-span-2 space-y-4">
+              {/* CONTEÚDO */}
+              <div className="md:col-span-2 space-y-5">
                 <div className="flex items-center gap-3">
                   <span className="w-10 h-[2px] bg-[#c9a84c]" />
                   <span className="text-xs font-medium tracking-[0.3em] text-[#c9a84c] uppercase">Quem está por trás</span>
                 </div>
-                <h2 className="text-2xl md:text-3xl font-display font-bold text-[#1a1a2e]">
-                  Eu sou o <span className="text-[#c9a84c]">Carioca de Atacama</span>
+                
+                <h2 className="text-3xl md:text-4xl font-display font-bold text-[#1a1a2e]">
+                  Raul Ramalho
                 </h2>
-                <p className="text-[#4a4a5a] text-sm leading-relaxed max-w-2xl">
-                  Durante um ano, vivi no Atacama. Trabalhei com turismo, fui guia, administrei uma agência local. 
-                  Conheci cada duna, cada lagoa, cada nascer do sol no deserto mais árido do mundo.
-                  <span className="block mt-2 text-[#1a1a2e] font-medium">Do Rio de Janeiro ao Atacama. Do sonho à experiência.</span>
+                <p className="text-xl text-[#c9a84c] font-display font-semibold">
+                  O Carioca de Atacama.
                 </p>
-                <div className="flex flex-wrap gap-6 text-sm">
-                  <span className="flex items-center gap-2 text-[#4a4a5a]">🌵 Viveu no Atacama</span>
-                  <span className="flex items-center gap-2 text-[#4a4a5a]">🏔️ Guia e Agente</span>
-                  <span className="flex items-center gap-2 text-[#4a4a5a]">🤝 Consultor Especialista</span>
+                
+                <p className="text-[#4a4a5a] text-base leading-relaxed max-w-2xl">
+                  Nascido em Niterói, no Rio de Janeiro, Raul viveu durante um ano no Atacama, onde trabalhou com turismo, foi guia e administrou uma agência local.
+                </p>
+                <p className="text-[#4a4a5a] text-base leading-relaxed max-w-2xl">
+                  Foi dessa experiência que nasceu o <span className="text-[#c9a84c] font-semibold">Carioca de Atacama</span> — hoje, o consultor principal da <span className="font-semibold text-[#1a1a2e]">COÉ, PARTIU?</span>, levando conhecimento vivido e uma visão mais humana para cada viagem.
+                </p>
+
+                <div className="pt-2">
+                  <p className="text-sm text-[#c9a84c] font-medium tracking-wide">Uma história real por trás de cada destino.</p>
                 </div>
+
                 <a
                   href="/sobre"
-                  className="inline-flex items-center gap-2 text-[#c9a84c] font-medium hover:gap-3 transition-all duration-300 text-sm"
+                  className="inline-flex items-center gap-2 text-[#c9a84c] font-semibold hover:gap-3 transition-all duration-300 text-sm group"
                 >
-                  Conheça minha história completa
-                  <ArrowRight className="h-4 w-4" />
+                  CONHEÇA A HISTÓRIA
+                  <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </a>
               </div>
             </div>
