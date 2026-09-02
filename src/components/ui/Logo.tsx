@@ -10,33 +10,29 @@ interface LogoProps {
 
 export function Logo({ className, size = 'md', showText = false }: LogoProps) {
   const sizes = {
-    sm: 'h-12',   // ~1.5cm
-    md: 'h-16',   // ~2cm
-    lg: 'h-20',   // ~2.5cm
+    sm: 'h-10',
+    md: 'h-12',
+    lg: 'h-14',
+  };
+
+  const widths = {
+    sm: 140,
+    md: 180,
+    lg: 220,
   };
 
   return (
-    <Link href="/" className={cn('flex items-center', className)}>
-      <div className={cn('relative', sizes[size])}>
+    <Link href="/" className={cn('flex items-center group', className)}>
+      <div className={cn('relative transition-transform duration-300 group-hover:scale-105', sizes[size])}>
         <Image
           src="/logo-coe-partiu.png"
           alt="COÉ, PARTIU? Travel & Experiences"
-          width={size === 'sm' ? 180 : size === 'md' ? 240 : 300}
-          height={size === 'sm' ? 48 : size === 'md' ? 64 : 80}
+          width={widths[size]}
+          height={size === 'sm' ? 40 : size === 'md' ? 48 : 56}
           className="h-full w-auto object-contain"
           priority
         />
       </div>
-      {showText && (
-        <div className="hidden sm:block">
-          <span className="font-display text-lg font-bold text-primary">
-            COÉ, PARTIU?
-          </span>
-          <span className="block text-xs text-text-secondary font-medium tracking-wide">
-            Travel & Experiences
-          </span>
-        </div>
-      )}
     </Link>
   );
 }
