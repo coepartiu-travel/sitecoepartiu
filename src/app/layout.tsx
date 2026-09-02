@@ -19,38 +19,38 @@ const playfair = Playfair_Display({
   display: 'swap',
 });
 
-// Metadata
+// METADADOS COMPLETOS DA MARCA
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://sitecoepartiu.vercel.app'),
   title: {
     template: '%s | COÉ, PARTIU? Travel & Experiences',
-    default: 'COÉ, PARTIU? — Sua próxima história começa aqui',
+    default: 'COÉ, PARTIU? — O Chile com o Carioca de Atacama',
   },
-  description: 'Viagens e experiências cuidadosamente planejadas para você viver mais e se preocupar menos. Atacama, Chile, Lua de Mel, Escolas e Grupos.',
-  keywords: 'agência de viagens, viagens personalizadas, pacotes de viagem, Atacama, Chile, lua de mel, turismo pedagógico, viagens escolares, viagens em grupo',
-  authors: [{ name: 'COÉ, PARTIU? Travel & Experiences' }],
-  creator: 'COÉ, PARTIU?',
-  publisher: 'COÉ, PARTIU?',
+  description: 'COÉ, PARTIU? Travel & Experiences — Viagens e experiências cuidadosamente planejadas para você viver o Chile com quem viveu lá. Atacama, Santiago, Lua de Mel, Escolas e Grupos.',
+  keywords: 'agência de viagens, viagens personalizadas, pacotes de viagem, Atacama, Chile, lua de mel, turismo pedagógico, viagens escolares, viagens em grupo, Carioca de Atacama',
+  authors: [{ name: 'Carioca de Atacama - COÉ, PARTIU? Travel & Experiences' }],
+  creator: 'Carioca de Atacama',
+  publisher: 'COÉ, PARTIU? Travel & Experiences',
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
     url: process.env.NEXT_PUBLIC_SITE_URL,
     siteName: 'COÉ, PARTIU? Travel & Experiences',
-    title: 'COÉ, PARTIU? — Sua próxima história começa aqui',
-    description: 'Viagens e experiências cuidadosamente planejadas para você viver mais e se preocupar menos.',
+    title: 'COÉ, PARTIU? — O Chile com o Carioca de Atacama',
+    description: 'Viagens e experiências cuidadosamente planejadas para você viver o Chile com quem viveu lá.',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'COÉ, PARTIU? Travel & Experiences',
+        alt: 'COÉ, PARTIU? Travel & Experiences — Carioca de Atacama',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'COÉ, PARTIU? — Sua próxima história começa aqui',
-    description: 'Viagens e experiências cuidadosamente planejadas para você viver mais e se preocupar menos.',
+    title: 'COÉ, PARTIU? — O Chile com o Carioca de Atacama',
+    description: 'Viagens e experiências cuidadosamente planejadas para você viver o Chile com quem viveu lá.',
     images: ['/og-image.jpg'],
   },
   robots: {
