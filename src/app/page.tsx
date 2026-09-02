@@ -135,15 +135,15 @@ export default function Home() {
 
           <div className="container-custom relative z-10 py-20">
             <div className="max-w-3xl">
-              {/* BADGE - CARIOCA DE ATACAMA CORRIGIDO */}
-              <div className="inline-flex items-center gap-3 px-5 py-3 bg-[#1a1a2e]/90 backdrop-blur-md rounded-full border border-[#c9a84c]/40 mb-8 shadow-lg shadow-[#c9a84c]/20">
+              {/* BADGE - CARIOCA DE ATACAMA (SEM FUNDO BRANCO) */}
+              <div className="inline-flex items-center gap-3 px-5 py-3 bg-white/10 backdrop-blur-md rounded-full border border-[#c9a84c]/30 mb-8 shadow-lg shadow-[#c9a84c]/10">
                 <img
                   src="/images/carioca-atacama-logo.png"
                   alt="Carioca de Atacama"
-                  className="h-10 w-auto object-contain"
+                  className="h-8 w-auto object-contain"
                 />
-                <span className="w-px h-8 bg-[#c9a84c]/40" />
-                <span className="text-sm font-semibold tracking-[0.2em] text-[#c9a84c] uppercase">
+                <span className="w-px h-6 bg-white/30" />
+                <span className="text-xs font-semibold tracking-[0.2em] text-white uppercase">
                   Carioca de Atacama
                 </span>
               </div>
@@ -226,7 +226,7 @@ export default function Home() {
         </section>
 
         {/* ============================================================
-            QUEM ESTÁ POR TRÁS - RAUL RAMALHO (TEXTO ATUALIZADO)
+            QUEM ESTÁ POR TRÁS - RAUL RAMALHO
             ============================================================ */}
         <section id="historia" className="py-20 bg-[#faf8f5] border-y border-[#e8e3dc]">
           <div className="container-custom">
@@ -240,19 +240,17 @@ export default function Home() {
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute bottom-4 left-4 bg-[#c9a84c]/90 backdrop-blur-sm px-4 py-2 rounded-full flex items-center gap-2 shadow-lg">
-                    <div className="bg-[#1a1a2e]/80 p-0.5 rounded-full">
-                      <img
-                        src="/images/carioca-atacama-logo.png"
-                        alt="Carioca de Atacama"
-                        className="h-4 w-auto object-contain"
-                      />
-                    </div>
+                    <img
+                      src="/images/carioca-atacama-logo.png"
+                      alt="Carioca de Atacama"
+                      className="h-5 w-auto object-contain"
+                    />
                     <span className="text-xs font-semibold text-[#0a0a1a]">Carioca de Atacama</span>
                   </div>
                 </div>
               </div>
 
-              {/* CONTEÚDO ATUALIZADO */}
+              {/* CONTEÚDO */}
               <div className="md:col-span-2 space-y-5">
                 <div className="flex items-center gap-3">
                   <span className="w-10 h-[2px] bg-[#c9a84c]" />
