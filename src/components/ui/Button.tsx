@@ -25,11 +25,11 @@ export function Button({
     'inline-flex items-center justify-center font-medium transition-all duration-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed';
 
   const variants = {
-    primary: 'bg-primary text-white hover:bg-primary/90 focus:ring-primary/50',
-    secondary: 'bg-secondary text-white hover:bg-secondary/90 focus:ring-secondary/50',
-    outline: 'border-2 border-primary text-primary hover:bg-primary hover:text-white focus:ring-primary/50',
-    ghost: 'text-primary hover:bg-primary/10 focus:ring-primary/50',
-    link: 'text-primary hover:underline focus:ring-primary/50',
+    primary: 'bg-[#1a1a2e] text-white hover:bg-[#2a2a4e] focus:ring-[#1a1a2e]/50',
+    secondary: 'bg-[#c9a84c] text-[#0a0a1a] hover:bg-[#b8983e] focus:ring-[#c9a84c]/50',
+    outline: 'border-2 border-[#1a1a2e] text-[#1a1a2e] hover:bg-[#1a1a2e] hover:text-white focus:ring-[#1a1a2e]/50',
+    ghost: 'text-[#1a1a2e] hover:bg-[#1a1a2e]/10 focus:ring-[#1a1a2e]/50',
+    link: 'text-[#1a1a2e] hover:underline focus:ring-[#1a1a2e]/50',
   };
 
   const sizes = {
