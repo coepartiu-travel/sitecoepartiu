@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Logo } from '@/components/ui/Logo';
-import { Button } from '@/components/ui/Button';
 import { cn } from '@/lib/utils/cn';
 
 const navigation = [
@@ -58,6 +57,7 @@ export function Header() {
                   href={item.href}
                   className={cn(
                     'text-sm font-medium transition-all duration-300 relative group',
+                    // COR DAS LETRAS: Branca no hero, escura no scroll
                     isScrolled ? 'text-[#4a4a5a]' : 'text-white/90',
                     isActive && (isScrolled ? 'text-[#1a1a2e]' : 'text-white'),
                     'hover:text-[#c9a84c]'
