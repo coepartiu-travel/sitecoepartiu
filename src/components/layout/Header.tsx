@@ -58,8 +58,8 @@ export function Header() {
                   className={cn(
                     'text-sm font-medium transition-all duration-300 relative group',
                     // COR DAS LETRAS: Branca no hero, escura no scroll
-                    isScrolled ? 'text-[#4a4a5a]' : 'text-white/90',
-                    isActive && (isScrolled ? 'text-[#1a1a2e]' : 'text-white'),
+                    isScrolled ? 'text-[#1a1a2e]' : 'text-white',
+                    isActive && (isScrolled ? 'text-[#c9a84c]' : 'text-[#c9a84c]'),
                     'hover:text-[#c9a84c]'
                   )}
                 >
@@ -156,8 +156,8 @@ export function Header() {
                     isActive
                       ? 'bg-[#c9a84c]/10 text-[#c9a84c]'
                       : isScrolled
-                        ? 'text-[#4a4a5a] hover:bg-[#f5f0eb]'
-                        : 'text-white/90 hover:bg-white/10'
+                        ? 'text-[#1a1a2e] hover:bg-[#f5f0eb]'
+                        : 'text-white hover:bg-white/10'
                   )}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
