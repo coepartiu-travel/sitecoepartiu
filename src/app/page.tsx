@@ -116,7 +116,7 @@ export default function Home() {
     <div className="bg-white text-[#1a1a2e] font-sans overflow-hidden">
       <main>
         {/* ============================================================
-            HERO - CARIOCA DE ATACAMA (TEXTO REVISADO)
+            HERO - CARIOCA DE ATACAMA
             ============================================================ */}
         <section className="relative min-h-screen flex items-center overflow-hidden">
           <div className="absolute inset-0 z-0">
@@ -135,22 +135,19 @@ export default function Home() {
 
           <div className="container-custom relative z-10 py-20">
             <div className="max-w-3xl">
-              {/* BADGE - CARIOCA DE ATACAMA */}
-              <div className="inline-flex items-center gap-3 px-5 py-3 bg-[#c9a84c]/15 backdrop-blur-md rounded-full border border-[#c9a84c]/30 mb-8">
-                <div className="bg-[#1a1a2e]/80 p-1 rounded-full">
-                  <img
-                    src="/images/carioca-atacama-logo.png"
-                    alt="Carioca de Atacama"
-                    className="h-7 w-auto object-contain"
-                  />
-                </div>
-                <span className="w-px h-7 bg-[#c9a84c]/40" />
-                <span className="text-xs font-medium tracking-[0.2em] text-[#c9a84c] uppercase">
+              {/* BADGE - CARIOCA DE ATACAMA CORRIGIDO */}
+              <div className="inline-flex items-center gap-3 px-5 py-3 bg-[#1a1a2e]/90 backdrop-blur-md rounded-full border border-[#c9a84c]/40 mb-8 shadow-lg shadow-[#c9a84c]/20">
+                <img
+                  src="/images/carioca-atacama-logo.png"
+                  alt="Carioca de Atacama"
+                  className="h-10 w-auto object-contain"
+                />
+                <span className="w-px h-8 bg-[#c9a84c]/40" />
+                <span className="text-sm font-semibold tracking-[0.2em] text-[#c9a84c] uppercase">
                   Carioca de Atacama
                 </span>
               </div>
 
-              {/* TÍTULO PRINCIPAL */}
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold leading-[1.05] tracking-tight">
                 <span className="text-white">Eu não apenas conheço o Chile.</span>
                 <br />
@@ -162,7 +159,6 @@ export default function Home() {
                 </span>
               </h1>
 
-              {/* TEXTO DE APRESENTAÇÃO */}
               <p className="mt-6 text-lg md:text-xl text-white/80 max-w-2xl font-light leading-relaxed">
                 Em 2019, saí de Niterói, no Rio de Janeiro, para viver uma experiência que mudaria minha história.
               </p>
@@ -173,13 +169,11 @@ export default function Home() {
                 Hoje, levo essa experiência para a <span className="text-[#c9a84c] font-medium">COÉ, PARTIU? Travel & Experiences</span>, ajudando você a descobrir o Chile com mais segurança, personalidade e significado.
               </p>
 
-              {/* FRASES DE IMPACTO */}
               <div className="mt-6 space-y-1">
                 <p className="text-[#c9a84c] font-medium text-sm tracking-wide">Do Rio ao Atacama.</p>
                 <p className="text-[#c9a84c]/80 font-medium text-sm tracking-wide">Da experiência vivida à sua próxima história.</p>
               </div>
 
-              {/* CTAs */}
               <div className="mt-10 flex flex-wrap items-center gap-4">
                 <a
                   href="https://wa.me/5534999082607?text=Olá! Vi que você é o Carioca de Atacama e quero planejar minha viagem."
@@ -199,7 +193,6 @@ export default function Home() {
                 </a>
               </div>
 
-              {/* INDICADORES DE AUTORIDADE */}
               <div className="mt-10 flex flex-wrap gap-6">
                 <div className="flex items-center gap-3">
                   <span className="text-2xl">🌵</span>
@@ -233,7 +226,7 @@ export default function Home() {
         </section>
 
         {/* ============================================================
-            QUEM ESTÁ POR TRÁS - RAUL RAMALHO (TEXTO REVISADO)
+            QUEM ESTÁ POR TRÁS - RAUL RAMALHO (TEXTO ATUALIZADO)
             ============================================================ */}
         <section id="historia" className="py-20 bg-[#faf8f5] border-y border-[#e8e3dc]">
           <div className="container-custom">
@@ -259,7 +252,7 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* CONTEÚDO */}
+              {/* CONTEÚDO ATUALIZADO */}
               <div className="md:col-span-2 space-y-5">
                 <div className="flex items-center gap-3">
                   <span className="w-10 h-[2px] bg-[#c9a84c]" />
@@ -270,18 +263,25 @@ export default function Home() {
                   Raul Ramalho
                 </h2>
                 <p className="text-xl text-[#c9a84c] font-display font-semibold">
-                  O Carioca de Atacama.
+                  O Carioca de Atacama
                 </p>
                 
                 <p className="text-[#4a4a5a] text-base leading-relaxed max-w-2xl">
-                  Nascido em Niterói, no Rio de Janeiro, Raul viveu durante um ano no Atacama, onde trabalhou com turismo, foi guia e administrou uma agência local.
+                  Carioca de Niterói, Raul Ramalho transformou sua paixão por viagens em uma missão: ajudar pessoas a viverem destinos que realmente marcam a vida.
                 </p>
                 <p className="text-[#4a4a5a] text-base leading-relaxed max-w-2xl">
-                  Foi dessa experiência que nasceu o <span className="text-[#c9a84c] font-semibold">Carioca de Atacama</span> — hoje, o consultor principal da <span className="font-semibold text-[#1a1a2e]">COÉ, PARTIU?</span>, levando conhecimento vivido e uma visão mais humana para cada viagem.
+                  Ele morou no Atacama, no Chile, e conhece de perto a essência do turismo e tudo aquilo que faz uma viagem deixar de ser apenas um roteiro para se tornar uma experiência.
+                </p>
+                <p className="text-[#4a4a5a] text-base leading-relaxed max-w-2xl">
+                  Hoje, à frente da <span className="font-semibold text-[#1a1a2e]">COÉ, PARTIU? Travel & Experiences</span>, leva esse olhar para destinos no Brasil e no mundo, conectando cada viajante ao lugar, à experiência e ao momento certo.
                 </p>
 
                 <div className="pt-2">
-                  <p className="text-sm text-[#c9a84c] font-medium tracking-wide">Uma história real por trás de cada destino.</p>
+                  <p className="text-base font-display font-semibold text-[#1a1a2e]">
+                    Você escolhe o destino.
+                    <br />
+                    <span className="text-[#c9a84c]">A gente ajuda a transformar a viagem em uma história para contar.</span>
+                  </p>
                 </div>
 
                 <a
