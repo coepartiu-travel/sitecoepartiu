@@ -37,13 +37,12 @@ export function Header() {
     <header
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
-        // SEMPRE FUNDO BRANCO
-        'bg-white shadow-soft border-b border-[#e8e3dc]/30'
+        'bg-white shadow-sm border-b border-[#e8e3dc]/50'
       )}
     >
       <nav className="container-custom py-3" aria-label="Global">
         <div className="flex items-center justify-between">
-          {/* LOGO */}
+          {/* LOGO COÉ, PARTIU? */}
           <Logo size="md" showText={false} />
 
           {/* DESKTOP NAVIGATION */}
@@ -56,7 +55,6 @@ export function Header() {
                   href={item.href}
                   className={cn(
                     'text-sm font-medium transition-all duration-300 relative group',
-                    // SEMPRE ESCURA
                     'text-[#1a1a2e]',
                     isActive && 'text-[#c9a84c]',
                     'hover:text-[#c9a84c]'
@@ -74,8 +72,16 @@ export function Header() {
             })}
           </div>
 
-          {/* DESKTOP CTA */}
-          <div className="hidden lg:block">
+          {/* DESKTOP CTA + BADGE CARIOCA */}
+          <div className="hidden lg:flex items-center gap-4">
+            <div className="flex items-center gap-2 px-3 py-1.5 bg-[#1a1a2e]/5 rounded-full border border-[#c9a84c]/20">
+              <img
+                src="/images/carioca-atacama-logo.png"
+                alt="Carioca de Atacama"
+                className="h-5 w-auto object-contain"
+              />
+              <span className="text-[10px] font-semibold text-[#c9a84c] tracking-wide uppercase">Carioca</span>
+            </div>
             <a
               href="https://wa.me/5534999082607?text=Olá! Quero planejar minha viagem com o Carioca de Atacama"
               target="_blank"
@@ -146,6 +152,16 @@ export function Header() {
                 </Link>
               );
             })}
+            <div className="px-4 pt-2">
+              <div className="flex items-center gap-2 px-3 py-2 bg-[#1a1a2e]/5 rounded-full border border-[#c9a84c]/20 w-fit">
+                <img
+                  src="/images/carioca-atacama-logo.png"
+                  alt="Carioca de Atacama"
+                  className="h-5 w-auto object-contain"
+                />
+                <span className="text-[10px] font-semibold text-[#c9a84c] tracking-wide uppercase">Carioca de Atacama</span>
+              </div>
+            </div>
             <div className="pt-4 px-4">
               <a
                 href="https://wa.me/5534999082607?text=Olá! Quero planejar minha viagem com o Carioca de Atacama"
