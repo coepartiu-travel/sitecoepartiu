@@ -57,7 +57,7 @@ export function Header() {
                   href={item.href}
                   className={cn(
                     'text-sm font-medium transition-all duration-300 relative group',
-                    // COR DAS LETRAS: Branca no hero, escura no scroll
+                    // COR DAS LETRAS: SEMPRE BRANCA NO HERO, ESCURA NO SCROLL
                     isScrolled ? 'text-[#1a1a2e]' : 'text-white',
                     isActive && (isScrolled ? 'text-[#c9a84c]' : 'text-[#c9a84c]'),
                     'hover:text-[#c9a84c]'
