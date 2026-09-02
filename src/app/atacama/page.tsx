@@ -104,17 +104,15 @@ export default function AtacamaPage() {
           <div className="absolute bottom-10 left-10 w-48 h-48 bg-[#c9a84c]/5 rounded-full blur-3xl" />
 
           <div className="relative z-10 max-w-3xl">
-            {/* BADGE CARIOCA */}
-            <div className="inline-flex items-center gap-3 px-5 py-3 bg-[#c9a84c]/20 backdrop-blur-sm rounded-full border border-[#c9a84c]/40 mb-8 shadow-lg shadow-[#c9a84c]/10">
-              <div className="bg-[#1a1a2e] p-1.5 rounded-full">
-                <img
-                  src="/images/carioca-atacama-logo.png"
-                  alt="Carioca de Atacama"
-                  className="h-7 w-auto object-contain"
-                />
-              </div>
-              <span className="w-px h-7 bg-[#c9a84c]/40" />
-              <span className="text-xs font-semibold tracking-[0.2em] text-[#c9a84c] uppercase">
+            {/* BADGE CARIOCA (SEM FUNDO BRANCO) */}
+            <div className="inline-flex items-center gap-3 px-5 py-3 bg-white/10 backdrop-blur-sm rounded-full border border-[#c9a84c]/30 mb-8 shadow-lg shadow-[#c9a84c]/10">
+              <img
+                src="/images/carioca-atacama-logo.png"
+                alt="Carioca de Atacama"
+                className="h-8 w-auto object-contain"
+              />
+              <span className="w-px h-6 bg-white/30" />
+              <span className="text-xs font-semibold tracking-[0.2em] text-white uppercase">
                 Carioca de Atacama
               </span>
             </div>
@@ -151,11 +149,11 @@ export default function AtacamaPage() {
         </section>
 
         {/* ============================================================
-            QUEM É O CARIOCA - VERSÃO RESUMIDA E EQUILIBRADA
+            QUEM É O CARIOCA - VERSÃO RESUMIDA
             ============================================================ */}
         <section className="mb-16 bg-[#faf8f5] rounded-3xl p-8 md:p-10 border border-[#e8e3dc]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            {/* FOTO - PROPORCIONAL */}
+            {/* FOTO */}
             <div className="relative rounded-2xl overflow-hidden aspect-square bg-gradient-to-br from-[#1a1a2e] to-[#0a0a1a] shadow-lg max-w-sm mx-auto md:mx-0">
               <img
                 src="/images/atacama/carioca-atacama.jpg"
@@ -163,18 +161,16 @@ export default function AtacamaPage() {
                 className="w-full h-full object-cover"
               />
               <div className="absolute bottom-4 left-4 bg-[#c9a84c]/90 backdrop-blur-sm px-4 py-2 rounded-full flex items-center gap-2 shadow-lg">
-                <div className="bg-[#1a1a2e]/80 p-0.5 rounded-full">
-                  <img
-                    src="/images/carioca-atacama-logo.png"
-                    alt="Carioca de Atacama"
-                    className="h-4 w-auto object-contain"
-                  />
-                </div>
+                <img
+                  src="/images/carioca-atacama-logo.png"
+                  alt="Carioca de Atacama"
+                  className="h-5 w-auto object-contain"
+                />
                 <span className="text-xs font-semibold text-[#0a0a1a]">Carioca de Atacama</span>
               </div>
             </div>
 
-            {/* CONTEÚDO - EQUILIBRADO */}
+            {/* CONTEÚDO */}
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <span className="w-10 h-[2px] bg-[#c9a84c]" />
