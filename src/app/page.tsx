@@ -116,122 +116,210 @@ export default function Home() {
     <div className="bg-white text-[#1a1a2e] font-sans overflow-hidden">
       <main>
         {/* ============================================================
-            HERO - ULTRA PREMIUM
+            HERO - CARIOCA DE ATACAMA
             ============================================================ */}
         <section className="relative min-h-screen flex items-center overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
-              src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=2200&q=90"
-              alt="Viagem dos sonhos - COÉ, PARTIU?"
+              src="https://images.unsplash.com/photo-1569529461291-04a377959d11?auto=format&fit=crop&w=2200&q=90"
+              alt="Atacama - Carioca de Atacama"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-white/85 via-white/60 to-transparent" />
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white/50" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a1a]/85 via-[#1a1a2e]/70 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0a0a1a]/50" />
           </div>
 
-          <div className="absolute top-20 right-20 z-0 opacity-30">
+          <div className="absolute top-20 right-20 z-0 opacity-20">
             <div className="w-96 h-96 rounded-full bg-[#c9a84c]/10 blur-3xl" />
-          </div>
-          <div className="absolute bottom-20 left-20 z-0 opacity-20">
-            <div className="w-64 h-64 rounded-full bg-[#c9a84c]/5 blur-3xl" />
           </div>
 
           <div className="container-custom relative z-10 py-20">
             <div className="max-w-3xl">
-              <div className="inline-flex items-center gap-3 px-5 py-2.5 bg-white/80 backdrop-blur-md rounded-full shadow-lg border border-white/50 mb-8">
-                <span className="w-2 h-2 rounded-full bg-[#c9a84c] animate-pulse" />
-                <span className="text-xs font-medium tracking-[0.2em] text-[#1a1a2e] uppercase">
-                  COÉ, PARTIU? Travel & Experiences
+              {/* BADGE - CARIOCA DE ATACAMA COM LOGO */}
+              <div className="inline-flex items-center gap-3 px-5 py-2.5 bg-[#c9a84c]/10 backdrop-blur-md rounded-full border border-[#c9a84c]/20 mb-8">
+                <img
+                  src="/images/carioca-atacama-logo.png"
+                  alt="Carioca de Atacama"
+                  className="h-6 w-auto object-contain"
+                />
+                <span className="w-px h-6 bg-[#c9a84c]/30" />
+                <span className="text-xs font-medium tracking-[0.2em] text-[#c9a84c] uppercase">
+                  Carioca de Atacama
                 </span>
-                <span className="text-xs font-light text-[#c9a84c]">✦</span>
               </div>
 
-              <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold leading-[1.05] tracking-tight text-[#1a1a2e]">
-                O mundo fica
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold leading-[1.05] tracking-tight text-white">
+                Eu não apenas conheço o Chile.
                 <br />
-                <span className="relative">
-                  <span className="bg-gradient-to-r from-[#c9a84c] via-[#e8c87a] to-[#c9a84c] bg-clip-text text-transparent">
-                    mais bonito
+                <span className="relative inline-block mt-2">
+                  <span className="bg-gradient-to-r from-[#c9a84c] via-[#f0d080] to-[#c9a84c] bg-clip-text text-transparent">
+                    Eu sou o Carioca de Atacama.
                   </span>
-                  <span className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-[#c9a84c]/30 via-[#e8c87a]/30 to-[#c9a84c]/30 rounded-full blur-sm" />
+                  <span className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-[#c9a84c]/30 via-[#e8c87a]/50 to-[#c9a84c]/30 rounded-full blur-sm" />
                 </span>
-                <br />
-                quando a gente parte.
               </h1>
 
-              <p className="mt-8 text-xl md:text-2xl text-[#1a1a2e]/80 max-w-2xl font-light leading-relaxed tracking-wide">
-                A COÉ, PARTIU? transforma vontade de viajar em experiências com sentido,
-                cuidado e espaço para o inesperado.
+              <p className="mt-6 text-lg md:text-xl text-white/80 max-w-2xl font-light leading-relaxed">
+                Durante um ano, vivi no Atacama. Trabalhei com turismo, fui guia, administrei agência. 
+                Conheci cada duna, cada lagoa, cada nascer do sol no deserto mais árido do mundo.
               </p>
 
-              <div className="mt-4 flex flex-wrap items-center gap-4 text-sm text-[#4a4a5a]">
-                <span className="flex items-center gap-2">
-                  <span className="w-1 h-1 rounded-full bg-[#c9a84c]" />
-                  Atendimento humano
-                </span>
-                <span className="flex items-center gap-2">
-                  <span className="w-1 h-1 rounded-full bg-[#c9a84c]" />
-                  Curadoria exclusiva
-                </span>
-                <span className="flex items-center gap-2">
-                  <span className="w-1 h-1 rounded-full bg-[#c9a84c]" />
-                  Parceiros selecionados
-                </span>
-              </div>
+              <p className="mt-3 text-[#c9a84c] font-medium text-sm tracking-wide">
+                Do Rio de Janeiro ao Atacama. Do sonho à experiência.
+              </p>
 
-              <div className="mt-10 flex flex-wrap items-center gap-6">
+              <div className="mt-10 flex flex-wrap items-center gap-4">
                 <a
-                  href="#planejar"
-                  className="group inline-flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-[#c9a84c] to-[#b8983e] hover:from-[#b8983e] hover:to-[#a08830] text-[#0a0a1a] font-semibold rounded-full transition-all duration-500 shadow-2xl shadow-[#c9a84c]/30 hover:shadow-[#c9a84c]/50 hover:scale-105"
+                  href="https://wa.me/5534999082607?text=Olá! Vi que você é o Carioca de Atacama e quero conhecer o Chile com quem viveu lá."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#c9a84c] to-[#b8983e] hover:from-[#b8983e] hover:to-[#a08830] text-[#0a0a1a] font-semibold rounded-full transition-all duration-500 shadow-2xl shadow-[#c9a84c]/30 hover:shadow-[#c9a84c]/50 hover:scale-105"
                 >
-                  <span className="text-lg">Quero viver essa viagem</span>
+                  <span>Quero conhecer o Chile com quem viveu lá</span>
                   <ArrowUpRight className="h-5 w-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                 </a>
                 <a
-                  href="#experiencias"
-                  className="group inline-flex items-center gap-3 px-6 py-4 text-[#1a1a2e] hover:text-[#c9a84c] transition-colors text-lg font-medium border-b-2 border-transparent hover:border-[#c9a84c]"
+                  href="#historia"
+                  className="group inline-flex items-center gap-2 px-6 py-4 text-white/70 hover:text-white transition-colors text-sm font-medium border-b border-transparent hover:border-[#c9a84c]"
                 >
-                  Descobrir possibilidades
-                  <ArrowRight className="h-5 w-5 group-hover:translate-x-2 transition-transform" />
+                  Conheça minha história
+                  <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </a>
               </div>
 
-              <div className="mt-12 flex flex-wrap gap-8">
+              <div className="mt-10 flex flex-wrap gap-6">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-[#c9a84c]/10 flex items-center justify-center text-[#c9a84c] text-lg font-bold">+</div>
+                  <span className="text-2xl">🌵</span>
                   <div>
-                    <span className="block text-sm font-semibold text-[#1a1a2e]">500+</span>
-                    <span className="text-xs text-[#4a4a5a]">viagens realizadas</span>
+                    <span className="block text-sm font-medium text-white">Viveu no Atacama</span>
+                    <span className="text-xs text-white/50">1 ano de experiência real</span>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-[#c9a84c]/10 flex items-center justify-center text-[#c9a84c] text-lg font-bold">✦</div>
+                  <span className="text-2xl">🏔️</span>
                   <div>
-                    <span className="block text-sm font-semibold text-[#1a1a2e]">4.9★</span>
-                    <span className="text-xs text-[#4a4a5a]">satisfação dos clientes</span>
+                    <span className="block text-sm font-medium text-white">Guia e Agente</span>
+                    <span className="text-xs text-white/50">Trabalhou no turismo local</span>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-[#c9a84c]/10 flex items-center justify-center text-[#c9a84c] text-lg font-bold">🌍</div>
+                  <span className="text-2xl">🤝</span>
                   <div>
-                    <span className="block text-sm font-semibold text-[#1a1a2e]">20+</span>
-                    <span className="text-xs text-[#4a4a5a]">destinos exclusivos</span>
+                    <span className="block text-sm font-medium text-white">Consultor Especialista</span>
+                    <span className="text-xs text-white/50">Conhecimento autêntico do destino</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-[#1a1a2e]/30">
-            <span className="text-xs tracking-[0.2em] uppercase font-medium">Explore</span>
+          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 text-white/30">
+            <span className="text-xs tracking-[0.2em] uppercase font-medium">Descubra</span>
             <div className="w-px h-12 bg-gradient-to-b from-[#c9a84c] to-transparent" />
           </div>
         </section>
 
         {/* ============================================================
-            PARA QUEM - ULTRA PREMIUM
+            QUEM ESTÁ POR TRÁS DA COÉ, PARTIU? - CARIOCA DE ATACAMA
             ============================================================ */}
-        <section id="para-quem" className="py-28 bg-gradient-to-b from-white to-[#faf8f5]">
+        <section id="historia" className="py-28 relative overflow-hidden bg-[#faf8f5]">
+          <div className="absolute inset-0 bg-gradient-to-br from-[#faf8f5] via-white to-[#f0ece6]" />
+          <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#c9a84c]/5 rounded-full blur-3xl" />
+
+          <div className="container-custom relative z-10">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+              <div className="relative order-2 lg:order-1">
+                <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/5] bg-gradient-to-br from-[#1a1a2e] to-[#0a0a1a]">
+                  <div className="absolute inset-0 flex flex-col items-center justify-center text-white/30">
+                    <span className="text-6xl mb-4">🌵</span>
+                    <span className="text-sm font-medium tracking-wide">Foto do Carioca de Atacama</span>
+                    <span className="text-xs opacity-50 mt-1">em breve</span>
+                  </div>
+                  <div className="absolute bottom-6 left-6 bg-[#c9a84c]/90 backdrop-blur-sm px-4 py-2 rounded-full flex items-center gap-2">
+                    <img
+                      src="/images/carioca-atacama-logo.png"
+                      alt="Carioca de Atacama"
+                      className="h-5 w-auto object-contain"
+                    />
+                    <span className="text-xs font-semibold text-[#0a0a1a] tracking-wide">Carioca de Atacama</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="order-1 lg:order-2 space-y-8">
+                <div>
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className="w-12 h-[2px] bg-[#c9a84c]" />
+                    <span className="text-sm font-medium tracking-[0.3em] text-[#c9a84c] uppercase">Quem está por trás</span>
+                  </div>
+                  <h2 className="text-4xl md:text-5xl font-display font-bold text-[#1a1a2e] leading-[1.1]">
+                    Sou o <span className="text-[#c9a84c]">Carioca de Atacama</span>
+                  </h2>
+                </div>
+
+                <div className="space-y-4 text-[#4a4a5a] leading-relaxed">
+                  <p>Nasci no Rio de Janeiro, mas foi no deserto mais árido do mundo que encontrei minha história.</p>
+                  <p>Em abril de 2019, cheguei a Calama, no Chile, com destino ao Atacama. Uma mochila, um sonho e zero certezas.</p>
+                  <p>Durante um ano, vivi no Atacama. Primeiro em uma hospedaria construída em adobe. Depois, consegui alugar minha primeira casa.</p>
+                  <p>Comecei minha trajetória trabalhando como agente de turismo em uma agência renomada da região.</p>
+                  <p>Precisei me reinventar. Aprendi espanhol latino, treinei meu inglês, mergulhei na cultura local.</p>
+                  <p>Enfrentei temperaturas abaixo de zero, conheci a rotina de uma pequena cidade e, aos poucos, conquistei meu espaço.</p>
+                  <p className="font-medium text-[#1a1a2e]">
+                    Naquela pequena rua de terra chamada <span className="text-[#c9a84c]">Caracoles</span>, construí minha trajetória no turismo.
+                  </p>
+                  <p>Com o tempo, adquiri conhecimento, administrei uma agência e também me tornei guia turístico.</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
+              {[
+                { emoji: '🏜️', label: 'Caminhei por dunas' },
+                { emoji: '🏊', label: 'Mergulhei em lagoas de sal' },
+                { emoji: '❄️', label: 'Enfrentei -11°C' },
+                { emoji: '🌋', label: 'Subi vulcões' },
+              ].map((item) => (
+                <div key={item.label} className="bg-white/80 backdrop-blur-sm p-4 rounded-2xl text-center border border-white/50 shadow-sm">
+                  <span className="text-3xl block mb-1">{item.emoji}</span>
+                  <span className="text-xs text-[#4a4a5a] font-medium">{item.label}</span>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-12 max-w-3xl mx-auto text-center space-y-4">
+              <div className="w-20 h-[2px] bg-[#c9a84c] mx-auto" />
+              <p className="text-lg text-[#4a4a5a] leading-relaxed font-light">
+                Conheci pessoas de diferentes partes do mundo. E, principalmente, conheci profundamente o universo do turismo no Atacama.
+              </p>
+              <p className="text-xl text-[#1a1a2e] font-display font-semibold">
+                <span className="text-[#c9a84c]">Hoje</span>, transformo essa experiência em viagens personalizadas para quem quer conhecer o Chile de verdade.
+              </p>
+              <div className="pt-4">
+                <p className="text-lg font-display font-bold text-[#1a1a2e]">
+                  Você escolhe o destino.
+                  <br />
+                  <span className="text-[#c9a84c]">Eu cuido do caminho.</span>
+                </p>
+              </div>
+              <div className="pt-4">
+                <a
+                  href="https://wa.me/5534999082607?text=Olá! Quero conhecer o Chile com o Carioca de Atacama"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#c9a84c] to-[#b8983e] hover:from-[#b8983e] hover:to-[#a08830] text-[#0a0a1a] font-semibold rounded-full transition-all duration-500 shadow-2xl shadow-[#c9a84c]/20 hover:shadow-[#c9a84c]/40 hover:scale-105"
+                >
+                  Planejar minha viagem com o Carioca de Atacama
+                  <ArrowUpRight className="h-5 w-5" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ============================================================
+            PARA QUEM
+            ============================================================ */}
+        <section className="py-28 bg-gradient-to-b from-white to-[#faf8f5]">
           <div className="container-custom">
             <div className="text-center max-w-4xl mx-auto mb-20">
               <div className="flex items-center justify-center gap-4 mb-6">
@@ -309,7 +397,7 @@ export default function Home() {
         {/* ============================================================
             EXPERIÊNCIAS EM DESTAQUE
             ============================================================ */}
-        <section id="experiencias" className="py-28 bg-white">
+        <section className="py-28 bg-white">
           <div className="container-custom">
             <div className="text-center max-w-3xl mx-auto mb-20 space-y-6">
               <div className="flex items-center justify-center gap-4">
@@ -399,26 +487,18 @@ export default function Home() {
         </section>
 
         {/* ============================================================
-            COMO FUNCIONA - INTERNACIONAL ULTRA PREMIUM
+            COMO FUNCIONA
             ============================================================ */}
-        <section id="processo" className="py-32 relative overflow-hidden bg-[#0a0a1a]">
-          {/* Fundo com gradiente internacional */}
+        <section className="py-32 relative overflow-hidden bg-[#0a0a1a]">
           <div className="absolute inset-0">
             <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a1a] via-[#1a1a2e] to-[#0a0a1a]" />
             <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[#c9a84c]/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3" />
             <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[#c9a84c]/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3" />
-            
-            {/* Linhas decorativas */}
             <div className="absolute top-1/3 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#c9a84c]/10 to-transparent" />
             <div className="absolute top-2/3 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#c9a84c]/10 to-transparent" />
-            
-            {/* Elementos dourados decorativos */}
-            <div className="absolute top-10 left-10 w-20 h-20 border border-[#c9a84c]/10 rounded-full" />
-            <div className="absolute bottom-10 right-10 w-32 h-32 border border-[#c9a84c]/10 rounded-full" />
           </div>
 
           <div className="container-custom relative z-10">
-            {/* CABEÇALHO */}
             <div className="text-center max-w-4xl mx-auto mb-24 space-y-8">
               <div className="flex items-center justify-center gap-6">
                 <div className="w-20 h-[2px] bg-gradient-to-r from-transparent to-[#c9a84c]" />
@@ -455,95 +535,36 @@ export default function Home() {
               </p>
             </div>
 
-            {/* CARDS PREMIUM */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {[
-                { 
-                  num: '01', 
-                  icon: Compass, 
-                  title: 'Você conta o sonho', 
-                  desc: 'O que imaginam, o que precisam e o que não pode faltar.',
-                  gradient: 'from-amber-500/10 to-orange-500/10',
-                  border: 'hover:border-amber-400/50',
-                  iconBg: 'bg-amber-500/20',
-                  iconColor: 'text-amber-400',
-                },
-                { 
-                  num: '02', 
-                  icon: Sparkle, 
-                  title: 'A gente escuta de verdade', 
-                  desc: 'Entendemos o perfil de vocês para filtrar o excesso.',
-                  gradient: 'from-purple-500/10 to-pink-500/10',
-                  border: 'hover:border-purple-400/50',
-                  iconBg: 'bg-purple-500/20',
-                  iconColor: 'text-purple-400',
-                },
-                { 
-                  num: '03', 
-                  icon: Heart, 
-                  title: 'Criamos o possível', 
-                  desc: 'Um roteiro com intenção, beleza e escolhas que fazem sentido.',
-                  gradient: 'from-rose-500/10 to-pink-500/10',
-                  border: 'hover:border-rose-400/50',
-                  iconBg: 'bg-rose-500/20',
-                  iconColor: 'text-rose-400',
-                },
-                { 
-                  num: '04', 
-                  icon: ArrowUpRight, 
-                  title: 'Vocês vivem a história', 
-                  desc: 'Com a tranquilidade de saber que existe alguém cuidando.',
-                  gradient: 'from-blue-500/10 to-indigo-500/10',
-                  border: 'hover:border-blue-400/50',
-                  iconBg: 'bg-blue-500/20',
-                  iconColor: 'text-blue-400',
-                },
+                { num: '01', icon: Compass, title: 'Você conta o sonho', desc: 'O que imaginam, o que precisam e o que não pode faltar.' },
+                { num: '02', icon: Sparkle, title: 'A gente escuta de verdade', desc: 'Entendemos o perfil de vocês para filtrar o excesso.' },
+                { num: '03', icon: Heart, title: 'Criamos o possível', desc: 'Um roteiro com intenção, beleza e escolhas que fazem sentido.' },
+                { num: '04', icon: ArrowUpRight, title: 'Vocês vivem a história', desc: 'Com a tranquilidade de saber que existe alguém cuidando.' },
               ].map((step, i) => (
-                <div 
-                  key={i} 
-                  className={`group relative bg-gradient-to-br ${step.gradient} backdrop-blur-sm p-8 rounded-3xl border border-white/10 ${step.border} transition-all duration-500 hover:shadow-2xl hover:-translate-y-3 hover:scale-[1.02] hover:shadow-[#c9a84c]/10`}
-                >
-                  <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-[#c9a84c]/0 via-[#c9a84c]/0 to-[#c9a84c]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  
+                <div key={i} className="group relative bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm p-8 rounded-3xl border border-white/10 hover:border-[#c9a84c]/30 transition-all duration-500 hover:shadow-2xl hover:-translate-y-3 hover:scale-[1.02]">
                   <div className="absolute -top-3 -right-3 text-7xl font-display font-bold text-white/5 group-hover:text-white/10 transition-all duration-500 group-hover:scale-110 group-hover:rotate-3">
                     {step.num}
                   </div>
-
                   <div className="relative z-10">
-                    <div className={`w-16 h-16 rounded-2xl ${step.iconBg} ${step.iconColor} flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-lg group-hover:shadow-xl`}>
+                    <div className="w-16 h-16 rounded-2xl bg-[#c9a84c]/20 text-[#c9a84c] flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-lg group-hover:shadow-xl">
                       <step.icon className="h-7 w-7" />
                     </div>
-                    
                     <h3 className="text-2xl font-display font-bold text-white mb-3 group-hover:text-[#c9a84c] transition-colors duration-300">
                       {step.title}
                     </h3>
-                    
-                    <p className="text-white/50 text-base leading-relaxed">
-                      {step.desc}
-                    </p>
-                    
+                    <p className="text-white/50 text-base leading-relaxed">{step.desc}</p>
                     <div className="mt-6 w-12 h-[2px] bg-[#c9a84c]/30 group-hover:w-full group-hover:bg-[#c9a84c] transition-all duration-500" />
                   </div>
                 </div>
               ))}
             </div>
 
-            {/* LINHA DE CONEXÃO */}
-            <div className="hidden lg:block relative mt-8">
-              <div className="absolute left-[12.5%] right-[12.5%] top-1/2 h-px bg-gradient-to-r from-[#c9a84c]/10 via-[#c9a84c]/30 to-[#c9a84c]/10" />
-              {[0, 1, 2, 3].map((i) => (
-                <div
-                  key={i}
-                  className="absolute top-1/2 w-3 h-3 rounded-full bg-[#c9a84c]/20 -translate-y-1/2"
-                  style={{ left: `${12.5 + i * 25}%` }}
-                />
-              ))}
-            </div>
-
-            {/* CTA */}
             <div className="mt-16 text-center">
               <a
-                href="#planejar"
+                href="https://wa.me/5534999082607?text=Olá! Quero começar minha jornada com o Carioca de Atacama"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group inline-flex items-center gap-4 px-10 py-5 bg-gradient-to-r from-[#c9a84c] to-[#b8983e] hover:from-[#b8983e] hover:to-[#a08830] text-[#0a0a1a] font-semibold rounded-full transition-all duration-500 shadow-2xl shadow-[#c9a84c]/20 hover:shadow-[#c9a84c]/40 hover:scale-105"
               >
                 <span className="text-lg">Quero começar minha jornada</span>
@@ -579,10 +600,7 @@ export default function Home() {
                 { emoji: '🛡️', title: 'Segurança', desc: 'Parceiros e fornecedores cuidadosamente selecionados.' },
                 { emoji: '📸', title: 'Experiência', desc: 'Pensamos além do destino, criamos memórias.' },
               ].map((item) => (
-                <div
-                  key={item.title}
-                  className="group bg-[#faf8f5] p-8 rounded-3xl text-center transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 border border-transparent hover:border-[#c9a84c]/30"
-                >
+                <div key={item.title} className="group bg-[#faf8f5] p-8 rounded-3xl text-center transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 border border-transparent hover:border-[#c9a84c]/30">
                   <span className="text-4xl block mb-4 group-hover:scale-110 transition-transform duration-500">{item.emoji}</span>
                   <h3 className="font-display font-semibold text-[#1a1a2e]">{item.title}</h3>
                   <p className="text-[#4a4a5a] text-sm mt-2 leading-relaxed">{item.desc}</p>
@@ -595,7 +613,7 @@ export default function Home() {
         {/* ============================================================
             SOBRE NÓS
             ============================================================ */}
-        <section id="sobre" className="py-28 bg-[#faf8f5]">
+        <section className="py-28 bg-[#faf8f5]">
           <div className="container-custom">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3] bg-[#f0ece6]">
@@ -666,14 +684,11 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
-                { text: 'A COÉ, PARTIU? transformou nossa lua de mel em um conto de fadas. Cada detalhe foi pensado com carinho.', author: 'Ana e Pedro', place: 'Lua de Mel - Atacama' },
+                { text: 'O Carioca de Atacama transformou nossa viagem. Ele realmente conhece cada detalhe do deserto.', author: 'Ana e Pedro', place: 'Lua de Mel - Atacama' },
                 { text: 'Nossa viagem em família foi perfeita. Roteiro adaptado para todas as idades, com surpresas incríveis.', author: 'Família Silva', place: 'Férias - Alagoas' },
                 { text: 'A excursão escolar foi um sucesso! Os alunos aprenderam muito e voltaram inspirados.', author: 'Escola Nova Geração', place: 'Turismo Pedagógico - Chile' },
               ].map((testimonial, i) => (
-                <div
-                  key={i}
-                  className="bg-[#faf8f5] p-8 rounded-3xl transition-all duration-500 hover:shadow-xl border border-transparent hover:border-[#c9a84c]/30"
-                >
+                <div key={i} className="bg-[#faf8f5] p-8 rounded-3xl transition-all duration-500 hover:shadow-xl border border-transparent hover:border-[#c9a84c]/30">
                   <div className="flex text-[#c9a84c] mb-4">
                     <span>★★★★★</span>
                   </div>
@@ -692,19 +707,15 @@ export default function Home() {
             FORMULÁRIO - "COMEÇA COM UMA CONVERSA"
             ============================================================ */}
         <section id="planejar" className="py-32 relative overflow-hidden bg-[#0a0a1a]">
-          {/* Fundo premium */}
           <div className="absolute inset-0">
             <div className="absolute inset-0 bg-gradient-to-br from-[#0a0a1a] via-[#1a1a2e] to-[#0a0a1a]" />
             <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-[#c9a84c]/5 rounded-full blur-3xl -translate-y-1/2 -translate-x-1/3" />
             <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-[#c9a84c]/5 rounded-full blur-3xl translate-y-1/2 translate-x-1/3" />
-            
-            {/* Linhas decorativas */}
             <div className="absolute top-1/2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#c9a84c]/10 to-transparent" />
           </div>
 
           <div className="container-custom max-w-5xl relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-              {/* LADO ESQUERDO - CONTEÚDO */}
               <div className="space-y-8">
                 <div>
                   <div className="flex items-center gap-4 mb-6">
@@ -738,7 +749,6 @@ export default function Home() {
                   </div>
                 </div>
 
-                {/* Selo de confiança */}
                 <div className="flex items-center gap-5 bg-white/5 rounded-2xl p-5 border border-white/10 backdrop-blur-sm">
                   <div className="flex -space-x-2">
                     <div className="w-9 h-9 rounded-full bg-[#c9a84c]/20 flex items-center justify-center text-xs font-bold text-[#c9a84c] border border-[#c9a84c]/30">A</div>
@@ -752,26 +762,16 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* LADO DIREITO - FORMULÁRIO */}
               <div className="bg-white/5 backdrop-blur-xl p-10 rounded-3xl border border-white/10 shadow-2xl shadow-[#c9a84c]/5">
                 <form action="/api/leads" method="POST" className="space-y-6">
                   <div>
                     <label className="block text-sm font-medium text-white/70 mb-2">Como podemos chamar você? <span className="text-[#c9a84c]">*</span></label>
-                    <input
-                      type="text"
-                      name="name"
-                      required
-                      placeholder="Seu nome"
-                      className="w-full px-5 py-4 bg-white/10 border border-white/10 rounded-2xl text-white placeholder:text-white/30 focus:outline-none focus:border-[#c9a84c] focus:ring-2 focus:ring-[#c9a84c]/20 transition-all duration-300"
-                    />
+                    <input type="text" name="name" required placeholder="Seu nome" className="w-full px-5 py-4 bg-white/10 border border-white/10 rounded-2xl text-white placeholder:text-white/30 focus:outline-none focus:border-[#c9a84c] focus:ring-2 focus:ring-[#c9a84c]/20 transition-all duration-300" />
                   </div>
                   
                   <div>
                     <label className="block text-sm font-medium text-white/70 mb-2">Qual experiência combina com o momento? <span className="text-[#c9a84c]">*</span></label>
-                    <select
-                      name="tripType"
-                      className="w-full px-5 py-4 bg-white/10 border border-white/10 rounded-2xl text-white placeholder:text-white/30 focus:outline-none focus:border-[#c9a84c] focus:ring-2 focus:ring-[#c9a84c]/20 transition-all duration-300 appearance-none"
-                    >
+                    <select name="tripType" className="w-full px-5 py-4 bg-white/10 border border-white/10 rounded-2xl text-white placeholder:text-white/30 focus:outline-none focus:border-[#c9a84c] focus:ring-2 focus:ring-[#c9a84c]/20 transition-all duration-300 appearance-none">
                       <option value="" className="text-[#1a1a2e]">Escolha uma opção</option>
                       <option value="familia" className="text-[#1a1a2e]">Viagem em família</option>
                       <option value="lua-de-mel" className="text-[#1a1a2e]">Lua de mel ou viagem a dois</option>
@@ -782,32 +782,17 @@ export default function Home() {
                   
                   <div>
                     <label className="block text-sm font-medium text-white/70 mb-2">Para onde o coração está apontando? <span className="text-[#c9a84c]">*</span></label>
-                    <input
-                      type="text"
-                      name="destination"
-                      required
-                      placeholder="Pode ser um lugar ou uma sensação"
-                      className="w-full px-5 py-4 bg-white/10 border border-white/10 rounded-2xl text-white placeholder:text-white/30 focus:outline-none focus:border-[#c9a84c] focus:ring-2 focus:ring-[#c9a84c]/20 transition-all duration-300"
-                    />
+                    <input type="text" name="destination" required placeholder="Pode ser um lugar ou uma sensação" className="w-full px-5 py-4 bg-white/10 border border-white/10 rounded-2xl text-white placeholder:text-white/30 focus:outline-none focus:border-[#c9a84c] focus:ring-2 focus:ring-[#c9a84c]/20 transition-all duration-300" />
                   </div>
                   
                   <div>
                     <label className="block text-sm font-medium text-white/70 mb-2">Seu melhor contato <span className="text-[#c9a84c]">*</span></label>
-                    <input
-                      type="email"
-                      name="email"
-                      required
-                      placeholder="voce@email.com"
-                      className="w-full px-5 py-4 bg-white/10 border border-white/10 rounded-2xl text-white placeholder:text-white/30 focus:outline-none focus:border-[#c9a84c] focus:ring-2 focus:ring-[#c9a84c]/20 transition-all duration-300"
-                    />
+                    <input type="email" name="email" required placeholder="voce@email.com" className="w-full px-5 py-4 bg-white/10 border border-white/10 rounded-2xl text-white placeholder:text-white/30 focus:outline-none focus:border-[#c9a84c] focus:ring-2 focus:ring-[#c9a84c]/20 transition-all duration-300" />
                   </div>
 
                   <input type="hidden" name="origin" value="site" />
 
-                  <button
-                    type="submit"
-                    className="w-full py-5 bg-gradient-to-r from-[#c9a84c] to-[#b8983e] hover:from-[#b8983e] hover:to-[#a08830] text-[#0a0a1a] font-semibold rounded-2xl transition-all duration-500 flex items-center justify-center gap-3 group shadow-xl shadow-[#c9a84c]/20 hover:shadow-[#c9a84c]/40 hover:scale-[1.02]"
-                  >
+                  <button type="submit" className="w-full py-5 bg-gradient-to-r from-[#c9a84c] to-[#b8983e] hover:from-[#b8983e] hover:to-[#a08830] text-[#0a0a1a] font-semibold rounded-2xl transition-all duration-500 flex items-center justify-center gap-3 group shadow-xl shadow-[#c9a84c]/20 hover:shadow-[#c9a84c]/40 hover:scale-[1.02]">
                     Quero receber uma ideia de roteiro
                     <ArrowUpRight className="h-5 w-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                   </button>
