@@ -39,7 +39,7 @@ export function Header() {
         'fixed top-0 left-0 right-0 z-50 transition-all duration-500',
         isScrolled
           ? 'bg-white/95 backdrop-blur-xl shadow-soft border-b border-[#e8e3dc]/20'
-          : 'bg-transparent'
+          : 'bg-[#0a0a1a]/80 backdrop-blur-sm'
       )}
     >
       <nav className="container-custom py-4" aria-label="Global">
@@ -57,7 +57,6 @@ export function Header() {
                   href={item.href}
                   className={cn(
                     'text-sm font-medium transition-all duration-300 relative group',
-                    // COR DAS LETRAS: SEMPRE VISÍVEIS
                     isScrolled ? 'text-[#1a1a2e]' : 'text-white',
                     isActive && (isScrolled ? 'text-[#c9a84c]' : 'text-[#c9a84c]'),
                     'hover:text-[#c9a84c]'
