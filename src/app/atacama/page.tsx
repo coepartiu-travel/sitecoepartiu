@@ -90,7 +90,7 @@ export default function AtacamaPage() {
     <div className="pt-28 pb-20 bg-white min-h-screen">
       <div className="container-custom">
         {/* ============================================================
-            HERO - ATACAMA
+            HERO - ATACAMA & CHILE (TEXTO REVISADO)
             ============================================================ */}
         <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#0a0a1a] via-[#1a1a2e] to-[#0a0a1a] p-12 md:p-16 lg:p-20 text-white mb-16">
           <div className="absolute inset-0 opacity-20" style={{ 
@@ -104,13 +104,16 @@ export default function AtacamaPage() {
           <div className="absolute bottom-10 left-10 w-48 h-48 bg-[#c9a84c]/5 rounded-full blur-3xl" />
 
           <div className="relative z-10 max-w-3xl">
+            {/* BADGE */}
             <div className="inline-flex items-center gap-3 px-5 py-3 bg-[#c9a84c]/15 backdrop-blur-sm rounded-full border border-[#c9a84c]/30 mb-8">
-              <img
-                src="/images/carioca-atacama-logo.png"
-                alt="Carioca de Atacama"
-                className="h-8 w-auto object-contain"
-              />
-              <span className="w-px h-8 bg-[#c9a84c]/40" />
+              <div className="bg-[#1a1a2e]/80 p-1 rounded-full">
+                <img
+                  src="/images/carioca-atacama-logo.png"
+                  alt="Carioca de Atacama"
+                  className="h-7 w-auto object-contain"
+                />
+              </div>
+              <span className="w-px h-7 bg-[#c9a84c]/40" />
               <span className="text-xs font-medium tracking-[0.2em] text-[#c9a84c] uppercase">
                 Carioca de Atacama
               </span>
@@ -119,151 +122,208 @@ export default function AtacamaPage() {
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold leading-[1.05]">
               Atacama & Chile
             </h1>
-            <p className="text-xl md:text-2xl text-white/80 mt-4 leading-relaxed">
-              Mais do que conhecer. <span className="text-[#c9a84c]">Viver o destino.</span>
+            
+            <div className="mt-4 space-y-2">
+              <p className="text-2xl md:text-3xl font-display font-bold text-white/90">
+                Mais do que conhecer.
+              </p>
+              <p className="text-2xl md:text-3xl font-display font-bold text-[#c9a84c]">
+                Viver o destino.
+              </p>
+            </div>
+
+            <p className="text-white/60 mt-4 text-base font-light max-w-xl">
+              Conheça o Chile com quem já viveu o destino por dentro.
             </p>
-            <p className="text-white/50 mt-2 text-base font-light max-w-xl">
-              Conheça o Chile com quem já viveu o destino por dentro. 
-              <span className="block text-white/30 text-sm mt-1">— Do Rio de Janeiro ao Atacama. Do sonho à experiência.</span>
+            <p className="text-white/40 text-sm font-light">
+              Experiências reais. Consultoria especializada. Viagens pensadas para você.
             </p>
 
-            <div className="mt-10 flex flex-wrap gap-4">
+            <div className="mt-8">
               <a
                 href="https://wa.me/5534999082607?text=Olá! Quero montar minha viagem para o Atacama com o Carioca de Atacama"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#c9a84c] to-[#b8983e] hover:from-[#b8983e] hover:to-[#a08830] text-[#0a0a1a] font-semibold rounded-full transition-all duration-500 shadow-2xl shadow-[#c9a84c]/20 hover:shadow-[#c9a84c]/40 hover:scale-105"
               >
-                Quero montar minha viagem
+                MONTE MINHA VIAGEM
                 <ArrowUpRight className="h-5 w-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               </a>
-              <a
-                href="#passeios"
-                className="inline-flex items-center gap-2 px-6 py-4 text-white/60 hover:text-white transition-colors text-sm font-medium border-b border-transparent hover:border-[#c9a84c]"
-              >
-                Ver passeios
-                <ArrowRight className="h-4 w-4" />
-              </a>
-            </div>
-
-            <div className="mt-10 flex flex-wrap gap-8">
-              <div className="flex items-center gap-3">
-                <span className="text-2xl">🌵</span>
-                <div>
-                  <span className="block text-sm font-medium text-white">Viveu no Atacama</span>
-                  <span className="text-xs text-white/40">1 ano de experiência real</span>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <span className="text-2xl">🏔️</span>
-                <div>
-                  <span className="block text-sm font-medium text-white">Guia e Agente</span>
-                  <span className="text-xs text-white/40">Trabalhou no turismo local</span>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <span className="text-2xl">🤝</span>
-                <div>
-                  <span className="block text-sm font-medium text-white">Consultor Especialista</span>
-                  <span className="text-xs text-white/40">Conhecimento autêntico do destino</span>
-                </div>
-              </div>
             </div>
           </div>
         </section>
 
         {/* ============================================================
-            QUEM É O CARIOCA DE ATACAMA (PÁGINA ATACAMA)
+            QUEM É O CARIOCA DE ATACAMA (TEXTO REVISADO - VERSÃO COMPLETA)
             ============================================================ */}
-        <section className="mb-16 bg-gradient-to-br from-[#faf8f5] to-[#f0ece6] rounded-3xl p-8 md:p-12 border border-[#e8e3dc]">
+        <section className="mb-16 bg-gradient-to-br from-[#faf8f5] to-[#f0ece6] rounded-3xl p-8 md:p-12 border border-[#e8e3dc] shadow-sm">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            {/* FOTO */}
             <div className="md:col-span-1">
-              <div className="relative rounded-2xl overflow-hidden aspect-square bg-gradient-to-br from-[#1a1a2e] to-[#0a0a1a] flex items-center justify-center">
+              <div className="relative rounded-2xl overflow-hidden aspect-square bg-gradient-to-br from-[#1a1a2e] to-[#0a0a1a] flex items-center justify-center shadow-lg">
                 <img
                   src="/images/atacama/carioca-atacama.jpg"
                   alt="Carioca de Atacama no deserto"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute bottom-4 left-4 bg-[#c9a84c]/90 backdrop-blur-sm px-4 py-2 rounded-full flex items-center gap-2">
-                  <img
-                    src="/images/carioca-atacama-logo.png"
-                    alt="Carioca de Atacama"
-                    className="h-5 w-auto object-contain"
-                  />
+                <div className="absolute bottom-4 left-4 bg-[#c9a84c]/90 backdrop-blur-sm px-4 py-2 rounded-full flex items-center gap-2 shadow-lg">
+                  <div className="bg-[#1a1a2e]/80 p-0.5 rounded-full">
+                    <img
+                      src="/images/carioca-atacama-logo.png"
+                      alt="Carioca de Atacama"
+                      className="h-4 w-auto object-contain"
+                    />
+                  </div>
                   <span className="text-xs font-semibold text-[#0a0a1a]">Carioca de Atacama</span>
                 </div>
               </div>
             </div>
 
-            <div className="md:col-span-2 space-y-4">
+            {/* CONTEÚDO */}
+            <div className="md:col-span-2 space-y-5">
               <div className="flex items-center gap-3">
                 <span className="w-10 h-[2px] bg-[#c9a84c]" />
                 <span className="text-xs font-medium tracking-[0.3em] text-[#c9a84c] uppercase">Quem é o Carioca de Atacama</span>
               </div>
+              
               <h2 className="text-2xl md:text-3xl font-display font-bold text-[#1a1a2e]">
                 Do Rio de Janeiro <span className="text-[#c9a84c]">ao deserto</span>
               </h2>
+
               <div className="space-y-3 text-[#4a4a5a] text-sm leading-relaxed">
                 <p>
-                  <span className="font-semibold text-[#1a1a2e]">Nasci no Rio de Janeiro</span>, mas foi no deserto mais árido do mundo que encontrei minha história.
+                  <span className="font-semibold text-[#1a1a2e]">Eu sou Raul Ramalho</span>, nascido em Niterói, no Rio de Janeiro.
                 </p>
                 <p>
-                  Em abril de 2019, cheguei a Calama, no Chile, com destino ao Atacama. 
-                  Uma mochila, um sonho e zero certezas.
+                  Em abril de 2019, cheguei a Calama, no Chile, com destino ao Atacama.
                 </p>
                 <p>
-                  Durante um ano, vivi no Atacama. Primeiro em uma hospedaria construída em adobe. 
-                  Depois, consegui alugar minha primeira casa.
+                  Uma nova língua. Uma nova cultura. Novos hábitos. Um novo desafio.
+                </p>
+                <p className="text-[#1a1a2e] font-medium">
+                  E uma experiência que acabaria mudando minha trajetória.
                 </p>
                 <p>
-                  Comecei minha trajetória trabalhando como <span className="font-semibold text-[#1a1a2e]">agente de turismo</span> em uma agência renomada da região.
+                  Durante um ano, vivi no Atacama. Primeiro em uma hospedaria construída em adobe. Depois, consegui alugar minha primeira casa e comecei a construir, pouco a pouco, minha vida naquele lugar.
+                </p>
+                <p className="text-[#1a1a2e] font-medium">
+                  Foi ali que comecei minha história no turismo.
                 </p>
                 <p>
-                  Precisei me reinventar. Aprendi espanhol latino, treinei meu inglês, mergulhei na cultura local.
+                  Comecei trabalhando como <span className="font-semibold text-[#1a1a2e]">agente de turismo em uma agência renomada da região</span>.
                 </p>
                 <p>
-                  Enfrentei temperaturas abaixo de zero, conheci a rotina de uma pequena cidade e, aos poucos, conquistei meu espaço.
-                </p>
-                <p className="font-medium text-[#1a1a2e]">
-                  Naquela pequena rua de terra chamada <span className="text-[#c9a84c]">Caracoles</span>, construí minha trajetória no turismo.
+                  Precisei me reinventar. Aprendi espanhol latino, treinei meu inglês e mergulhei em uma cultura completamente diferente da minha.
                 </p>
                 <p>
-                  Com o tempo, adquiri conhecimento, <span className="font-semibold text-[#1a1a2e]">administrei uma agência</span> e também me tornei <span className="font-semibold text-[#1a1a2e]">guia turístico</span>.
+                  Aos poucos, fui conquistando meu espaço naquela pequena cidade.
+                </p>
+                <p>
+                  E foi na famosa <span className="text-[#c9a84c] font-semibold">Caracoles</span>, uma simples rua de terra no coração de San Pedro de Atacama, que parte importante dessa trajetória aconteceu.
+                </p>
+                <p>
+                  Conheci viajantes de diferentes lugares do mundo, atendi clientes, aprendi sobre os passeios, os caminhos, a cultura e a realidade daquele destino.
+                </p>
+                <p>
+                  Com o tempo, passei a <span className="font-semibold text-[#1a1a2e]">administrar uma agência de turismo</span> e também me tornei <span className="font-semibold text-[#1a1a2e]">guia turístico</span>.
+                </p>
+                <p className="text-[#1a1a2e] font-medium">
+                  Foi quando o Atacama deixou de ser apenas o lugar onde eu estava morando.
+                </p>
+                <p className="text-[#c9a84c] font-semibold text-base">
+                  Passou a fazer parte de quem eu sou.
                 </p>
               </div>
 
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 pt-2">
+              {/* EXPERIÊNCIAS VIVIDAS */}
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-2 pt-2">
                 {[
                   { emoji: '🏜️', label: 'Caminhei por dunas' },
-                  { emoji: '🏊', label: 'Mergulhei em lagoas de sal' },
+                  { emoji: '💧', label: 'Mergulhei em lagoas de sal' },
                   { emoji: '❄️', label: 'Enfrentei -11°C' },
                   { emoji: '🌋', label: 'Subi vulcões' },
+                  { emoji: '🌌', label: 'Contemplei o céu' },
+                  { emoji: '🤝', label: 'Fiz amigos' },
                 ].map((item) => (
-                  <div key={item.label} className="bg-white/80 backdrop-blur-sm p-3 rounded-xl text-center border border-white/50">
-                    <span className="text-2xl block">{item.emoji}</span>
-                    <span className="text-[10px] text-[#4a4a5a] font-medium">{item.label}</span>
-                  </div>
+                  <span key={item.label} className="flex items-center gap-1.5 text-[10px] text-[#4a4a5a] bg-white/70 px-2.5 py-1.5 rounded-full border border-white/50">
+                    <span>{item.emoji}</span>
+                    {item.label}
+                  </span>
                 ))}
               </div>
 
-              <div className="pt-2">
+              <div className="pt-2 space-y-3">
                 <p className="text-[#4a4a5a] text-sm leading-relaxed">
-                  Conheci pessoas de diferentes partes do mundo. E, principalmente, conheci profundamente o universo do turismo no Atacama.
+                  E, acima de tudo, aprendi a enxergar o turismo de uma maneira diferente.
                 </p>
-                <p className="mt-2 text-[#1a1a2e] font-medium">
-                  <span className="text-[#c9a84c]">Hoje</span>, transformo essa experiência em viagens personalizadas para quem quer conhecer o Chile de verdade.
+                <p className="text-[#4a4a5a] text-sm leading-relaxed">
+                  Não apenas como venda de passeios.
+                </p>
+                <p className="text-[#1a1a2e] font-medium text-base">
+                  Mas como <span className="text-[#c9a84c]">experiência, descoberta, conexão e memória.</span>
                 </p>
               </div>
 
-              <a
-                href="https://wa.me/5534999082607?text=Olá! Quero montar minha viagem para o Atacama com o Carioca de Atacama"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 mt-4 px-6 py-3 bg-[#c9a84c] hover:bg-[#b8983e] text-[#0a0a1a] font-semibold rounded-full transition-all duration-300 text-sm shadow-lg hover:shadow-xl"
-              >
-                Planejar minha viagem com o Carioca de Atacama
-                <ArrowUpRight className="h-4 w-4" />
-              </a>
+              {/* POR QUE ISSO IMPORTA */}
+              <div className="pt-3 border-t border-[#e8e3dc] space-y-3">
+                <h3 className="text-sm font-semibold text-[#1a1a2e]">Por que isso importa para a sua viagem?</h3>
+                <p className="text-[#4a4a5a] text-sm leading-relaxed">
+                  Porque existe uma diferença entre <span className="font-semibold text-[#1a1a2e]">conhecer um destino</span> e simplesmente <span className="font-semibold text-[#1a1a2e]">vender um destino</span>.
+                </p>
+                <p className="text-[#4a4a5a] text-sm leading-relaxed">
+                  Minha experiência no Atacama me permitiu conhecer não apenas os lugares que aparecem nas fotografias, mas também entender a dinâmica do turismo, os diferentes perfis de viajantes e os detalhes que podem fazer diferença na experiência de quem está chegando pela primeira vez.
+                </p>
+                <p className="text-[#1a1a2e] font-medium text-sm">
+                  É essa experiência que hoje levo para a <span className="text-[#c9a84c]">COÉ, PARTIU? Travel & Experiences</span>.
+                </p>
+              </div>
+
+              {/* CONSULTORIA ESPECIALIZADA */}
+              <div className="pt-3 space-y-3">
+                <h3 className="text-sm font-semibold text-[#1a1a2e]">Consultoria especializada em Chile</h3>
+                <p className="text-[#4a4a5a] text-sm leading-relaxed">
+                  Você não precisa chegar ao Chile com todas as respostas.
+                </p>
+                <p className="text-[#4a4a5a] text-sm leading-relaxed">
+                  A COÉ, PARTIU? ajuda você a entender as possibilidades e construir uma viagem de acordo com <span className="font-semibold text-[#1a1a2e]">seu perfil, seu tempo, seus interesses e seu orçamento</span>.
+                </p>
+
+                <div className="flex flex-wrap gap-3 pt-1">
+                  <span className="px-4 py-1.5 bg-[#c9a84c]/10 rounded-full text-xs text-[#c9a84c] border border-[#c9a84c]/20 font-medium">🌵 Atacama</span>
+                  <span className="px-4 py-1.5 bg-[#c9a84c]/10 rounded-full text-xs text-[#c9a84c] border border-[#c9a84c]/20 font-medium">🏙️ Santiago</span>
+                  <span className="px-4 py-1.5 bg-[#c9a84c]/10 rounded-full text-xs text-[#c9a84c] border border-[#c9a84c]/20 font-medium">🌊 Chile</span>
+                </div>
+              </div>
+
+              {/* SUA VIAGEM COMEÇA ANTES */}
+              <div className="pt-3 border-t border-[#e8e3dc] space-y-3">
+                <h3 className="text-sm font-semibold text-[#1a1a2e]">Sua viagem começa antes do embarque.</h3>
+                <div className="grid grid-cols-2 gap-1 text-xs text-[#4a4a5a]">
+                  <span>✅ A gente conversa</span>
+                  <span>✅ Entende o que você procura</span>
+                  <span>✅ Apresenta as possibilidades</span>
+                  <span>✅ Ajuda a montar seu roteiro</span>
+                </div>
+                <p className="text-[#4a4a5a] text-sm leading-relaxed">
+                  E conecta você às experiências que fazem sentido para a sua viagem.
+                </p>
+                <div className="pt-1">
+                  <p className="text-base font-display font-bold text-[#1a1a2e]">
+                    Você escolhe o destino.
+                    <br />
+                    <span className="text-[#c9a84c]">A gente ajuda a cuidar do caminho.</span>
+                  </p>
+                </div>
+                <a
+                  href="https://wa.me/5534999082607?text=Olá! Quero montar minha viagem para o Atacama com o Carioca de Atacama"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 mt-2 px-6 py-3 bg-gradient-to-r from-[#c9a84c] to-[#b8983e] hover:from-[#b8983e] hover:to-[#a08830] text-[#0a0a1a] font-semibold rounded-full transition-all duration-300 text-sm shadow-lg hover:shadow-xl hover:scale-105"
+                >
+                  QUERO MONTAR MINHA VIAGEM
+                  <ArrowUpRight className="h-4 w-4" />
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -416,7 +476,7 @@ export default function AtacamaPage() {
               Pronto para viver o Atacama <span className="text-[#c9a84c]">com quem viveu lá?</span>
             </h2>
             <p className="text-[#4a4a5a] mt-3 text-sm font-light">
-              Você escolhe o destino. A gente cuida do caminho.
+              Você escolhe o destino. A gente ajuda a cuidar do caminho.
             </p>
             <a
               href="https://wa.me/5534999082607?text=Olá! Quero montar minha viagem para o Atacama com o Carioca de Atacama"
