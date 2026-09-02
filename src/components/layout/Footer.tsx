@@ -6,11 +6,10 @@ import { Instagram, Youtube, Facebook, Send } from 'lucide-react';
 const navigation = {
   principal: [
     { name: 'Início', href: '/' },
-    { name: 'Viagens', href: '/viagens' },
-    { name: 'Experiências', href: '/experiencias' },
     { name: 'Atacama & Chile', href: '/atacama' },
-    { name: 'Lua de Mel', href: '/lua-de-mel' },
-    { name: 'Escolas & Grupos', href: '/escolas-grupos' },
+    { name: 'Viagens', href: '/viagens' },
+    { name: 'Excursões', href: '/excursoes' },
+    { name: 'Experiências', href: '/experiencias' },
     { name: 'Sobre Nós', href: '/sobre' },
   ],
   suporte: [
@@ -39,14 +38,14 @@ const social = [
   },
   {
     name: 'Fale com Especialista',
-    href: 'https://wa.me/5534999082607?text=Olá! Conheci a COÉ, PARTIU? Travel & Experiences e gostaria de planejar uma viagem.',
+    href: 'https://wa.me/5534999082607?text=Olá! Conheci a COÉ, PARTIU? e gostaria de planejar uma viagem com o Carioca de Atacama.',
     icon: Send,
   },
 ];
 
 export function Footer() {
   return (
-    <footer className="bg-white border-t border-gray-100">
+    <footer className="bg-white border-t border-[#e8e3dc]">
       <Container className="section-padding">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Logo e descrição */}
@@ -61,17 +60,17 @@ export function Footer() {
                 priority
               />
             </div>
-            <p className="mt-4 text-text-secondary text-sm max-w-xs">
-              Sua próxima história começa aqui. Viagens e experiências cuidadosamente planejadas para você viver mais e se preocupar menos.
+            <p className="mt-4 text-[#4a4a5a] text-sm max-w-xs leading-relaxed">
+              O Chile que só um carioca que virou atacamenho pode te mostrar.
             </p>
-            <div className="mt-6 flex gap-4">
+            <div className="mt-6 flex gap-3">
               {social.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors text-primary"
+                  className="p-2.5 rounded-full bg-[#f5f0eb] hover:bg-[#c9a84c] hover:text-white transition-all duration-300 text-[#1a1a2e] hover:scale-110"
                   aria-label={item.name}
                 >
                   <item.icon className="w-5 h-5" />
@@ -82,13 +81,13 @@ export function Footer() {
 
           {/* Navegação Principal */}
           <div>
-            <h3 className="font-display text-lg font-semibold mb-4 text-primary">Navegação</h3>
+            <h3 className="font-display text-lg font-semibold mb-5 text-[#1a1a2e]">Navegação</h3>
             <ul className="space-y-3">
               {navigation.principal.map((item) => (
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-text-secondary hover:text-primary transition-colors text-sm"
+                    className="text-[#4a4a5a] hover:text-[#c9a84c] transition-colors text-sm"
                   >
                     {item.name}
                   </Link>
@@ -99,13 +98,13 @@ export function Footer() {
 
           {/* Suporte */}
           <div>
-            <h3 className="font-display text-lg font-semibold mb-4 text-primary">Suporte</h3>
+            <h3 className="font-display text-lg font-semibold mb-5 text-[#1a1a2e]">Suporte</h3>
             <ul className="space-y-3">
               {navigation.suporte.map((item) => (
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-text-secondary hover:text-primary transition-colors text-sm"
+                    className="text-[#4a4a5a] hover:text-[#c9a84c] transition-colors text-sm"
                   >
                     {item.name}
                   </Link>
@@ -116,40 +115,46 @@ export function Footer() {
 
           {/* Contato */}
           <div>
-            <h3 className="font-display text-lg font-semibold mb-4 text-primary">Contato</h3>
-            <ul className="space-y-3 text-sm text-text-secondary">
+            <h3 className="font-display text-lg font-semibold mb-5 text-[#1a1a2e]">Contato</h3>
+            <ul className="space-y-3 text-sm text-[#4a4a5a]">
               <li>
                 <a
                   href="https://wa.me/5534999082607"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-primary transition-colors"
+                  className="hover:text-[#c9a84c] transition-colors flex items-center gap-2"
                 >
+                  <Send className="w-4 h-4 text-[#c9a84c]" />
                   Fale com Especialista: (34) 99908-2607
                 </a>
               </li>
               <li>
                 <a
                   href="mailto:contato@coepartiu.com.br"
-                  className="hover:text-primary transition-colors"
+                  className="hover:text-[#c9a84c] transition-colors"
                 >
                   contato@coepartiu.com.br
                 </a>
               </li>
-              <li className="text-text-tertiary text-xs">
-                São Paulo - Brasil
+              <li className="text-[#7a7a8a] text-xs">
+                🌵 Carioca de Atacama
               </li>
             </ul>
           </div>
         </div>
 
         {/* Rodapé inferior */}
-        <div className="mt-12 pt-8 border-t border-gray-200">
+        <div className="mt-12 pt-8 border-t border-[#e8e3dc]">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-text-tertiary">
-              © {new Date().getFullYear()} COÉ, PARTIU? Travel & Experiences. Todos os direitos reservados.
+            <p className="text-sm text-[#7a7a8a] flex items-center gap-2">
+              <img
+                src="/images/carioca-atacama-logo.png"
+                alt="Carioca de Atacama"
+                className="h-5 w-auto object-contain"
+              />
+              © {new Date().getFullYear()} COÉ, PARTIU? Travel & Experiences — by Carioca de Atacama
             </p>
-            <p className="text-sm text-text-tertiary">
+            <p className="text-sm text-[#7a7a8a]">
               Feito com ❤️ para viajantes
             </p>
           </div>
